@@ -27,8 +27,14 @@ let clients = [];
 
 // Function to send progress updates to SSE clients
 function sendProgressUpdate(progress) {
+    if (!progress || typeof progress !== 'object') return;
+
     clients.forEach(client => {
-        client.write(`data: ${JSON.stringify(progress)}\n\n`);
+        try {
+            client.write(`data: ${JSON.stringify(progress)}\n\n`);
+        } catch (err) {
+            console.error('Failed to send progress update:', err.message);
+        }
     });
 }
 
@@ -61,11 +67,8 @@ app.get('/api/status', (req, res) => {
 
 // Logs Route
 app.get('/api/logs', (req, res) => {
-    const logsFilePath = path.join(__dirname, 'logs', 'sync-logs.txt');
-
-    if (!fs.existsSync(path.join(__dirname, 'logs'))) {
-        return res.status(200).json([]);
-    }
+    const logsDir = path.join(__dirname, 'logs');
+    const logsFilePath = path.join(logsDir, 'sync-logs.txt');
 
     if (!fs.existsSync(logsFilePath)) {
         return res.status(200).json([]);
@@ -74,49 +77,57 @@ app.get('/api/logs', (req, res) => {
     fs.readFile(logsFilePath, 'utf8', (err, data) => {
         if (err) {
             console.error('Failed to read logs:', err.message);
-            res.status(500).json({ error: 'Failed to retrieve logs' });
-        } else {
-            const logs = data.trim().split('\n').filter(log => log);
-            res.json(Array.from(new Set(logs)));
+            return res.status(500).json({ error: 'Failed to retrieve logs' });
         }
+
+        const logs = data.trim().split('\n').filter(log => log);
+        res.json(Array.from(new Set(logs)));
     });
 });
 
 // OAuth callback route
 app.get('/oauth/callback', (req, res) => {
-    const authorizationCode = req.query.code;
-    const error = req.query.error;
+    const { code, error } = req.query;
 
     if (error) {
         console.error('OAuth authorization error:', error);
         return res.status(400).json({ error: 'Authorization failed', detail: error });
     }
 
-    if (!authorizationCode) {
+    if (!code) {
         console.error('Authorization code not found.');
         return res.status(400).json({ error: 'Authorization code missing' });
     }
 
-    exchangeCodeForToken(authorizationCode)
+    exchangeCodeForToken(code)
         .then(() => {
             res.redirect('/?authSuccess=domaincomau');
         })
         .catch(err => {
-            console.error('Error exchanging code for token:', err);
+            console.error('Error exchanging code for token:', err.message);
             res.status(500).json({ error: 'Failed to exchange authorization code', detail: err.message });
         });
 });
 
 // Serve static files if they exist
 if (fs.existsSync(path.join(__dirname, 'dist'))) {
-    app.use(express.static(path.join(__dirname, 'dist')));
+    app.use(express.static(path.join(__dirname, 'dist'), {
+        setHeaders: (res, path) => {
+            res.setHeader('Cache-Control', 'public, max-age=31536000'); // Cache for one year
+        }
+    }));
 } else {
     console.warn('Dist directory not found. Run `npm run build` to generate the frontend build.');
 }
 
 // Catch-all route for SPA
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+    const indexPath = path.join(__dirname, 'dist', 'index.html');
+    if (fs.existsSync(indexPath)) {
+        res.sendFile(indexPath);
+    } else {
+        res.status(404).send('Frontend build not found. Please build the project.');
+    }
 });
 
 // Start the server

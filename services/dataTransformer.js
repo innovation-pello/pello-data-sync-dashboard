@@ -4,7 +4,7 @@
  * @param {object} performanceData - Performance metrics for the listing.
  * @returns {object|null} - Transformed Airtable record or null if performance data is missing.
  */
-function processSingleListing(property, performanceData) {
+export function processSingleListing(property, performanceData) {
     if (!property) {
         console.warn('No property data available to process.');
         return null;
@@ -54,7 +54,6 @@ function processSingleListing(property, performanceData) {
         });
     }
 
-    // The transformed record structure
     const transformedRecord = {
         UniqueID: property.uniqueID || '',
         AgentID: property.agentID || '',
@@ -73,11 +72,13 @@ function processSingleListing(property, performanceData) {
         Bathrooms: property.features?.bathrooms || '0',
         CarSpaces: property.features?.carports || '0',
         PropertyImages: (property.objects?.img || []).map(img => ({ url: img.$?.url })),
-        ...metrics, // Include performance metrics
+        ...metrics,
     };
 
     console.log(`Transformed record for ListingID: ${listingId}`, transformedRecord);
-    return transformedRecord;
+
+    // Wrap in fields object as expected by Airtable
+    return { fields: transformedRecord };
 }
 
 /**
@@ -86,7 +87,7 @@ function processSingleListing(property, performanceData) {
  * @param {object} performanceDataMap - A map of listing IDs to their performance data.
  * @returns {Array<object>} - Array of transformed records.
  */
-async function transformDataForAirtable(apiData, performanceDataMap) {
+export async function transformDataForAirtable(apiData, performanceDataMap) {
     const properties = Array.isArray(apiData.propertyList?.residential)
         ? apiData.propertyList.residential
         : [apiData.propertyList?.residential].filter(Boolean);
@@ -107,14 +108,13 @@ async function transformDataForAirtable(apiData, performanceDataMap) {
         const performanceData = performanceDataMap[listingId];
         if (!performanceData) {
             console.warn(`Performance data not found for ListingID: ${listingId}`);
-            continue; // Skip this record if no performance data exists
+            continue;
         }
 
         try {
             const record = processSingleListing(property, performanceData);
             if (record) {
-                //transformedRecords.push({ fields: record }); // Wrap once here
-                transformedRecords.push(record); // Push without additional wrapping
+                transformedRecords.push(record);
             } else {
                 console.warn(`Skipping ListingID ${listingId} due to transformation issues.`);
             }
@@ -123,7 +123,7 @@ async function transformDataForAirtable(apiData, performanceDataMap) {
         }
     }
 
+    console.log('Transformed Records:', JSON.stringify(transformedRecords, null, 2));
+
     return transformedRecords;
 }
-
-module.exports = { processSingleListing, transformDataForAirtable };

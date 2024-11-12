@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!response.ok) throw new Error('Failed to fetch platform statuses.');
 
             const data = await response.json();
+
             statusSection.innerHTML = data.map(platform => {
                 const platformId = platform.platform.toLowerCase().trim().replace(/[\s\.]/g, '');
 
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }).join('');
 
             attachAuthorizeButtonListener();
+            attachSyncButtonListeners(); // Attach Sync Now button listeners here
         } catch (error) {
             showError('Failed to load platform statuses. Please try again.');
             console.error('fetchStatus error:', error);
@@ -93,6 +95,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         }
+    }
+
+    function attachSyncButtonListeners() {
+        const syncButtons = document.querySelectorAll('[id^="sync-now-"]');
+        syncButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const platform = button.id.replace('sync-now-', '');
+                console.log(`Attempting sync for platform: ${platform}`); // Debug log
+                syncPlatform(platform);
+            });
+        });
     }
 
     window.syncPlatform = function (platform) {
@@ -149,16 +162,18 @@ document.addEventListener('DOMContentLoaded', function () {
         fetch(`http://localhost:3000/api/${endpoint}/sync`, { method: 'POST' })
             .then(response => {
                 if (!response.ok) {
+                    console.error(`Sync request failed for ${endpoint} with status: ${response.status}`);
                     throw new Error(`Sync failed with status ${response.status}`);
                 }
                 return response.json();
             })
             .then(() => {
+                console.log(`Sync completed successfully for ${endpoint}`);
                 fetchLogs();
             })
             .catch(error => {
-                console.error(`Sync failed:`, error);
-                showError('Sync failed. Please try again.');
+                console.error(`Sync failed for platform ${platform}:`, error.message);
+                showError(`Sync failed: ${error.message}. Please try again.`);
                 statusElement.textContent = 'Error';
                 statusElement.className = 'font-medium text-red-500';
             });

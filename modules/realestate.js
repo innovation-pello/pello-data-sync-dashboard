@@ -1,7 +1,7 @@
-const { pushDataToAirtable } = require('../services/airtableService'); // Airtable service
-const { transformDataForAirtable } = require('../services/dataTransformer'); // Data transformer
-const { fetchDataFromAPI, fetchListingPerformanceData } = require('../services/apiService'); // API service
-const { logSyncMessage, getLastSyncTimestamp } = require('../services/logger'); // Logger utility
+import { pushDataToAirtable } from '../services/airtableService.js'; // Airtable service
+import { transformDataForAirtable } from '../services/dataTransformer.js'; // Data transformer
+import { fetchDataFromAPI, fetchListingPerformanceData } from '../services/apiService.js';
+import { logSyncMessage } from '../services/logger.js'; // Logger utility
 
 /**
  * Main sync function for Realestate.com.au
@@ -55,7 +55,6 @@ async function realestateSync(sendProgressUpdate) {
 
         sendProgressUpdate({ step: 5, total: 5, message: 'Finalizing sync...' });
 
-        const timestamp = new Date().toLocaleString();
         logSyncMessage(`Realestate.com.au — Sync completed. Success: ${successCount}, Failed: ${failedCount}`);
         console.log('Sync successful');
         return { success: true, successCount, failedCount };
@@ -66,4 +65,4 @@ async function realestateSync(sendProgressUpdate) {
     }
 }
 
-module.exports = realestateSync;
+export default realestateSync;

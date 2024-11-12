@@ -1,12 +1,19 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: './public', // Set public as the root for frontend
+  root: './public', // Public folder as root
   server: {
-    port: 3000, // Port for development
+    port: 3000, // Vite development server port
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000', // Your backend server
+        changeOrigin: true,
+        secure: false,
+      },
+    },
   },
   build: {
-    outDir: '../dist', // Output built files to ../dist
-    emptyOutDir: true,  // Clear the output directory before building
+    outDir: '../dist', // Build files to ../dist
+    emptyOutDir: true,  // Clear outDir before building
   },
 });

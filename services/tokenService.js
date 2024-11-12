@@ -1,8 +1,11 @@
-const axios = require('axios');
-const qs = require('querystring');
+import axios from 'axios';
+import qs from 'querystring';
 
-// Fetch OAuth token from REA API
-async function fetchToken() {
+/**
+ * Fetch OAuth token from REA API.
+ * @returns {Promise<string>} Access token.
+ */
+export async function fetchToken() {
     const authEndpoint = process.env.AUTH_ENDPOINT;
     const clientId = process.env.CLIENT_ID;
     const clientSecret = process.env.CLIENT_SECRET;
@@ -27,5 +30,3 @@ async function fetchToken() {
         throw new Error('Failed to fetch access token.');
     }
 }
-
-module.exports = { fetchToken };

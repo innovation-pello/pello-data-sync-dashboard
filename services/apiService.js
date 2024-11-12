@@ -1,8 +1,8 @@
-const axios = require('axios');
-const xml2js = require('xml2js');
-const { fetchToken } = require('./tokenService'); // Token service
-const { transformDataForAirtable } = require('./dataTransformer'); // Data transformer
-const { pushDataToAirtable } = require('./airtableService'); // Airtable integration
+import axios from 'axios';
+import xml2js from 'xml2js';
+import { fetchToken } from './tokenService.js'; // Token service
+import { transformDataForAirtable } from './dataTransformer.js'; // Data transformer
+import { pushDataToAirtable } from './airtableService.js'; // Airtable integration
 
 // Utility function to parse XML data to JSON
 const parseXML = (xml) => {
@@ -15,7 +15,7 @@ const parseXML = (xml) => {
 };
 
 // Fetch property data from the REA API
-async function fetchDataFromAPI() {
+export async function fetchDataFromAPI() {
     try {
         const accessToken = await fetchToken();
         console.log('Fetching property data from REA API...');
@@ -38,7 +38,7 @@ async function fetchDataFromAPI() {
 }
 
 // Fetch performance data for a specific listing ID
-async function fetchListingPerformanceData(listingId) {
+export async function fetchListingPerformanceData(listingId) {
     try {
         const accessToken = await fetchToken();
         console.log(`Fetching performance data for Listing ID: ${listingId}...`);
@@ -67,7 +67,7 @@ async function fetchListingPerformanceData(listingId) {
 }
 
 // Process only one listing for testing purposes
-async function syncSingleListingToAirtable() {
+export async function syncSingleListingToAirtable() {
     try {
         console.log('Starting sync process for a single listing...');
         const apiData = await fetchDataFromAPI(); // Fetch property data
@@ -110,9 +110,3 @@ async function syncSingleListingToAirtable() {
         throw new Error('Sync to Airtable failed for single listing.');
     }
 }
-
-module.exports = {
-    fetchDataFromAPI,
-    fetchListingPerformanceData,
-    syncSingleListingToAirtable,
-};
