@@ -1,20 +1,20 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 /**
  * Logs sync message with timestamp to sync-logs.txt
  * Ensures the message follows the correct format.
  * @param {string} message
  */
-function logSyncMessage(message) {
+export function logSyncMessage(message) {
     const timestamp = new Date().toLocaleString();
     const formattedMessage = `[${timestamp}] ${message.trim()}\n`;
 
-    const logsFilePath = path.join(__dirname, '../logs', 'sync-logs.txt');
+    const logsFilePath = path.join(path.resolve(), 'logs', 'sync-logs.txt');
 
     try {
         if (!fs.existsSync(path.dirname(logsFilePath))) {
-            fs.mkdirSync(path.dirname(logsFilePath));
+            fs.mkdirSync(path.dirname(logsFilePath), { recursive: true });
         }
 
         // Ensure correct format before logging
@@ -48,8 +48,8 @@ function isValidLogFormat(log) {
  * @param {string} platform
  * @returns {string} Last sync timestamp or 'N/A' if not found.
  */
-function getLastSyncTimestamp(platform) {
-    const logsFilePath = path.join(__dirname, '../logs', 'sync-logs.txt');
+export function getLastSyncTimestamp(platform) {
+    const logsFilePath = path.join(path.resolve(), 'logs', 'sync-logs.txt');
 
     try {
         if (fs.existsSync(logsFilePath)) {
@@ -69,5 +69,3 @@ function getLastSyncTimestamp(platform) {
 
     return 'N/A';
 }
-
-module.exports = { logSyncMessage, getLastSyncTimestamp };

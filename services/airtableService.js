@@ -1,4 +1,4 @@
-const Airtable = require('airtable');
+import Airtable from 'airtable';
 
 const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE_ID);
 const tableName = process.env.AIRTABLE_TABLE_NAME;
@@ -47,7 +47,7 @@ async function createOrUpdateRecord(record) {
  * Push data to Airtable.
  * @param {Array<object>} records - Array of transformed Airtable records.
  */
-async function pushDataToAirtable(records) {
+export async function pushDataToAirtable(records) {
     try {
         console.log(`Pushing ${records.length} records to Airtable...`);
         for (const record of records) {
@@ -59,5 +59,3 @@ async function pushDataToAirtable(records) {
         throw new Error('Airtable sync error: ' + error.message);
     }
 }
-
-module.exports = { pushDataToAirtable };

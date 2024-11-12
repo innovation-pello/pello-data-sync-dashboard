@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from 'axios';
 
 // Load environment variables
 const DOMAIN_API_BASE_URL = process.env.DOMAIN_API_BASE_URL;
@@ -8,7 +8,7 @@ const DOMAIN_API_KEY = process.env.DOMAIN_API_KEY;
  * Fetch data from Domain API.
  * @returns {Promise<object>} Property data from Domain.
  */
-async function fetchDomainData() {
+export async function fetchDomainData() {
     try {
         const response = await axios.get(`${DOMAIN_API_BASE_URL}/listings`, {
             headers: { Authorization: DOMAIN_API_KEY }
@@ -25,7 +25,7 @@ async function fetchDomainData() {
  * @param {string} listingId
  * @returns {Promise<object>} Performance data for the listing.
  */
-async function fetchDomainPerformanceData(listingId) {
+export async function fetchDomainPerformanceData(listingId) {
     try {
         const response = await axios.get(`${DOMAIN_API_BASE_URL}/listings/${listingId}/performance`, {
             headers: { Authorization: DOMAIN_API_KEY }
@@ -36,5 +36,3 @@ async function fetchDomainPerformanceData(listingId) {
         throw new Error('Domain API performance data fetch failed.');
     }
 }
-
-module.exports = { fetchDomainData, fetchDomainPerformanceData };

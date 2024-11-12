@@ -1,12 +1,9 @@
-const { pushDataToAirtable } = require('../services/airtableService');
-const { transformDataForAirtable } = require('../services/dataTransformer');
-const { fetchDomainData, fetchDomainPerformanceData } = require('../services/domainService');
-const { logSyncMessage } = require('../services/logger');
+// Import any required modules
+import { pushDataToAirtable } from '../services/airtableService.js';
+import { transformDataForAirtable } from '../services/dataTransformer.js';
+import { fetchDomainData, fetchDomainPerformanceData } from '../services/domainService.js';
+import { logSyncMessage } from '../services/logger.js';
 
-/**
- * Main sync function for Domain.com.au
- * @param {Function} sendProgressUpdate - Callback for sending progress updates
- */
 async function domainSync(sendProgressUpdate) {
     let successCount = 0;
     let failedCount = 0;
@@ -18,7 +15,7 @@ async function domainSync(sendProgressUpdate) {
         const apiData = await fetchDomainData();
 
         if (!apiData?.listings) {
-            throw new Error('No property data available from Domain API.');
+            throw new Error('No property data available from API.');
         }
 
         sendProgressUpdate({ step: 2, total: 5, message: 'Fetching performance data...' });
@@ -41,11 +38,10 @@ async function domainSync(sendProgressUpdate) {
         }
 
         sendProgressUpdate({ step: 4, total: 5, message: 'Pushing data to Airtable...' });
-        console.log(`Pushing ${transformedData.length} records to Airtable...`);
 
         for (const record of transformedData) {
             try {
-                await pushDataToAirtable([record]); // Push one record at a time
+                await pushDataToAirtable([record]);
                 successCount++;
             } catch (error) {
                 console.error(`Failed to push record with ListingID: ${record.ListingID}`, error.message);
@@ -54,13 +50,14 @@ async function domainSync(sendProgressUpdate) {
         }
 
         sendProgressUpdate({ step: 5, total: 5, message: 'Finalizing sync...' });
-        logSyncMessage(`Domain.com.au — Sync completed. Success: ${successCount}, Failed: ${failedCount}`);
+        logSyncMessage(`Domain.com.au sync completed. Success: ${successCount}, Failed: ${failedCount}`);
 
         return { success: true, successCount, failedCount };
     } catch (error) {
-        logSyncMessage(`Domain.com.au — Sync failed: ${error.message}`);
+        logSyncMessage(`Domain.com.au sync failed: ${error.message}`);
         throw error;
     }
 }
 
-module.exports = domainSync;
+// Export the sync function as default
+export default domainSync;

@@ -31,13 +31,16 @@ function sendProgressUpdate(progress) {
         client.write(`data: ${JSON.stringify(progress)}\n\n`);
     });
 }
+
+// Export SSE functionality
 export { clients, sendProgressUpdate };
 
-// Use platform-specific routes
+// Import platform-specific routes
 import realestateRoutes from './routes/realestate.js';
 import domainRoutes from './routes/domain.js';
 import domainAuthRoutes from './routes/domainAuth.js';
 
+// Use routes
 app.use('/api/realestate', realestateRoutes);
 app.use('/api/domain', domainRoutes);
 app.use('/api/domain/auth', domainAuthRoutes);
@@ -60,12 +63,20 @@ app.get('/api/status', (req, res) => {
 app.get('/api/logs', (req, res) => {
     const logsFilePath = path.join(__dirname, 'logs', 'sync-logs.txt');
 
+    if (!fs.existsSync(path.join(__dirname, 'logs'))) {
+        return res.status(200).json([]);
+    }
+
+    if (!fs.existsSync(logsFilePath)) {
+        return res.status(200).json([]);
+    }
+
     fs.readFile(logsFilePath, 'utf8', (err, data) => {
         if (err) {
             console.error('Failed to read logs:', err.message);
             res.status(500).json({ error: 'Failed to retrieve logs' });
         } else {
-            const logs = data.trim().split('\n');
+            const logs = data.trim().split('\n').filter(log => log);
             res.json(Array.from(new Set(logs)));
         }
     });
@@ -78,12 +89,12 @@ app.get('/oauth/callback', (req, res) => {
 
     if (error) {
         console.error('OAuth authorization error:', error);
-        return res.status(400).send('Authorization failed.');
+        return res.status(400).json({ error: 'Authorization failed', detail: error });
     }
 
     if (!authorizationCode) {
         console.error('Authorization code not found.');
-        return res.status(400).send('Authorization code missing.');
+        return res.status(400).json({ error: 'Authorization code missing' });
     }
 
     exchangeCodeForToken(authorizationCode)
@@ -91,13 +102,17 @@ app.get('/oauth/callback', (req, res) => {
             res.redirect('/?authSuccess=domaincomau');
         })
         .catch(err => {
-            console.error('Error exchanging code for token:', err.message);
-            res.status(500).send('Failed to exchange authorization code.');
+            console.error('Error exchanging code for token:', err);
+            res.status(500).json({ error: 'Failed to exchange authorization code', detail: err.message });
         });
 });
 
-// Serve frontend files
-app.use(express.static(path.join(__dirname, 'dist')));
+// Serve static files if they exist
+if (fs.existsSync(path.join(__dirname, 'dist'))) {
+    app.use(express.static(path.join(__dirname, 'dist')));
+} else {
+    console.warn('Dist directory not found. Run `npm run build` to generate the frontend build.');
+}
 
 // Catch-all route for SPA
 app.get('*', (req, res) => {

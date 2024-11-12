@@ -1,5 +1,5 @@
-const express = require('express');
-const { getAuthUrl, exchangeCodeForToken } = require('../services/auth'); // Only use what's necessary
+import express from 'express';
+import { getAuthUrl, exchangeCodeForToken } from '../services/auth.js'; // Use .js extension for ES modules
 
 const router = express.Router();
 
@@ -23,4 +23,4 @@ router.get('/callback', async (req, res) => {
     }
 });
 
-module.exports = router;
+export default router; // Default export for router

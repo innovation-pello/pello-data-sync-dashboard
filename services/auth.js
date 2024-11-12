@@ -1,10 +1,11 @@
 // Load environment variables
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 // Import necessary modules
-const axios = require('axios');
-const fs = require('fs');
-const crypto = require('crypto');
+import axios from 'axios';
+import fs from 'fs';
+import crypto from 'crypto';
 
 // Generate a nonce value for OAuth flow
 function generateNonce() {
@@ -34,7 +35,7 @@ function storeTokens(accessToken, refreshToken) {
     fs.writeFileSync('.env', envContent);
 
     // Reload environment variables to use updated tokens
-    require('dotenv').config();
+    dotenv.config();
 }
 
 // Exchange authorization code for tokens
@@ -73,7 +74,7 @@ async function exchangeCodeForToken(code) {
     }
 }
 
-//Construct the OAuth authorization URL
+// Construct the OAuth authorization URL
 function getAuthUrl() {
     const nonce = generateNonce(); // Generate nonce
     const state = generateNonce(); // Generate state
@@ -82,15 +83,5 @@ function getAuthUrl() {
     return `https://auth.domain.com.au/v1/connect/authorize?client_id=${process.env.DOMAIN_CLIENT_ID}&redirect_uri=${encodeURIComponent(process.env.DOMAIN_REDIRECT_URI)}&response_type=code&scope=openid%20profile%20api_listings_read%20api_agencies_read&nonce=${nonce}&state=${state}`;
 }
 
-// function getAuthUrl() {
-//     const nonce = generateNonce();
-//     const state = generateNonce();
-
-//     return `https://auth.domain.com.au/v1/connect/authorize?client_id=${process.env.DOMAIN_REDIRECT_URI}&redirect_uri=${encodeURIComponent(process.env.DOMAIN_REDIRECT_URI)}&response_type=code&scope=openid%20profile%20api_listings_read%20api_agencies_read&nonce=${nonce}&state=${state}`;
-// }
-
 // Export functions for external use
-module.exports = {
-    getAuthUrl,
-    exchangeCodeForToken
-};
+export { getAuthUrl, exchangeCodeForToken };
