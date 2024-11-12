@@ -1,0 +1,20 @@
+{
+  "name": "pello-data-sync-dashboard",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",                
+    "build": "vite build",        
+    "start": "node server.js",    
+    "serve": "vite preview"       
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11",
+    "nodemon": "^3.1.7"
+  }
+}

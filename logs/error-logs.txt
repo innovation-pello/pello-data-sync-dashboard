@@ -1,0 +1,115 @@
+[11/8/2024, 11:33:12 AM] TypeError: Cannot read properties of undefined (reading '142716040')
+    at transformDataForAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/dataTransformer.js:110:31)
+    at realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:27:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 11:36:25 AM] TypeError: Cannot read properties of undefined (reading '142716040')
+    at transformDataForAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/dataTransformer.js:110:73)
+    at realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:27:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 11:50:33 AM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:56:9)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 11:57:06 AM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:51:9)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 12:00:30 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:45:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 12:04:08 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:50:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 12:08:47 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:50:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 12:11:04 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:50:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 12:15:58 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:50:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 12:19:33 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:50:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 12:21:46 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:50:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 12:29:56 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:50:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 12:33:27 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:50:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 12:36:21 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:50:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 12:38:36 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:50:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 12:41:37 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:50:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 12:51:26 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:55:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 1:05:20 PM] Error: Airtable sync error: Cannot read properties of undefined (reading 'ListingID')
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:61:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:55:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 1:11:42 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:57:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 1:18:39 PM] Error: Failed to fetch data from REA API.
+    at fetchDataFromAPI (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/apiService.js:36:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:17:25)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 1:20:17 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:60:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:58:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 1:32:40 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:57:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
+[11/8/2024, 1:34:52 PM] Error: Airtable sync error: Unknown field name: "fields"
+    at pushDataToAirtable (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/services/airtableService.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async realestateSync (/Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/modules/realestate.js:51:13)
+    at async /Users/mark-logos/Documents/Projects/pello-data-sync-dashboard/server.js:41:24
