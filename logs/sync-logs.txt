@@ -1,12 +1,3 @@
 [11/11/2024, 11:00:00 AM] Realestate.com.au — Sync completed. Success: 10, Failed: 0
 [11/11/2024, 11:05:00 AM] Domain.com.au — Sync completed. Success: 8, Failed: 1
-[11/11/2024, 9:57:47 AM] Realestate.com.au — Sync completed. Success: 79, Failed: 1
-[11/11/2024, 9:57:47 AM] Realestate.com.au — Realestate.com.au sync successful
-[11/11/2024, 10:14:20 AM] Realestate.com.au — Sync completed. Success: 79, Failed: 1
-[11/11/2024, 10:14:20 AM] Realestate.com.au — Realestate.com.au sync successful
-[11/11/2024, 11:16:07 AM] Realestate.com.au — Sync completed. Success: 79, Failed: 1
-[11/11/2024, 11:16:07 AM] Domain.com.au — Sync completed. Success: 79, Failed: 1
-[11/12/2024, 7:37:02 PM] Realestate.com.au — Sync completed. Success: 0, Failed: 75
-[11/12/2024, 11:33:23 PM] Realestate.com.au — Sync completed. Success: 75, Failed: 0
-[11/12/2024, 11:55:38 PM] Realestate.com.au — Sync completed. Success: 75, Failed: 0
-[11/13/2024, 1:19:53 AM] Realestate.com.au — Sync completed. Success: 75, Failed: 0
+[11/14/2024, 9:49:03 AM] Realestate.com.au — Sync completed. Success: 72, Failed: 0

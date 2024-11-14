@@ -5,83 +5,121 @@ dotenv.config();
 // Import necessary modules
 import axios from 'axios';
 import fs from 'fs';
-import crypto from 'crypto';
 
-// Generate a nonce value for OAuth flow
-function generateNonce() {
-    const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._~';
-    return Array.from(crypto.randomBytes(32)).map(c => charset[c % charset.length]).join('');
+// In-memory storage for tokens
+let memoryTokens = {
+    accessToken: process.env.DOMAIN_ACCESS_TOKEN || '',
+};
+
+/**
+ * Updates a specific environment variable in the .env content.
+ * @param {string} envContent - Current .env content.
+ * @param {string} key - Environment variable key.
+ * @param {string} value - Environment variable value.
+ * @returns {string} Updated .env content.
+ */
+function updateEnvVariable(envContent, key, value) {
+    const regex = new RegExp(`${key}=.*`, 'g');
+    const newLine = `${key}=${value}`;
+    return regex.test(envContent) ? envContent.replace(regex, newLine) : `${envContent}\n${newLine}`;
 }
 
-// Store tokens in the .env file
-function storeTokens(accessToken, refreshToken) {
-    const domainApiKey = `Bearer ${accessToken}`; // Prepare DOMAIN_API_KEY format
-
-    // Read current .env content
-    let envContent = fs.readFileSync('.env', 'utf8');
-
-    // Update ACCESS_TOKEN and REFRESH_TOKEN
-    envContent = envContent.replace(/ACCESS_TOKEN=.*/g, `ACCESS_TOKEN=${accessToken}`);
-    envContent = envContent.replace(/REFRESH_TOKEN=.*/g, `REFRESH_TOKEN=${refreshToken}`);
-
-    // Update or add DOMAIN_API_KEY
-    if (envContent.includes('DOMAIN_API_KEY')) {
-        envContent = envContent.replace(/DOMAIN_API_KEY=.*/g, `DOMAIN_API_KEY=${domainApiKey}`);
-    } else {
-        envContent += `\nDOMAIN_API_KEY=${domainApiKey}`;
+/**
+ * Store tokens in memory and .env, and generate DOMAIN_API_KEY.
+ * @param {string} accessToken - Access token.
+ */
+function storeTokens(accessToken) {
+    if (!accessToken) {
+        throw new Error('Invalid token: Access token is required.');
     }
 
-    // Write updated tokens back to .env
-    fs.writeFileSync('.env', envContent);
+    memoryTokens.accessToken = accessToken;
 
-    // Reload environment variables to use updated tokens
-    dotenv.config();
+    const domainApiKey = `Bearer ${accessToken}`; // Generate DOMAIN_API_KEY
+    console.log('Storing token and generating DOMAIN_API_KEY...');
+
+    try {
+        let envContent = '';
+        try {
+            envContent = fs.readFileSync('.env', 'utf8');
+        } catch (error) {
+            console.warn('.env file not found. Creating a new one.');
+        }
+
+        envContent = updateEnvVariable(envContent, 'DOMAIN_ACCESS_TOKEN', accessToken);
+        envContent = updateEnvVariable(envContent, 'DOMAIN_API_KEY', domainApiKey);
+
+        fs.writeFileSync('.env', envContent);
+        dotenv.config(); // Reload environment variables
+        console.log('Access token and DOMAIN_API_KEY successfully stored in .env file.');
+    } catch (error) {
+        console.error('Failed to store token:', error.message);
+        throw new Error('Error storing token.');
+    }
 }
 
-// Exchange authorization code for tokens
-async function exchangeCodeForToken(code) {
+/**
+ * Fetch access token using client credentials.
+ * @returns {Promise<string>} Access token.
+ */
+async function fetchAccessToken() {
+    const tokenEndpoint = 'https://auth.domain.com.au/v1/connect/token';
+
     try {
-        // Post request to exchange authorization code
-        const tokenResponse = await axios.post(
-            'https://auth.domain.com.au/v1/connect/token',
+        console.log('Requesting access token using client credentials...');
+
+        // Encode client ID and secret to Base64
+        const credentials = Buffer.from(
+            `${process.env.DOMAIN_CLIENT_ID}:${process.env.DOMAIN_CLIENT_SECRET}`
+        ).toString('base64');
+
+        const response = await axios.post(
+            tokenEndpoint,
             new URLSearchParams({
-                grant_type: 'authorization_code',
-                code: code,
-                redirect_uri: process.env.DOMAIN_REDIRECT_URI
+                grant_type: 'client_credentials',
             }),
             {
-                auth: {
-                    username: process.env.DOMAIN_CLIENT_ID,
-                    password: process.env.DOMAIN_CLIENT_SECRET
-                },
                 headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                }
+                    Authorization: `Basic ${credentials}`,
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
             }
         );
 
-        // Destructure tokens from response
-        const { access_token, refresh_token } = tokenResponse.data;
+        const { access_token } = response.data;
 
-        // Store tokens in .env file
-        storeTokens(access_token, refresh_token);
+        if (!access_token) {
+            throw new Error('Failed to obtain access token.');
+        }
 
-        // Return tokens
-        return { access_token, refresh_token };
+        storeTokens(access_token); // Store token and generate DOMAIN_API_KEY
+        return access_token;
     } catch (error) {
-        console.error('Error exchanging code for token:', error.response?.data || error.message);
-        throw error;
+        console.error('Error fetching access token:', error.response?.data || error.message);
+        throw new Error(`Access token request failed: ${error.response?.data?.error_description || error.message}`);
     }
 }
 
-// Construct the OAuth authorization URL
-function getAuthUrl() {
-    const nonce = generateNonce(); // Generate nonce
-    const state = generateNonce(); // Generate state
+/**
+ * Load tokens on server startup or page reload.
+ */
+async function loadTokensOnStartup() {
+    try {
+        console.log('Fetching fresh tokens on startup...');
+        await fetchAccessToken(); // Fetch and store fresh tokens on every startup or reload
+        console.log('Tokens refreshed and stored successfully on startup.');
+    } catch (error) {
+        console.error('Failed to refresh tokens on startup:', error.message);
+    }
+}
 
-    // Return the constructed OAuth URL
-    return `https://auth.domain.com.au/v1/connect/authorize?client_id=${process.env.DOMAIN_CLIENT_ID}&redirect_uri=${encodeURIComponent(process.env.DOMAIN_REDIRECT_URI)}&response_type=code&scope=openid%20profile%20api_listings_read%20api_agencies_read&nonce=${nonce}&state=${state}`;
+/**
+ * Validate the current access token.
+ * @returns {boolean} True if the token exists and is non-empty.
+ */
+function validateAccessToken() {
+    return !!memoryTokens.accessToken;
 }
 
 // Export functions for external use
-export { getAuthUrl, exchangeCodeForToken };
+export { fetchAccessToken, validateAccessToken, loadTokensOnStartup, memoryTokens };

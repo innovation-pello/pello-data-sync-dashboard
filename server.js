@@ -9,7 +9,7 @@ import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 import { getLastSyncTimestamp } from './services/logger.js';
-import { exchangeCodeForToken } from './services/auth.js';
+import { fetchAccessToken, memoryTokens } from './services/auth.js'; // Ensure import of necessary token methods
 
 // Determine __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
@@ -44,18 +44,32 @@ export { clients, sendProgressUpdate };
 // Import platform-specific routes
 import realestateRoutes from './routes/realestate.js';
 import domainRoutes from './routes/domain.js';
-import domainAuthRoutes from './routes/domainAuth.js';
 
 // Use routes
 app.use('/api/realestate', realestateRoutes);
 app.use('/api/domain', domainRoutes);
-app.use('/api/domain/auth', domainAuthRoutes);
+
+// Middleware to ensure access token is valid
+app.use(async (req, res, next) => {
+    try {
+        if (!memoryTokens.accessToken) {
+            console.log('Access token missing, fetching a new one...');
+            await fetchAccessToken();
+        }
+        next(); // Proceed if token is valid
+    } catch (error) {
+        console.error('Error validating or refreshing token:', error.message);
+        res.status(500).json({ error: 'Failed to refresh access token.' });
+    }
+});
 
 // Platform Status Route
 app.get('/api/status', (req, res) => {
+    console.log('DOMAIN_ACCESS_TOKEN (memory):', memoryTokens.accessToken || 'Not set');
+
     const platforms = [
         { platform: 'Realestate.com.au', status: 'Connected', lastSync: 'N/A' },
-        { platform: 'Domain.com.au', status: 'Connected', lastSync: 'N/A' }
+        { platform: 'Domain.com.au', status: memoryTokens.accessToken ? 'Connected' : 'Not Authorized', lastSync: 'N/A' }
     ];
 
     platforms.forEach(platform => {
@@ -85,29 +99,16 @@ app.get('/api/logs', (req, res) => {
     });
 });
 
-// OAuth callback route
-app.get('/oauth/callback', (req, res) => {
-    const { code, error } = req.query;
-
-    if (error) {
-        console.error('OAuth authorization error:', error);
-        return res.status(400).json({ error: 'Authorization failed', detail: error });
+// Fetch tokens at server startup
+(async () => {
+    console.log('Fetching access token on server startup...');
+    try {
+        await fetchAccessToken(); // Fetch fresh access token
+        console.log('Access token successfully fetched on startup.');
+    } catch (error) {
+        console.error('Failed to fetch access token on startup:', error.message);
     }
-
-    if (!code) {
-        console.error('Authorization code not found.');
-        return res.status(400).json({ error: 'Authorization code missing' });
-    }
-
-    exchangeCodeForToken(code)
-        .then(() => {
-            res.redirect('/?authSuccess=domaincomau');
-        })
-        .catch(err => {
-            console.error('Error exchanging code for token:', err.message);
-            res.status(500).json({ error: 'Failed to exchange authorization code', detail: err.message });
-        });
-});
+})();
 
 // Serve static files if they exist
 if (fs.existsSync(path.join(__dirname, 'dist'))) {

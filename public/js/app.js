@@ -21,11 +21,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const data = await response.json();
 
+            console.log('Platform statuses:', data); // Debugging
+
             statusSection.innerHTML = data.map(platform => {
                 const platformId = platform.platform.toLowerCase().trim().replace(/[\s\.]/g, '');
 
-                const authorizeButton = platform.platform === 'Domain.com.au'
-                    ? `<button id="authorize-domain" class="mt-4"><i class="fa-solid fa-lock text-blue-500 text-xl"></i></button>`
+                const authorizeButton = platform.platform === 'Domain.com.au' && platform.status === 'Not Authorized'
+                    ? `<button id="authorize-domain" class="bg-yellow-500 text-white py-2 px-4 rounded mt-4">Authorize Domain</button>`
                     : '';
 
                 return `
@@ -37,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             </span>
                         </p>
                         <p class="text-gray-600">Status: 
-                            <span id="status-${platformId}" class="font-medium text-green-500">
-                                ${platform.status || 'Pending'}
+                            <span id="status-${platformId}" class="font-medium ${platform.status === 'Connected' ? 'text-green-500' : 'text-red-500'}">
+                                ${platform.status}
                             </span>
                         </p>
                         <div class="w-full bg-gray-200 rounded-full h-2.5 mt-4 hidden" id="progress-bar-${platformId}">
@@ -53,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }).join('');
 
             attachAuthorizeButtonListener();
-            attachSyncButtonListeners(); // Attach Sync Now button listeners here
+            attachSyncButtonListeners();
         } catch (error) {
             showError('Failed to load platform statuses. Please try again.');
             console.error('fetchStatus error:', error);
@@ -85,7 +87,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     const response = await fetch('http://localhost:3000/api/domain/authorize');
                     const data = await response.json();
                     if (data.authUrl) {
-                        window.location.href = data.authUrl;
+                        const authWindow = window.open(data.authUrl, '_blank');
+                        if (!authWindow) {
+                            alert('Please allow pop-ups for this website.');
+                            return;
+                        }
+
+                        showModal('Waiting for Domain Login...', 'Complete the login process in the new tab.');
                     } else {
                         alert('Failed to retrieve authorization URL.');
                     }
@@ -123,7 +131,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const progressBarContainer = document.getElementById(`progress-bar-${platform}`);
         const progressBar = progressBarContainer.querySelector('.progress-bar');
         const statusElement = document.getElementById(`status-${platform}`);
-        const lastSyncElement = document.getElementById(`last-sync-${platform}`);
 
         statusElement.textContent = 'Syncing...';
         statusElement.className = 'font-medium text-blue-500';
@@ -195,15 +202,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     };
 
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has('authSuccess')) {
-        const authorizeButton = document.getElementById('authorize-domain');
-        if (authorizeButton) {
-            authorizeButton.innerHTML = `<i class="fa-solid fa-unlock text-green-500 text-xl"></i>`;
+    window.addEventListener('message', (event) => {
+        if (event.data === 'domainAuthorized') {
+            showModal('Authorization Successful', 'Domain.com.au is now connected.');
+            fetchStatus();
         }
-        showModal('Authorization Successful', 'You can now sync with Domain.com.au.');
-        window.history.replaceState({}, document.title, window.location.pathname);
-    }
+    });
 
     fetchStatus();
     fetchLogs();
