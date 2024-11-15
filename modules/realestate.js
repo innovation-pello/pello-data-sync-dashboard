@@ -1,7 +1,7 @@
 import { pushDataToAirtable } from '../services/airtableService.js'; // Airtable service
 import { transformDataForAirtable } from '../services/dataTransformer.js'; // Data transformer
 import { fetchDataFromAPI, fetchListingPerformanceData } from '../services/apiService.js';
-import { logSyncMessage } from '../services/logger.js'; // Logger utility
+import logger from '../services/logger.js'; // Ensure logger is imported correctly
 
 /**
  * Main sync function for Realestate.com.au
@@ -12,7 +12,7 @@ async function realestateSync(sendProgressUpdate) {
     let failedCount = 0;
 
     try {
-        console.log('Starting Realestate.com.au sync...');
+        logger.info('Starting Realestate.com.au sync...');
 
         sendProgressUpdate({ step: 1, total: 5, message: 'Fetching data from API...' });
         const apiData = await fetchDataFromAPI();
@@ -29,7 +29,7 @@ async function realestateSync(sendProgressUpdate) {
                 const performanceData = await fetchListingPerformanceData(listingId);
                 performanceDataMap[listingId] = performanceData;
             } catch (error) {
-                console.warn(`Performance data fetch failed for ListingID ${listingId}: ${error.message}`);
+                logger.warn(`Performance data fetch failed for ListingID ${listingId}: ${error.message}`);
             }
         }
 
@@ -40,27 +40,29 @@ async function realestateSync(sendProgressUpdate) {
             throw new Error('No valid data to sync.');
         }
 
-        sendProgressUpdate({ step: 4, total: 5, message: 'Pushing data to Airtable...' });
-        console.log(`Pushing ${transformedData.length} records to Airtable...`);
+        // Commenting out record-level logging for brevity
+        // transformedData.forEach(record => {
+        //     logger.info(`Transformed Record for ListingID ${record.fields.ListingID}: ${JSON.stringify(record, null, 2)}`);
+        // });
 
+        sendProgressUpdate({ step: 4, total: 5, message: 'Pushing data to Airtable...' });
         for (const record of transformedData) {
             try {
                 await pushDataToAirtable([record]); // Push one record at a time
+                logger.info(`Successfully pushed record with ListingID: ${record.fields.ListingID}`);
                 successCount++;
             } catch (error) {
-                console.error(`Failed to push record with ListingID: ${record.ListingID}`, error.message);
+                logger.error(`Failed to push record with ListingID ${record.fields.ListingID}: ${error.message}`);
                 failedCount++;
             }
         }
 
         sendProgressUpdate({ step: 5, total: 5, message: 'Finalizing sync...' });
 
-        logSyncMessage(`Realestate.com.au — Sync completed. Success: ${successCount}, Failed: ${failedCount}`);
-        console.log('Sync successful');
+        logger.info(`Realestate.com.au — Sync completed. Success: ${successCount}, Failed: ${failedCount}`);
         return { success: true, successCount, failedCount };
     } catch (error) {
-        logSyncMessage(`Sync failed: ${error.message}`);
-        console.error('Error during Realestate.com.au sync:', error.message);
+        logger.error(`Sync failed: ${error.message}`);
         throw error;
     }
 }

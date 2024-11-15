@@ -101,8 +101,8 @@ export async function transformDataForAirtable(apiData, performanceDataMap) {
     for (const property of properties) {
         const listingId = String(property?.listingId).trim();
         if (!listingId) {
-            console.warn('Missing listingId, skipping property.');
-            continue;
+            console.warn('Missing ListingID in property:', JSON.stringify(property, null, 2));
+            continue; // Corrected: Skip this property, do not return from the loop.
         }
 
         const performanceData = performanceDataMap[listingId];

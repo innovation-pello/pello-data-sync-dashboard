@@ -1,55 +1,62 @@
-import fs from 'fs';
+import winston from 'winston';
 import path from 'path';
+import fs from 'fs';
+
+// Define log directory
+const logDir = path.join(process.cwd(), 'logs');
+
+// Ensure logs directory exists
+if (!fs.existsSync(logDir)) {
+    fs.mkdirSync(logDir, { recursive: true });
+}
+
+// Create a Winston logger instance
+const logger = winston.createLogger({
+    level: 'info',
+    format: winston.format.combine(
+        winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+        winston.format.printf(({ timestamp, level, message }) => {
+            return `[${timestamp}] ${level.toUpperCase()}: ${message}`;
+        })
+    ),
+    transports: [
+        new winston.transports.Console({ level: 'warn' }), // Show only warnings and errors in the console
+        new winston.transports.File({ filename: path.join(logDir, 'sync-logs.log'), level: 'info' }), // Detailed sync logs
+        new winston.transports.File({ filename: path.join(logDir, 'error-logs.log'), level: 'error' }) // Errors only
+    ],
+});
 
 /**
- * Logs sync message with timestamp to sync-logs.txt
- * Ensures the message follows the correct format.
- * @param {string} message
+ * Logs sync messages with timestamps.
+ * @param {string} message - The sync message.
  */
 export function logSyncMessage(message) {
-    const timestamp = new Date().toLocaleString();
-    const formattedMessage = `[${timestamp}] ${message.trim()}\n`;
-
-    const logsFilePath = path.join(path.resolve(), 'logs', 'sync-logs.txt');
-
-    try {
-        if (!fs.existsSync(path.dirname(logsFilePath))) {
-            fs.mkdirSync(path.dirname(logsFilePath), { recursive: true });
-        }
-
-        // Ensure correct format before logging
-        if (!isValidLogFormat(formattedMessage)) {
-            console.warn(`Invalid log format detected: ${formattedMessage}`);
-            return;
-        }
-
-        fs.appendFileSync(logsFilePath, formattedMessage);
-    } catch (error) {
-        console.error('Failed to write log:', error.message);
-    }
+    logger.info(message);
 }
 
 /**
- * Validates the log format.
- * Expected format:
- * [timestamp] Platform — Sync completed. Success: X, Failed: Y
- * or
- * [timestamp] Platform — Custom Message
- * @param {string} log
- * @returns {boolean} Whether the log format is valid.
+ * Logs warnings.
+ * @param {string} message - The warning message.
  */
-function isValidLogFormat(log) {
-    const logFormatRegex = /^\[\d{1,2}\/\d{1,2}\/\d{4}, \d{1,2}:\d{2}:\d{2} (AM|PM)\] [A-Za-z. ]+ — (Sync completed\. Success: \d+, Failed: \d+|.+)\n$/;
-    return logFormatRegex.test(log);
+export function logWarningMessage(message) {
+    logger.warn(message);
+}
+
+/**
+ * Logs errors.
+ * @param {string} message - The error message.
+ */
+export function logErrorMessage(message) {
+    logger.error(message);
 }
 
 /**
  * Retrieves the last sync timestamp for a specific platform from the logs.
- * @param {string} platform
+ * @param {string} platform - The platform name.
  * @returns {string} Last sync timestamp or 'N/A' if not found.
  */
 export function getLastSyncTimestamp(platform) {
-    const logsFilePath = path.join(path.resolve(), 'logs', 'sync-logs.txt');
+    const logsFilePath = path.join(logDir, 'sync-logs.log');
 
     try {
         if (fs.existsSync(logsFilePath)) {
@@ -64,8 +71,10 @@ export function getLastSyncTimestamp(platform) {
             }
         }
     } catch (error) {
-        console.error('Failed to read log file:', error.message);
+        logger.error(`Failed to read log file: ${error.message}`);
     }
 
     return 'N/A';
 }
+
+export default logger;
