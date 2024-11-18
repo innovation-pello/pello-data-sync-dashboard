@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!response.ok) throw new Error('Failed to fetch platform statuses.');
 
             const data = await response.json();
-
             console.log('Platform statuses:', data); // Debugging
 
             statusSection.innerHTML = data.map(platform => {
@@ -70,9 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!response.ok) throw new Error('Failed to fetch logs.');
 
             const logs = await response.json();
-            const uniqueLogs = Array.from(new Set(logs));
-
-            logsSection.innerHTML = uniqueLogs.map(log => `<p>${log}</p>`).join('');
+            logsSection.innerHTML = logs.map(log => `<p>${log}</p>`).join('');
         } catch (error) {
             showError('Failed to load logs. Please try again.');
             console.error('fetchLogs error:', error);
@@ -92,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function () {
                             alert('Please allow pop-ups for this website.');
                             return;
                         }
-
                         showModal('Waiting for Domain Login...', 'Complete the login process in the new tab.');
                     } else {
                         alert('Failed to retrieve authorization URL.');
@@ -110,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
         syncButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const platform = button.id.replace('sync-now-', '');
-                console.log(`Attempting sync for platform: ${platform}`); // Debug log
+                console.log(`Attempting sync for platform: ${platform}`);
                 syncPlatform(platform);
             });
         });
@@ -144,7 +140,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const progress = JSON.parse(event.data);
             const percent = (progress.step / progress.total) * 100;
             progressBar.style.width = `${percent}%`;
-
             statusElement.textContent = progress.message;
 
             if (progress.step === progress.total) {
@@ -153,6 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 statusElement.textContent = 'Connected';
                 statusElement.className = 'font-medium text-green-500';
 
+                // Refresh both logs and statuses
                 fetchLogs();
                 fetchStatus();
             }

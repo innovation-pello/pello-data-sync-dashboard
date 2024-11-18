@@ -68,8 +68,13 @@ export function logErrorMessage(message) {
     broadcastLog('error', message);
 }
 
+/**
+ * Retrieves the last sync timestamp for a specific platform from the logs.
+ * @param {string} platform - The platform name.
+ * @returns {string} Last sync timestamp or 'N/A' if not found.
+ */
 export function getLastSyncTimestamp(platform) {
-    const logsFilePath = path.join(logDir, 'sync-logs.log');
+    const logsFilePath = path.join(logDir, 'sync-logs.txt'); // Correct log file path
 
     try {
         if (fs.existsSync(logsFilePath)) {
@@ -80,7 +85,7 @@ export function getLastSyncTimestamp(platform) {
             if (logs.length > 0) {
                 const lastLog = logs[logs.length - 1];
                 const match = lastLog.match(/\[(.*?)\]/);
-                return match ? match[1] : 'N/A';
+                return match ? match[1] : 'N/A'; // Return the timestamp
             }
         }
     } catch (error) {

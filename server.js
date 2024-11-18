@@ -8,7 +8,7 @@ import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
-import logger, { getLastSyncTimestamp, logSyncMessage } from './services/logger.js'; 
+import logger, { getLastSyncTimestamp, logSyncMessage, addLogClient } from './services/logger.js'; // Ensure all necessary logger methods are imported
 import { fetchAccessToken, memoryTokens } from './services/auth.js'; // Ensure import of necessary token methods
 
 // Determine __dirname for ES modules
@@ -81,13 +81,9 @@ app.get('/api/status', (req, res) => {
     console.log('DOMAIN_ACCESS_TOKEN (memory):', memoryTokens.accessToken || 'Not set');
 
     const platforms = [
-        { platform: 'Realestate.com.au', status: 'Connected', lastSync: 'N/A' },
-        { platform: 'Domain.com.au', status: memoryTokens.accessToken ? 'Connected' : 'Not Authorized', lastSync: 'N/A' }
+        { platform: 'Realestate.com.au', status: 'Connected', lastSync: getLastSyncTimestamp('Realestate.com.au') },
+        { platform: 'Domain.com.au', status: memoryTokens.accessToken ? 'Connected' : 'Not Authorized', lastSync: getLastSyncTimestamp('Domain.com.au') }
     ];
-
-    platforms.forEach(platform => {
-        platform.lastSync = getLastSyncTimestamp(platform.platform);
-    });
 
     res.json(platforms);
 });
