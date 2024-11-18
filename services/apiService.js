@@ -53,7 +53,7 @@ export async function fetchListingPerformanceData(listingId) {
             },
         });
 
-        console.log(`Performance data fetched for Listing ID: ${listingId}`, response.data);
+        //console.log(`Performance data fetched for Listing ID: ${listingId}`, response.data);
         return response.data;
     } catch (error) {
         console.error(`Error fetching performance data for Listing ID ${listingId}:`, error.message);

@@ -8,7 +8,7 @@ import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
-import { getLastSyncTimestamp } from './services/logger.js';
+import logger, { getLastSyncTimestamp, logSyncMessage } from './services/logger.js'; 
 import { fetchAccessToken, memoryTokens } from './services/auth.js'; // Ensure import of necessary token methods
 
 // Determine __dirname for ES modules
@@ -63,6 +63,19 @@ app.use(async (req, res, next) => {
     }
 });
 
+// Route for SSE real-time log streaming
+app.get('/logs/stream', (req, res) => {
+    res.setHeader('Content-Type', 'text/event-stream');
+    res.setHeader('Cache-Control', 'no-cache');
+    res.setHeader('Connection', 'keep-alive');
+    res.flushHeaders();
+
+    addLogClient(res); // Add client for real-time log streaming
+    res.write('data: Connection established\n\n'); // Initial connection message
+
+    console.log('Client connected to /logs/stream');
+});
+
 // Platform Status Route
 app.get('/api/status', (req, res) => {
     console.log('DOMAIN_ACCESS_TOKEN (memory):', memoryTokens.accessToken || 'Not set');
@@ -79,7 +92,7 @@ app.get('/api/status', (req, res) => {
     res.json(platforms);
 });
 
-// Logs Route
+// Logs Route for fetching logs from file
 app.get('/api/logs', (req, res) => {
     const logsDir = path.join(__dirname, 'logs');
     const logsFilePath = path.join(logsDir, 'sync-logs.txt');

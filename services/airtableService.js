@@ -53,7 +53,7 @@ function validateRecord(fields) {
  * @param {object} record - Record to log.
  */
 function logRecord(record) {
-    logger.info(`Prepared Airtable record: ${JSON.stringify(record, null, 2)}`);
+    //logger.info(`Prepared Airtable record: ${JSON.stringify(record, null, 2)}`);
 }
 
 /**
@@ -79,10 +79,10 @@ async function createOrUpdateRecord(record) {
         const existingRecord = await findRecordByUniqueId(uniqueId);
 
         if (existingRecord) {
-            logger.info(`Updating record with ListingID: ${uniqueId}`);
+            //logger.info(`Updating record with ListingID: ${uniqueId}`);
             await base(tableName).update(existingRecord.id, record.fields); // Correct usage
         } else {
-            logger.info(`Creating new record with ListingID: ${uniqueId}`);
+            //logger.info(`Creating new record with ListingID: ${uniqueId}`);
             await base(tableName).create([{ fields: record.fields }]); // Correct usage
         }
     } catch (error) {
@@ -143,6 +143,6 @@ export async function pushDataToAirtable(records) {
             logRecordsToFile(failedRecords);
         }
     } else {
-        logger.info('All records successfully pushed to Airtable.');
+        //logger.info('All records successfully pushed to Airtable.');
     }
 }

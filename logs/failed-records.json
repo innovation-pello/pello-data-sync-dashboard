@@ -1,66 +1,78 @@
 [
   {
     "fields": {
-      "UniqueID": "102P22379",
-      "AgentID": "MRQLAL",
-      "ListingID": "146626916",
+      "UniqueID": "102P20854",
+      "AgentID": "VFDXKX",
+      "ListingID": "145592036",
       "Status": "current",
       "UnderOffer": "no",
       "IsHomeLandPackage": "no",
-      "Authority": "auction",
+      "Authority": "exclusive",
       "Municipality": "",
       "Category": "House",
-      "Address": "Malvina Street, RYDE, NSW 2112",
-      "Headline": "DA approved 1,859sqm block ready to build with north to rear aspect",
-      "Description": "An incredible opportunity for development, this 1,859sqm vacant block is ready to build with DA approval for subdivision. Glowing in the sunlight of an exclusive north to rear aspect, the site backs onto lush greenery at the end of a premier cul-de-sac. It's minutes to parks, public transport, schools and shops. \n\n- Options to divide between 886sqm Lot 1 and 973sqm Lot 2\n- R2 zoning allows great flexibility for builders or developers\n- Potential for a family to craft a sensational dream home\n- Maximise tranquil green vistas and due northern sunlight\n- Within a stroll of surrounding parklands and scenic trails\n- Moments to schools, parks, transport and shops  ",
-      "Price": 2000000,
-      "Bedrooms": "1",
-      "Bathrooms": "1",
+      "Address": "Exeter Road, WAHROONGA, NSW 2076",
+      "Headline": "Newly Renovated Family Entertainer ",
+      "Description": "Tucked back amidst lush surrounds on approx. 1,277sqm with a northeast rear as-pect, this five-bedroom home offers an idyllic indoor/outdoor lifestyle in a serene cul-de-sac street. The property was fully renovated just two years ago and opens to a wonderland setting complete with a refurbished pool. A true haven for family living and entertaining, the home is within 8 minute drive of Wahroonga village and conveniently accessible to the area's most renowned schools.\n\n-\tSpacious light filled living and dining areas open outdoors on two sides\n-\tRemodelled island kitchen has induction cooking and a walk-in pantry\n-\tFive bedrooms all providing built-in robes/storage or four plus a study\n-\tNew full bathroom with separate powder, renovated second bath/laundry\n-\tBlackbutt hardwood floors, double glazing and ducted r/c air conditioning\n-\tLarge multipurpose area under the house includes workshop and storage\n-\tGlass-fronted balcony, terrace, lawn area and refurbished saltwater pool\n-\tBrand new driveway to wide single lock-up garage plus off-street parking\n-\tMoments to Wahroonga, Warrawee and Normanhurst stations\n-\tIn the catchment zones for Warrawee Public and Turramurra High School\n\n",
+      "Price": 2500000,
+      "Bedrooms": "5",
+      "Bathrooms": "2",
       "CarSpaces": "0",
       "PropertyImages": [
         {
-          "url": "http://i2.au.reastatic.net/original/3cfd6867dbff94b9129eb8c70e415ea87c0f8299a349edd3ce74e5663f01882d/146626916-image-M.jpg"
+          "url": "http://i2.au.reastatic.net/original/2f4fdcdc2a5b719fb31dbdd64abcb7dafbe1e4bcc6f6abcd078e69e546cad886/145592036-image-M.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/56a3faf6fb14d489ec47a29b3f7e680dce1670492928d954ae1ee34eb21db642/146626916-image-A.jpg"
+          "url": "http://i2.au.reastatic.net/original/0276aee0bdc1abe2f8a771cf0212ab5e64c8683c38aa43c6b9ebd7e368214410/145592036-image-A.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/2a7ee2f57dc9d6724f5e9509cba1cdd6e049947c106d504ea93d02668c9fa0dc/146626916-image-B.jpg"
+          "url": "http://i2.au.reastatic.net/original/7430f1a00d7ef0ca79af06f57070d82102d5654858bb414c2ea6f8d9fb295e51/145592036-image-B.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/0459480bec6134e03ef7dc0e5afd3a0850260db2e6cb9d8fc92967234cac9164/146626916-image-C.jpg"
+          "url": "http://i2.au.reastatic.net/original/59884c9c99e5003b8fa8f07fbe94d6776468851ba4dad4bbc60537fdaedb6f7d/145592036-image-C.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/5fcf7b6b681fbd497279175aa583043e3f7551155621c0e8dffde1bdbc8df493/146626916-image-D.jpg"
+          "url": "http://i2.au.reastatic.net/original/3ef54381394f42752a1db90d67a1fea162c6f8530f731220f0922b194c18e148/145592036-image-D.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/e18b031a277712761e4d0dffe7832ca633e88635e601c9c3ef3b5f2a3326b727/146626916-image-E.jpg"
+          "url": "http://i2.au.reastatic.net/original/88bdc266a434e96cea4a028defd0999129240bbe6da90ced506e697326f354da/145592036-image-E.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/16f97f473532615774a09c4e46e8908007dd8fe513d90724d90dc0fb9d7282ef/146626916-image-F.jpg"
+          "url": "http://i2.au.reastatic.net/original/0ada77267b19a509da9d2f314286fa75627b80c27d7ed42292598bcdedb4f73b/145592036-image-F.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/dcca92a069f09365fff0a758c9d3483095f2c90cc4dcded36da66d2e34240608/146626916-image-G.jpg"
+          "url": "http://i2.au.reastatic.net/original/6e0f5aa72e8af8e9abeac88a039d67fd191c6f2bd68cbc7aa862f2924d109d47/145592036-image-G.jpg"
+        },
+        {
+          "url": "http://i2.au.reastatic.net/original/f4ca13848f30bed2d3a58bce525ec687d3afae949cdcc87b2c26395d069265fe/145592036-image-H.jpg"
+        },
+        {
+          "url": "http://i2.au.reastatic.net/original/b59d5b22f5d95c796a0980220aa5fa41f3dfa3f607ef1a1be7f8f4fd5a230dcb/145592036-image-I.jpg"
+        },
+        {
+          "url": "http://i2.au.reastatic.net/original/94d3076cd7fe4cc9208ed16998d60cc8f7f967a034a6e590efda62e9260b9c2f/145592036-image-J.jpg"
+        },
+        {
+          "url": "http://i2.au.reastatic.net/original/285c9ba5fbcd993d5ca547ef04dd5eb8dd798c074fea8fc80e47b62c0a65ef59/145592036-image-K.jpg"
         }
       ],
-      "PageViews": 104,
-      "SearchResultPhotoViews": 553,
-      "ExpandMap": 14,
+      "PageViews": 11109,
+      "SearchResultPhotoViews": 78689,
+      "ExpandMap": 1512,
       "VideoViews": 0,
-      "PropertyDetailPhotoViews": 361,
-      "FloorplanViews": 79,
+      "PropertyDetailPhotoViews": 61000,
+      "FloorplanViews": 9016,
       "VirtualTourViews": 0,
       "3DTourViews": 0,
-      "EmailEnquiries": 0,
-      "RevealedAgentPhoneNumber": 0,
+      "EmailEnquiries": 148,
+      "RevealedAgentPhoneNumber": 56,
       "RentalAppliedOnline": 0,
       "AppliedForInspection": 0,
-      "SavedInspectionTime": 0,
-      "SavedAuctionTime": 0,
-      "ListingSaved": 5,
+      "SavedInspectionTime": 19,
+      "SavedAuctionTime": 9,
+      "ListingSaved": 408,
       "SendToFriend": 0,
       "ViewStatementOfInformation": 0,
-      "SearchResultsPageImpression": 1593
+      "SearchResultsPageImpression": 143475
     }
   }
 ]

@@ -20,41 +20,54 @@ const logger = winston.createLogger({
         })
     ),
     transports: [
-        new winston.transports.Console({ level: 'warn' }), // Show only warnings and errors in the console
-        new winston.transports.File({ filename: path.join(logDir, 'sync-logs.log'), level: 'info' }), // Detailed sync logs
-        new winston.transports.File({ filename: path.join(logDir, 'error-logs.log'), level: 'error' }) // Errors only
+        new winston.transports.Console({ level: 'warn' }),
+        new winston.transports.File({ filename: path.join(logDir, 'sync-logs.txt'), level: 'info' }), // Main log file
+        new winston.transports.File({ filename: path.join(logDir, 'error-logs.txt'), level: 'error' }) // Error logs
     ],
 });
 
+// Array of connected SSE clients for real-time log streaming
+const logClients = [];
+
 /**
- * Logs sync messages with timestamps.
- * @param {string} message - The sync message.
+ * Broadcast a log message to all connected SSE clients.
+ * @param {string} level - Log level (info, warn, error).
+ * @param {string} message - Log message.
  */
+function broadcastLog(level, message) {
+    const logEntry = `[${new Date().toISOString()}] ${level.toUpperCase()}: ${message}`;
+    logClients.forEach(client => client.write(`data: ${logEntry}\n\n`));
+}
+
+/**
+ * Add a new SSE client for log streaming.
+ * @param {object} res - SSE response stream.
+ */
+export function addLogClient(res) {
+    logClients.push(res);
+    res.on('close', () => {
+        logClients.splice(logClients.indexOf(res), 1);
+        console.log(`Client disconnected: ${logClients.length} active log clients`);
+    });
+}
+
+// Logging functions that also broadcast logs
 export function logSyncMessage(message) {
     logger.info(message);
+    fs.appendFileSync(path.join(logDir, 'sync-logs.txt'), `[${new Date().toLocaleString()}] ${message}\n`);
+    broadcastLog('info', message);
 }
 
-/**
- * Logs warnings.
- * @param {string} message - The warning message.
- */
 export function logWarningMessage(message) {
     logger.warn(message);
+    broadcastLog('warn', message);
 }
 
-/**
- * Logs errors.
- * @param {string} message - The error message.
- */
 export function logErrorMessage(message) {
     logger.error(message);
+    broadcastLog('error', message);
 }
 
-/**
- * Retrieves the last sync timestamp for a specific platform from the logs.
- * @param {string} platform - The platform name.
- * @returns {string} Last sync timestamp or 'N/A' if not found.
- */
 export function getLastSyncTimestamp(platform) {
     const logsFilePath = path.join(logDir, 'sync-logs.log');
 
