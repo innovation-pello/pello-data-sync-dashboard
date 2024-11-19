@@ -16,18 +16,14 @@ document.addEventListener('DOMContentLoaded', function () {
         hideError();
 
         try {
-            const response = await fetch('http://localhost:3000/api/status');
+            const response = await fetch('/api/status');
             if (!response.ok) throw new Error('Failed to fetch platform statuses.');
 
             const data = await response.json();
-            console.log('Platform statuses:', data); // Debugging
+            console.log('Platform statuses:', data);
 
             statusSection.innerHTML = data.map(platform => {
                 const platformId = platform.platform.toLowerCase().trim().replace(/[\s\.]/g, '');
-
-                const authorizeButton = platform.platform === 'Domain.com.au' && platform.status === 'Not Authorized'
-                    ? `<button id="authorize-domain" class="bg-yellow-500 text-white py-2 px-4 rounded mt-4">Authorize Domain</button>`
-                    : '';
 
                 return `
                     <div class="bg-white shadow-md rounded-lg p-4" id="platform-${platformId}">
@@ -45,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="w-full bg-gray-200 rounded-full h-2.5 mt-4 hidden" id="progress-bar-${platformId}">
                             <div class="bg-blue-500 h-2.5 rounded-full progress-bar" style="width: 0%;"></div>
                         </div>
-                        ${authorizeButton}
                         <button id="sync-now-${platformId}" class="bg-blue-500 text-white py-2 px-4 rounded mt-4">
                             Sync Now
                         </button>
@@ -53,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 `;
             }).join('');
 
-            attachAuthorizeButtonListener();
             attachSyncButtonListeners();
         } catch (error) {
             showError('Failed to load platform statuses. Please try again.');
@@ -65,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
         hideError();
 
         try {
-            const response = await fetch('http://localhost:3000/api/logs');
+            const response = await fetch('/api/logs');
             if (!response.ok) throw new Error('Failed to fetch logs.');
 
             const logs = await response.json();
@@ -73,31 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
         } catch (error) {
             showError('Failed to load logs. Please try again.');
             console.error('fetchLogs error:', error);
-        }
-    }
-
-    function attachAuthorizeButtonListener() {
-        const authorizeButton = document.getElementById('authorize-domain');
-        if (authorizeButton) {
-            authorizeButton.addEventListener('click', async () => {
-                try {
-                    const response = await fetch('http://localhost:3000/api/domain/authorize');
-                    const data = await response.json();
-                    if (data.authUrl) {
-                        const authWindow = window.open(data.authUrl, '_blank');
-                        if (!authWindow) {
-                            alert('Please allow pop-ups for this website.');
-                            return;
-                        }
-                        showModal('Waiting for Domain Login...', 'Complete the login process in the new tab.');
-                    } else {
-                        alert('Failed to retrieve authorization URL.');
-                    }
-                } catch (error) {
-                    console.error('Authorization failed:', error);
-                    alert('Authorization failed. Please try again.');
-                }
-            });
         }
     }
 
@@ -134,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
         progressBarContainer.classList.remove('hidden');
         progressBar.style.width = '0%';
 
-        const eventSource = new EventSource(`http://localhost:3000/api/${endpoint}/progress`);
+        const eventSource = new EventSource(`/api/${endpoint}/progress`);
 
         eventSource.onmessage = function (event) {
             const progress = JSON.parse(event.data);
@@ -148,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 statusElement.textContent = 'Connected';
                 statusElement.className = 'font-medium text-green-500';
 
-                // Refresh both logs and statuses
                 fetchLogs();
                 fetchStatus();
             }
@@ -162,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
             progressBarContainer.classList.add('hidden');
         };
 
-        fetch(`http://localhost:3000/api/${endpoint}/sync`, { method: 'POST' })
+        fetch(`/api/${endpoint}/sync`, { method: 'POST' })
             .then(response => {
                 if (!response.ok) {
                     console.error(`Sync request failed for ${endpoint} with status: ${response.status}`);
@@ -181,29 +149,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 statusElement.className = 'font-medium text-red-500';
             });
     };
-
-    const showModal = (title, message) => {
-        const modalContainer = document.createElement('div');
-        modalContainer.classList.add('modal', 'fixed', 'z-50', 'inset-0', 'flex', 'items-center', 'justify-center', 'bg-gray-800', 'bg-opacity-50');
-        modalContainer.innerHTML = `
-            <div class="bg-white p-6 rounded-lg shadow-lg max-w-md text-center">
-                <h2 class="text-2xl font-bold mb-4">${title}</h2>
-                <p class="text-gray-600">${message}</p>
-                <button id="close-modal" class="bg-blue-500 text-white py-2 px-4 rounded mt-4">Close</button>
-            </div>
-        `;
-        document.body.appendChild(modalContainer);
-        document.getElementById('close-modal').addEventListener('click', () => {
-            document.body.removeChild(modalContainer);
-        });
-    };
-
-    window.addEventListener('message', (event) => {
-        if (event.data === 'domainAuthorized') {
-            showModal('Authorization Successful', 'Domain.com.au is now connected.');
-            fetchStatus();
-        }
-    });
 
     fetchStatus();
     fetchLogs();

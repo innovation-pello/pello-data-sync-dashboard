@@ -21,8 +21,8 @@ const logger = winston.createLogger({
     ),
     transports: [
         new winston.transports.Console({ level: 'warn' }),
-        new winston.transports.File({ filename: path.join(logDir, 'sync-logs.txt'), level: 'info' }), // Main log file
-        new winston.transports.File({ filename: path.join(logDir, 'error-logs.txt'), level: 'error' }) // Error logs
+        new winston.transports.File({ filename: path.join(logDir, 'sync-logs.txt'), level: 'info' }),
+        new winston.transports.File({ filename: path.join(logDir, 'error-logs.txt'), level: 'error' })
     ],
 });
 
@@ -51,30 +51,42 @@ export function addLogClient(res) {
     });
 }
 
-// Logging functions that also broadcast logs
+/**
+ * Write logs to the sync log file and broadcast the message.
+ * @param {string} message - Log message.
+ */
 export function logSyncMessage(message) {
+    const logEntry = `[${new Date().toLocaleString()}] ${message}`;
     logger.info(message);
-    fs.appendFileSync(path.join(logDir, 'sync-logs.txt'), `[${new Date().toLocaleString()}] ${message}\n`);
+    fs.appendFileSync(path.join(logDir, 'sync-logs.txt'), `${logEntry}\n`);
     broadcastLog('info', message);
 }
 
+/**
+ * Log warnings and broadcast the message.
+ * @param {string} message - Warning message.
+ */
 export function logWarningMessage(message) {
     logger.warn(message);
     broadcastLog('warn', message);
 }
 
+/**
+ * Log errors and broadcast the message.
+ * @param {string} message - Error message.
+ */
 export function logErrorMessage(message) {
     logger.error(message);
     broadcastLog('error', message);
 }
 
 /**
- * Retrieves the last sync timestamp for a specific platform from the logs.
+ * Retrieve the last sync timestamp for a specific platform from the logs.
  * @param {string} platform - The platform name.
  * @returns {string} Last sync timestamp or 'N/A' if not found.
  */
 export function getLastSyncTimestamp(platform) {
-    const logsFilePath = path.join(logDir, 'sync-logs.txt'); // Correct log file path
+    const logsFilePath = path.join(logDir, 'sync-logs.txt');
 
     try {
         if (fs.existsSync(logsFilePath)) {
@@ -85,7 +97,7 @@ export function getLastSyncTimestamp(platform) {
             if (logs.length > 0) {
                 const lastLog = logs[logs.length - 1];
                 const match = lastLog.match(/\[(.*?)\]/);
-                return match ? match[1] : 'N/A'; // Return the timestamp
+                return match ? match[1] : 'N/A';
             }
         }
     } catch (error) {

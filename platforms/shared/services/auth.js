@@ -5,6 +5,9 @@ dotenv.config();
 // Import necessary modules
 import axios from 'axios';
 import fs from 'fs';
+import path from 'path';
+
+const ENV_FILE_PATH = path.resolve(process.cwd(), '.env');
 
 // In-memory storage for tokens
 let memoryTokens = {
@@ -34,22 +37,16 @@ function storeTokens(accessToken) {
     }
 
     memoryTokens.accessToken = accessToken;
-
-    const domainApiKey = `Bearer ${accessToken}`; // Generate DOMAIN_API_KEY
+    const domainApiKey = `Bearer ${accessToken}`;
     console.log('Storing token and generating DOMAIN_API_KEY...');
 
     try {
-        let envContent = '';
-        try {
-            envContent = fs.readFileSync('.env', 'utf8');
-        } catch (error) {
-            console.warn('.env file not found. Creating a new one.');
-        }
+        let envContent = fs.existsSync(ENV_FILE_PATH) ? fs.readFileSync(ENV_FILE_PATH, 'utf8') : '';
 
         envContent = updateEnvVariable(envContent, 'DOMAIN_ACCESS_TOKEN', accessToken);
         envContent = updateEnvVariable(envContent, 'DOMAIN_API_KEY', domainApiKey);
 
-        fs.writeFileSync('.env', envContent);
+        fs.writeFileSync(ENV_FILE_PATH, envContent);
         dotenv.config(); // Reload environment variables
         console.log('Access token and DOMAIN_API_KEY successfully stored in .env file.');
     } catch (error) {
@@ -63,12 +60,11 @@ function storeTokens(accessToken) {
  * @returns {Promise<string>} Access token.
  */
 async function fetchAccessToken() {
-    const tokenEndpoint = 'https://auth.domain.com.au/v1/connect/token';
+    const tokenEndpoint = process.env.DOMAIN_AUTH_ENDPOINT || 'https://auth.domain.com.au/v1/connect/token';
 
     try {
         console.log('Requesting access token using client credentials...');
 
-        // Encode client ID and secret to Base64
         const credentials = Buffer.from(
             `${process.env.DOMAIN_CLIENT_ID}:${process.env.DOMAIN_CLIENT_SECRET}`
         ).toString('base64');

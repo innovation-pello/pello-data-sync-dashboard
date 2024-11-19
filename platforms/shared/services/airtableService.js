@@ -1,13 +1,13 @@
 import Airtable from 'airtable';
 import fs from 'fs';
 import path from 'path';
-import logger from '../services/logger.js';
+import logger from './logger.js'; // Correct relative path for shared logger
 
 const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE_ID);
 const tableName = process.env.AIRTABLE_TABLE_NAME;
 
 /**
- * Find record in Airtable by unique identifier (e.g., ListingID).
+ * Find a record in Airtable by unique identifier (e.g., ListingID).
  * @param {string} uniqueId - Unique ID of the record.
  * @returns {Promise<object|null>} - Found record or null.
  */
@@ -53,7 +53,7 @@ function validateRecord(fields) {
  * @param {object} record - Record to log.
  */
 function logRecord(record) {
-    //logger.info(`Prepared Airtable record: ${JSON.stringify(record, null, 2)}`);
+    logger.debug(`Prepared Airtable record: ${JSON.stringify(record, null, 2)}`);
 }
 
 /**
@@ -67,23 +67,23 @@ async function createOrUpdateRecord(record) {
         throw new Error('ListingID is missing from the record.');
     }
 
-    const validationErrors = validateRecord(record.fields); // Validate only fields
+    const validationErrors = validateRecord(record.fields);
     if (validationErrors.length > 0) {
         logger.warn(`Validation errors for ListingID ${uniqueId}: ${validationErrors.join(', ')}`);
         throw new Error(`Validation failed for ListingID ${uniqueId}`);
     }
 
-    logRecord(record); // Log record for debugging
+    logRecord(record);
 
     try {
         const existingRecord = await findRecordByUniqueId(uniqueId);
 
         if (existingRecord) {
             //logger.info(`Updating record with ListingID: ${uniqueId}`);
-            await base(tableName).update(existingRecord.id, record.fields); // Correct usage
+            await base(tableName).update(existingRecord.id, record.fields);
         } else {
-            //logger.info(`Creating new record with ListingID: ${uniqueId}`);
-            await base(tableName).create([{ fields: record.fields }]); // Correct usage
+            logger.info(`Creating new record with ListingID: ${uniqueId}`);
+            await base(tableName).create([{ fields: record.fields }]);
         }
     } catch (error) {
         logger.error(`Error creating/updating record with ListingID ${uniqueId}: ${error.message}`);
@@ -92,7 +92,7 @@ async function createOrUpdateRecord(record) {
 }
 
 /**
- * Log records to a JSON file for debugging.
+ * Log failed records to a JSON file for further investigation.
  * @param {Array<object>} records - Records to log.
  */
 function logRecordsToFile(records) {

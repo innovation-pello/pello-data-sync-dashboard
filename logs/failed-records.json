@@ -1,78 +1,87 @@
 [
   {
     "fields": {
-      "UniqueID": "102P20854",
+      "UniqueID": "102P22305",
       "AgentID": "VFDXKX",
-      "ListingID": "145592036",
+      "ListingID": "146633828",
       "Status": "current",
       "UnderOffer": "no",
       "IsHomeLandPackage": "no",
-      "Authority": "exclusive",
+      "Authority": "auction",
       "Municipality": "",
       "Category": "House",
-      "Address": "Exeter Road, WAHROONGA, NSW 2076",
-      "Headline": "Newly Renovated Family Entertainer ",
-      "Description": "Tucked back amidst lush surrounds on approx. 1,277sqm with a northeast rear as-pect, this five-bedroom home offers an idyllic indoor/outdoor lifestyle in a serene cul-de-sac street. The property was fully renovated just two years ago and opens to a wonderland setting complete with a refurbished pool. A true haven for family living and entertaining, the home is within 8 minute drive of Wahroonga village and conveniently accessible to the area's most renowned schools.\n\n-\tSpacious light filled living and dining areas open outdoors on two sides\n-\tRemodelled island kitchen has induction cooking and a walk-in pantry\n-\tFive bedrooms all providing built-in robes/storage or four plus a study\n-\tNew full bathroom with separate powder, renovated second bath/laundry\n-\tBlackbutt hardwood floors, double glazing and ducted r/c air conditioning\n-\tLarge multipurpose area under the house includes workshop and storage\n-\tGlass-fronted balcony, terrace, lawn area and refurbished saltwater pool\n-\tBrand new driveway to wide single lock-up garage plus off-street parking\n-\tMoments to Wahroonga, Warrawee and Normanhurst stations\n-\tIn the catchment zones for Warrawee Public and Turramurra High School\n\n",
-      "Price": 2500000,
+      "Address": "Murdoch Street, TURRAMURRA, NSW 2074",
+      "Headline": "Perfect Family Lifestyle in Serene Garden Setting",
+      "Description": "A custom renovation has transformed this exceptionally presented home into a vibrant as-new haven for family life and entertaining on a peaceful cul-de-sac street. Occupying a northeast to rear level block of approx. 929.5sqm, it combines blended indoor/outdoor living with generous proportions, abundant light and quality finishes over two levels. Near a pathway through to Kent Oval and just 1.0km from Princes Street shops, it offers a highly desirable opportunity in a prestigious neighbourhood. \n\n- Formal lounge and dining, family room, casual meals and upstairs retreat\n- Near-new kitchen has Bosch appliances, gas cooking and walk-in pantry\n- Five bedrooms include one on the ground floor with adjacent bathroom\n- Master bed walk-in robe and ensuite, three-way main bathroom w/ bath\n- Floorboards, wide timber staircase, shutters, ducted r/c air and vacuum\n- Sizeable terrace featuring split opening roof system and motorised blind\n- North front and side level lawns, fenced backyard, heated pool and spa\n- Ample storage, internal access auto double garage plus driveway parking\n- 350m from buses to Turramurra/Pymble rail, Pymble Public School zone \n- Abbotsleigh, Knox Grammar, Pymble Ladies College within 10mins drive",
+      "Price": 4000000,
       "Bedrooms": "5",
-      "Bathrooms": "2",
+      "Bathrooms": "3",
       "CarSpaces": "0",
       "PropertyImages": [
         {
-          "url": "http://i2.au.reastatic.net/original/2f4fdcdc2a5b719fb31dbdd64abcb7dafbe1e4bcc6f6abcd078e69e546cad886/145592036-image-M.jpg"
+          "url": "http://i2.au.reastatic.net/original/2fb1ad0a2d02d3969f36ab7795d5835e91ae65c2df9264045e660316961e5e10/146633828-image-M.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/0276aee0bdc1abe2f8a771cf0212ab5e64c8683c38aa43c6b9ebd7e368214410/145592036-image-A.jpg"
+          "url": "http://i2.au.reastatic.net/original/53813c3589e86354dcaa6026cf9630c6adb76e87a2f64b359f8ae40159b79a66/146633828-image-A.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/7430f1a00d7ef0ca79af06f57070d82102d5654858bb414c2ea6f8d9fb295e51/145592036-image-B.jpg"
+          "url": "http://i2.au.reastatic.net/original/092e7a6eb6395d60808360dec6d5379e6edfcbe6dee9719353f3c69b1f2e61e0/146633828-image-B.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/59884c9c99e5003b8fa8f07fbe94d6776468851ba4dad4bbc60537fdaedb6f7d/145592036-image-C.jpg"
+          "url": "http://i2.au.reastatic.net/original/da822b18e3dae22f8528084d7e83d167361d8475abdad3420e4e1f63eb42a9d7/146633828-image-C.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/3ef54381394f42752a1db90d67a1fea162c6f8530f731220f0922b194c18e148/145592036-image-D.jpg"
+          "url": "http://i2.au.reastatic.net/original/c1f47ddbfa34f4fdf0e9149769aa6164798bc355e63f811dc8936cbe7a69dfa9/146633828-image-D.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/88bdc266a434e96cea4a028defd0999129240bbe6da90ced506e697326f354da/145592036-image-E.jpg"
+          "url": "http://i2.au.reastatic.net/original/8844e0ade606d1b5b23e0a1b4fa839c911a5fcd573ede0614231118345da7a51/146633828-image-E.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/0ada77267b19a509da9d2f314286fa75627b80c27d7ed42292598bcdedb4f73b/145592036-image-F.jpg"
+          "url": "http://i2.au.reastatic.net/original/61ede462fff46b45e47a1ab0b9f7eb93cbecfd5aa1d2093e39747a7726aa39d3/146633828-image-F.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/6e0f5aa72e8af8e9abeac88a039d67fd191c6f2bd68cbc7aa862f2924d109d47/145592036-image-G.jpg"
+          "url": "http://i2.au.reastatic.net/original/0b9fd3d5c81a1f0a96d55b3c1f3327deeb5da0127cd79cea1982ba70138f8409/146633828-image-G.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/f4ca13848f30bed2d3a58bce525ec687d3afae949cdcc87b2c26395d069265fe/145592036-image-H.jpg"
+          "url": "http://i2.au.reastatic.net/original/d55a1d7f03f594b4eb4cb8aee5673d5358f42df76fcdf54887aa18a9c755a047/146633828-image-H.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/b59d5b22f5d95c796a0980220aa5fa41f3dfa3f607ef1a1be7f8f4fd5a230dcb/145592036-image-I.jpg"
+          "url": "http://i2.au.reastatic.net/original/c18d3da4474597af2f838cc476b5b2cecf7fe42882f89152ab0a567422211bc7/146633828-image-I.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/94d3076cd7fe4cc9208ed16998d60cc8f7f967a034a6e590efda62e9260b9c2f/145592036-image-J.jpg"
+          "url": "http://i2.au.reastatic.net/original/6dbf71d60038f1293c9c3bad5e3a1b270ec1910b826cf98354cab05502a508a0/146633828-image-J.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/285c9ba5fbcd993d5ca547ef04dd5eb8dd798c074fea8fc80e47b62c0a65ef59/145592036-image-K.jpg"
+          "url": "http://i2.au.reastatic.net/original/51bfec5cada3052997c678bde8b5ff39fc1fc6054cb3d51707a5cb796fdde9a5/146633828-image-K.jpg"
+        },
+        {
+          "url": "http://i2.au.reastatic.net/original/6756cd88eba85bc8a34dca6ae227ffe6eb754b3561a846e3f1abc961638cc183/146633828-image-L.jpg"
+        },
+        {
+          "url": "http://i2.au.reastatic.net/original/437b1f49c265ffbddd309d0bef0b93016b4c0ed2a811297b67547541d584973f/146633828-image-N.jpg"
+        },
+        {
+          "url": "http://i2.au.reastatic.net/original/2a2c32fdf863e2d964f142b9a825c808335737dfc2e7a315a32163dd69df4860/146633828-image-O.jpg"
         }
       ],
-      "PageViews": 11109,
-      "SearchResultPhotoViews": 78689,
-      "ExpandMap": 1512,
+      "PageViews": 976,
+      "SearchResultPhotoViews": 7048,
+      "ExpandMap": 184,
       "VideoViews": 0,
-      "PropertyDetailPhotoViews": 61000,
-      "FloorplanViews": 9016,
+      "PropertyDetailPhotoViews": 5951,
+      "FloorplanViews": 673,
       "VirtualTourViews": 0,
       "3DTourViews": 0,
-      "EmailEnquiries": 148,
-      "RevealedAgentPhoneNumber": 56,
+      "EmailEnquiries": 26,
+      "RevealedAgentPhoneNumber": 3,
       "RentalAppliedOnline": 0,
       "AppliedForInspection": 0,
-      "SavedInspectionTime": 19,
-      "SavedAuctionTime": 9,
-      "ListingSaved": 408,
-      "SendToFriend": 0,
+      "SavedInspectionTime": 11,
+      "SavedAuctionTime": 2,
+      "ListingSaved": 65,
+      "SendToFriend": 1,
       "ViewStatementOfInformation": 0,
-      "SearchResultsPageImpression": 143475
+      "SearchResultsPageImpression": 5134
     }
   }
 ]

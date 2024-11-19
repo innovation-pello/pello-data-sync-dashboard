@@ -8,8 +8,8 @@ import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
-import logger, { getLastSyncTimestamp, logSyncMessage, addLogClient } from './services/logger.js'; // Ensure all necessary logger methods are imported
-import { fetchAccessToken, memoryTokens } from './services/auth.js'; // Ensure import of necessary token methods
+import { getLastSyncTimestamp, logSyncMessage, addLogClient } from './platforms/shared/services/logger.js';
+import { fetchAccessToken, memoryTokens } from './platforms/shared/services/auth.js';
 
 // Determine __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
@@ -25,7 +25,10 @@ app.use(express.json());
 // SSE clients array for progress updates
 let clients = [];
 
-// Function to send progress updates to SSE clients
+/**
+ * Function to send progress updates to SSE clients
+ * @param {object} progress - Progress update object.
+ */
 function sendProgressUpdate(progress) {
     if (!progress || typeof progress !== 'object') return;
 
@@ -42,21 +45,21 @@ function sendProgressUpdate(progress) {
 export { clients, sendProgressUpdate };
 
 // Import platform-specific routes
-import realestateRoutes from './routes/realestate.js';
-import domainRoutes from './routes/domain.js';
+import realestateRoutes from './platforms/realestate/routes/realestate.js';
+import domainRoutes from './platforms/domain/routes/domain.js';
 
 // Use routes
 app.use('/api/realestate', realestateRoutes);
 app.use('/api/domain', domainRoutes);
 
-// Middleware to ensure access token is valid
+// Middleware to ensure access token is valid for every request
 app.use(async (req, res, next) => {
     try {
         if (!memoryTokens.accessToken) {
             console.log('Access token missing, fetching a new one...');
             await fetchAccessToken();
         }
-        next(); // Proceed if token is valid
+        next();
     } catch (error) {
         console.error('Error validating or refreshing token:', error.message);
         res.status(500).json({ error: 'Failed to refresh access token.' });
@@ -112,7 +115,7 @@ app.get('/api/logs', (req, res) => {
 (async () => {
     console.log('Fetching access token on server startup...');
     try {
-        await fetchAccessToken(); // Fetch fresh access token
+        await fetchAccessToken();
         console.log('Access token successfully fetched on startup.');
     } catch (error) {
         console.error('Failed to fetch access token on startup:', error.message);
@@ -123,7 +126,7 @@ app.get('/api/logs', (req, res) => {
 if (fs.existsSync(path.join(__dirname, 'dist'))) {
     app.use(express.static(path.join(__dirname, 'dist'), {
         setHeaders: (res, path) => {
-            res.setHeader('Cache-Control', 'public, max-age=31536000'); // Cache for one year
+            res.setHeader('Cache-Control', 'public, max-age=31536000');
         }
     }));
 } else {

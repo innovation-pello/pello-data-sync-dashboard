@@ -1,8 +1,7 @@
-// Import any required modules
-import { pushDataToAirtable } from '../services/airtableService.js';
-import { transformDataForAirtable } from '../services/dataTransformer.js';
-import { fetchDomainData, fetchDomainPerformanceData } from '../services/domainService.js';
-import { logSyncMessage } from '../services/logger.js';
+import { pushDataToAirtable } from '../../shared/services/airtableService.js'; // Shared Airtable service
+import { transformDataForAirtable } from '../services/dataTransformer.js'; // Domain-specific data transformer
+import { fetchDomainData, fetchDomainPerformanceData } from '../services/domainApiService.js'; // Domain API services
+import { logSyncMessage, logErrorMessage } from '../../shared/services/logger.js'; // Shared logger
 
 /**
  * Sync function for Domain.com.au.
@@ -14,7 +13,7 @@ async function domainSync(sendProgressUpdate) {
     const failedRecords = []; // Track failed records for detailed debugging
 
     try {
-        console.log('Starting Domain.com.au sync...');
+        logSyncMessage('Starting Domain.com.au sync...');
 
         sendProgressUpdate({ step: 1, total: 5, message: 'Fetching data from API...' });
         const apiData = await fetchDomainData();
@@ -32,7 +31,7 @@ async function domainSync(sendProgressUpdate) {
                 const performanceData = await fetchDomainPerformanceData(listingId);
                 performanceDataMap[listingId] = performanceData;
             } catch (error) {
-                console.warn(`Performance data fetch failed for ListingID ${listingId}: ${error.message}`);
+                logErrorMessage(`Performance data fetch failed for ListingID ${listingId}: ${error.message}`);
             }
         }
 
@@ -50,29 +49,26 @@ async function domainSync(sendProgressUpdate) {
                 await pushDataToAirtable([record]); // Push one record at a time
                 successCount++;
             } catch (error) {
-                console.error(`Failed to push record with ListingID: ${record.ListingID}`, error.message);
+                logErrorMessage(`Failed to push record with ListingID: ${record.fields.ListingID}, Error: ${error.message}`);
                 failedCount++;
-                failedRecords.push({ ListingID: record.ListingID, error: error.message });
+                failedRecords.push({ ListingID: record.fields.ListingID, error: error.message });
             }
         }
 
         sendProgressUpdate({ step: 5, total: 5, message: 'Finalizing sync...' });
 
-        // Log the sync summary
         logSyncMessage(`Domain.com.au sync completed. Success: ${successCount}, Failed: ${failedCount}`);
 
         if (failedRecords.length > 0) {
-            console.warn('Some records failed to sync:', failedRecords);
+            logErrorMessage(`Some records failed to sync: ${JSON.stringify(failedRecords, null, 2)}`);
             throw new Error(`Domain sync partially failed. Check logs for details.`);
         }
 
         return { success: true, successCount, failedCount };
     } catch (error) {
-        logSyncMessage(`Domain.com.au sync failed: ${error.message}`);
-        console.error('Error during Domain.com.au sync:', error);
+        logErrorMessage(`Domain.com.au sync failed: ${error.message}`);
         throw error; // Propagate the error for higher-level handling
     }
 }
 
-// Export the sync function as default
 export default domainSync;

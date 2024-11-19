@@ -18,8 +18,6 @@ export function processSingleListing(property, performanceData) {
         return null;
     }
 
-    console.log('Fetched Performance Data:', JSON.stringify(performanceData, null, 2));
-
     const fieldMapping = {
         pageView: 'PageViews',
         emailEnquiry: 'EmailEnquiries',
@@ -61,7 +59,7 @@ export function processSingleListing(property, performanceData) {
         Status: property?.$?.status || 'unknown',
         UnderOffer: property.underOffer?.$?.value || 'no',
         IsHomeLandPackage: property.isHomeLandPackage?.$?.value || 'no',
-        Authority: property.authority?.$?.value || 'none',
+        //Authority: property.authority?.$?.value || 'none',
         Municipality: property.municipality || '',
         Category: property.category?.$?.name || '',
         Address: `${property.address?.street || ''}, ${property.address?.suburb || ''}, ${property.address?.state || ''} ${property.address?.postcode || ''}`.trim(),
@@ -75,10 +73,10 @@ export function processSingleListing(property, performanceData) {
         ...metrics,
     };
 
+    // Log the transformed record
     console.log(`Transformed record for ListingID: ${listingId}`, transformedRecord);
 
-    // Wrap in fields object as expected by Airtable
-    return { fields: transformedRecord };
+    return { fields: transformedRecord }; // Return Airtable-compatible record
 }
 
 /**
@@ -92,7 +90,7 @@ export async function transformDataForAirtable(apiData, performanceDataMap) {
         ? apiData.propertyList.residential
         : [apiData.propertyList?.residential].filter(Boolean);
 
-    if (!properties || properties.length === 0) {
+    if (!properties.length) {
         console.warn('No properties found in API data.');
         return [];
     }
@@ -101,8 +99,8 @@ export async function transformDataForAirtable(apiData, performanceDataMap) {
     for (const property of properties) {
         const listingId = String(property?.listingId).trim();
         if (!listingId) {
-            console.warn('Missing ListingID in property:', JSON.stringify(property, null, 2));
-            continue; // Corrected: Skip this property, do not return from the loop.
+            console.warn('Missing ListingID in property:', property);
+            continue;
         }
 
         const performanceData = performanceDataMap[listingId];
@@ -119,11 +117,10 @@ export async function transformDataForAirtable(apiData, performanceDataMap) {
                 console.warn(`Skipping ListingID ${listingId} due to transformation issues.`);
             }
         } catch (error) {
-            console.error(`Error processing ListingID ${listingId}:`, error.message);
+            console.error(`Error processing ListingID ${listingId}: ${error.message}`);
         }
     }
 
-    console.log('Transformed Records:', JSON.stringify(transformedRecords, null, 2));
-
+    console.log('Transformed Records:', transformedRecords);
     return transformedRecords;
 }
