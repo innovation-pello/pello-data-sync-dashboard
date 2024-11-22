@@ -22,11 +22,24 @@ document.addEventListener('DOMContentLoaded', function () {
             const data = await response.json();
             console.log('Platform statuses:', data);
 
-            statusSection.innerHTML = data.map(platform => {
-                const platformId = platform.platform.toLowerCase().trim().replace(/[\s\.]/g, '');
+            // List of new platforms to display as disabled
+            const additionalPlatforms = [
+                { platform: 'Pello Website Analytics', disabled: true },
+                { platform: 'iRealty EDM Analytics', disabled: true },
+                { platform: 'LinkedIn Analytics', disabled: true },
+                { platform: 'Google Ads Analytics', disabled: true },
+                { platform: 'PropertyMe API', disabled: true },
+            ];
+
+            statusSection.innerHTML = [...data, ...additionalPlatforms].map(platform => {
+                const platformId = platform.platform.toLowerCase().trim().replace(/[\s\.&]/g, '');
+
+                const disabledClass = platform.disabled ? 'opacity-50 cursor-not-allowed' : '';
+                const buttonDisabled = platform.disabled ? 'disabled' : '';
+                const buttonText = platform.disabled ? 'Coming Soon' : 'Sync Now';
 
                 return `
-                    <div class="bg-white shadow-md rounded-lg p-4" id="platform-${platformId}">
+                    <div class="bg-white shadow-md rounded-lg p-4 ${disabledClass}" id="platform-${platformId}">
                         <h2 class="text-xl font-semibold mb-2">${platform.platform}</h2>
                         <p class="text-gray-600">Last sync: 
                             <span id="last-sync-${platformId}" class="font-medium text-gray-500">
@@ -35,14 +48,14 @@ document.addEventListener('DOMContentLoaded', function () {
                         </p>
                         <p class="text-gray-600">Status: 
                             <span id="status-${platformId}" class="font-medium ${platform.status === 'Connected' ? 'text-green-500' : 'text-red-500'}">
-                                ${platform.status}
+                                ${platform.status || 'Not Available'}
                             </span>
                         </p>
                         <div class="w-full bg-gray-200 rounded-full h-2.5 mt-4 hidden" id="progress-bar-${platformId}">
                             <div class="bg-blue-500 h-2.5 rounded-full progress-bar" style="width: 0%;"></div>
                         </div>
-                        <button id="sync-now-${platformId}" class="bg-blue-500 text-white py-2 px-4 rounded mt-4">
-                            Sync Now
+                        <button id="sync-now-${platformId}" class="bg-blue-500 text-white py-2 px-4 rounded mt-4" ${buttonDisabled}>
+                            ${buttonText}
                         </button>
                     </div>
                 `;
@@ -76,7 +89,11 @@ document.addEventListener('DOMContentLoaded', function () {
             button.addEventListener('click', () => {
                 const platform = button.id.replace('sync-now-', '');
                 console.log(`Attempting sync for platform: ${platform}`);
-                syncPlatform(platform);
+                if (button.hasAttribute('disabled')) {
+                    alert(`${platform} sync functionality is coming soon!`);
+                } else {
+                    syncPlatform(platform);
+                }
             });
         });
     }
@@ -85,6 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const endpointMap = {
             realestatecomau: 'realestate',
             domaincomau: 'domain',
+            facebookinstagram: 'facebook-instagram',
         };
 
         const endpoint = endpointMap[platform];

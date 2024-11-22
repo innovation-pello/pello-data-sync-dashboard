@@ -19,7 +19,7 @@ async function domainSync(sendProgressUpdate) {
         const apiData = await fetchDomainData();
 
         if (!apiData?.listings || apiData.listings.length === 0) {
-            throw new Error('No property data available from API.');
+            throw new Error('No property data available from Domain API.');
         }
 
         sendProgressUpdate({ step: 2, total: 5, message: 'Fetching performance data...' });
@@ -29,9 +29,13 @@ async function domainSync(sendProgressUpdate) {
             const listingId = String(listing.listingId).trim();
             try {
                 const performanceData = await fetchDomainPerformanceData(listingId);
-                performanceDataMap[listingId] = performanceData;
+                if (performanceData) {
+                    performanceDataMap[listingId] = performanceData;
+                } else {
+                    logErrorMessage(`No performance data for ListingID ${listingId}`);
+                }
             } catch (error) {
-                logErrorMessage(`Performance data fetch failed for ListingID ${listingId}: ${error.message}`);
+                logErrorMessage(`Failed to fetch performance data for ListingID ${listingId}: ${error.message}`);
             }
         }
 
@@ -39,7 +43,7 @@ async function domainSync(sendProgressUpdate) {
         const transformedData = await transformDataForAirtable(apiData, performanceDataMap);
 
         if (!transformedData || transformedData.length === 0) {
-            throw new Error('No valid data to sync.');
+            throw new Error('No valid data to sync to Airtable.');
         }
 
         sendProgressUpdate({ step: 4, total: 5, message: 'Pushing data to Airtable...' });

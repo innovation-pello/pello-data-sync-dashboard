@@ -1,87 +1,78 @@
 [
   {
     "fields": {
-      "UniqueID": "102P22305",
-      "AgentID": "VFDXKX",
-      "ListingID": "146633828",
+      "UniqueID": "102P21199",
+      "AgentID": "MRQLAL",
+      "ListingID": "146546504",
       "Status": "current",
       "UnderOffer": "no",
       "IsHomeLandPackage": "no",
-      "Authority": "auction",
       "Municipality": "",
-      "Category": "House",
-      "Address": "Murdoch Street, TURRAMURRA, NSW 2074",
-      "Headline": "Perfect Family Lifestyle in Serene Garden Setting",
-      "Description": "A custom renovation has transformed this exceptionally presented home into a vibrant as-new haven for family life and entertaining on a peaceful cul-de-sac street. Occupying a northeast to rear level block of approx. 929.5sqm, it combines blended indoor/outdoor living with generous proportions, abundant light and quality finishes over two levels. Near a pathway through to Kent Oval and just 1.0km from Princes Street shops, it offers a highly desirable opportunity in a prestigious neighbourhood. \n\n- Formal lounge and dining, family room, casual meals and upstairs retreat\n- Near-new kitchen has Bosch appliances, gas cooking and walk-in pantry\n- Five bedrooms include one on the ground floor with adjacent bathroom\n- Master bed walk-in robe and ensuite, three-way main bathroom w/ bath\n- Floorboards, wide timber staircase, shutters, ducted r/c air and vacuum\n- Sizeable terrace featuring split opening roof system and motorised blind\n- North front and side level lawns, fenced backyard, heated pool and spa\n- Ample storage, internal access auto double garage plus driveway parking\n- 350m from buses to Turramurra/Pymble rail, Pymble Public School zone \n- Abbotsleigh, Knox Grammar, Pymble Ladies College within 10mins drive",
-      "Price": 4000000,
-      "Bedrooms": "5",
-      "Bathrooms": "3",
+      "Address": "44 Anthony Road, DENISTONE, NSW 2114",
+      "Description": "A showcase of flawless craftsmanship and luxury, this beautiful home set on a 752sqm block with a wide 19.8m frontage defines family living. You're led effortlessly from space to space in a generous single level design, while bi-fold doors spill open to a tranquil alfresco sanctuary made for entertaining. Set amid established greenery in one of Denistone's most premier streets, you're within a brief 500 metre stroll of West Ryde Marketplace, village amenities and Denistone Station.\n\n- Plush lounge retreat enhanced by fireplace and cathedral height ceilings\n- Chefs' kitchen hosts polished stone benchtops and stainless appliances\n- Bi-fold doors flow open to sprawling entertainers' deck and garden oasis\n- Three deluxe bedrooms feature built-in cabinetry, master adjoins ensuite\n- Versatile family room or home office, main bathroom with stylish inclusions\n- Manicured front gardens and driveway parking into oversized rear carport\n- Walk to local parklands plus minutes from zoned West Ryde Public School\n- Easy access to Top Ryde City, golf courses and central links for commuters",
+      "Price Guide": 2500000,
+      "Bedrooms": "3",
+      "Bathrooms": "2",
       "CarSpaces": "0",
       "PropertyImages": [
         {
-          "url": "http://i2.au.reastatic.net/original/2fb1ad0a2d02d3969f36ab7795d5835e91ae65c2df9264045e660316961e5e10/146633828-image-M.jpg"
+          "url": "http://i2.au.reastatic.net/original/93642b455deb882e64862188a40d88646b3c1b39de86e1306e312ee2420a1655/146546504-image-M.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/53813c3589e86354dcaa6026cf9630c6adb76e87a2f64b359f8ae40159b79a66/146633828-image-A.jpg"
+          "url": "http://i2.au.reastatic.net/original/99d3483391cf0ea0def3b06f10449d380311fd2dfeecee6515d0cb620d4cc981/146546504-image-A.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/092e7a6eb6395d60808360dec6d5379e6edfcbe6dee9719353f3c69b1f2e61e0/146633828-image-B.jpg"
+          "url": "http://i2.au.reastatic.net/original/551993d6c6564b40ecb5d933cfb37e1e028fe0999383277960a80345a64de8fe/146546504-image-B.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/da822b18e3dae22f8528084d7e83d167361d8475abdad3420e4e1f63eb42a9d7/146633828-image-C.jpg"
+          "url": "http://i2.au.reastatic.net/original/1459e21817c1fc38003f288246b23fb6c653b83344122ff86af01ab77bc658ae/146546504-image-C.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/c1f47ddbfa34f4fdf0e9149769aa6164798bc355e63f811dc8936cbe7a69dfa9/146633828-image-D.jpg"
+          "url": "http://i2.au.reastatic.net/original/97ad9cb22c695b866f5ac53ae712c180a2d26a79e9e76b9908d112eaafee2fbc/146546504-image-D.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/8844e0ade606d1b5b23e0a1b4fa839c911a5fcd573ede0614231118345da7a51/146633828-image-E.jpg"
+          "url": "http://i2.au.reastatic.net/original/b6e2147ae003c10e6f86dcb827d5ec651893a73f9b176f0e89507e35b8f0104b/146546504-image-E.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/61ede462fff46b45e47a1ab0b9f7eb93cbecfd5aa1d2093e39747a7726aa39d3/146633828-image-F.jpg"
+          "url": "http://i2.au.reastatic.net/original/10c5a72db2d7ac68b234c4d3e4428df9102757ec25d13c5cc0ff2764247907ed/146546504-image-F.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/0b9fd3d5c81a1f0a96d55b3c1f3327deeb5da0127cd79cea1982ba70138f8409/146633828-image-G.jpg"
+          "url": "http://i2.au.reastatic.net/original/fbc208b4a3dc65255b4536de324e6725eadff247933d13d4ef95d33309c9af64/146546504-image-G.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/d55a1d7f03f594b4eb4cb8aee5673d5358f42df76fcdf54887aa18a9c755a047/146633828-image-H.jpg"
+          "url": "http://i2.au.reastatic.net/original/2c1e74b23d272cf219892c531f7a2bbccf0eba849a708f84f192f4cf231e3f3e/146546504-image-H.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/c18d3da4474597af2f838cc476b5b2cecf7fe42882f89152ab0a567422211bc7/146633828-image-I.jpg"
+          "url": "http://i2.au.reastatic.net/original/091fd2e80da565e68b5cfccd3764740d1c13260509e035d60c08a6b4b57d4509/146546504-image-I.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/6dbf71d60038f1293c9c3bad5e3a1b270ec1910b826cf98354cab05502a508a0/146633828-image-J.jpg"
+          "url": "http://i2.au.reastatic.net/original/cf4418f0c6aa702476ef69d7798e8887366233667b5bf24d702eb96b55286bb5/146546504-image-J.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/51bfec5cada3052997c678bde8b5ff39fc1fc6054cb3d51707a5cb796fdde9a5/146633828-image-K.jpg"
+          "url": "http://i2.au.reastatic.net/original/40eb61f5ebcd925114e974fc36989bafe6a6561d5a576dc2f6e62f7494943fb5/146546504-image-K.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/6756cd88eba85bc8a34dca6ae227ffe6eb754b3561a846e3f1abc961638cc183/146633828-image-L.jpg"
+          "url": "http://i2.au.reastatic.net/original/cc39a283b6d746001dde608e583952c194a86071e2c24294d94f3a4bab4ab170/146546504-image-L.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/437b1f49c265ffbddd309d0bef0b93016b4c0ed2a811297b67547541d584973f/146633828-image-N.jpg"
+          "url": "http://i2.au.reastatic.net/original/5981979f5fefad4fd33634b6b57ad1a6dc24162e71d92267ea482f2130c393d8/146546504-image-N.jpg"
         },
         {
-          "url": "http://i2.au.reastatic.net/original/2a2c32fdf863e2d964f142b9a825c808335737dfc2e7a315a32163dd69df4860/146633828-image-O.jpg"
+          "url": "http://i2.au.reastatic.net/original/303f9d8fef2c75ea87a660de3faa9be3f6e037322d8a7bc31c125d01165a2c78/146546504-image-O.jpg"
         }
       ],
-      "PageViews": 976,
-      "SearchResultPhotoViews": 7048,
-      "ExpandMap": 184,
-      "VideoViews": 0,
-      "PropertyDetailPhotoViews": 5951,
-      "FloorplanViews": 673,
+      "SearchResultPhotoViews": 8142,
       "VirtualTourViews": 0,
       "3DTourViews": 0,
-      "EmailEnquiries": 26,
-      "RevealedAgentPhoneNumber": 3,
+      "RevealedAgentPhoneNumber": 8,
       "RentalAppliedOnline": 0,
       "AppliedForInspection": 0,
-      "SavedInspectionTime": 11,
-      "SavedAuctionTime": 2,
-      "ListingSaved": 65,
-      "SendToFriend": 1,
+      "SavedInspectionTime": 13,
+      "SavedAuctionTime": 5,
+      "ListingSaved": 123,
+      "SendToFriend": 0,
       "ViewStatementOfInformation": 0,
-      "SearchResultsPageImpression": 5134
+      "SearchResultsPageImpression": 9564
     }
   }
 ]

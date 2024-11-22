@@ -47,10 +47,12 @@ export { clients, sendProgressUpdate };
 // Import platform-specific routes
 import realestateRoutes from './platforms/realestate/routes/realestate.js';
 import domainRoutes from './platforms/domain/routes/domain.js';
+import analyticsRoutes from './platforms/facebook-instagram/routes/analytics.js'; // Facebook-Instagram platform routes
 
 // Use routes
 app.use('/api/realestate', realestateRoutes);
 app.use('/api/domain', domainRoutes);
+app.use('/api/analytics', analyticsRoutes); // New Facebook-Instagram analytics routes
 
 // Middleware to ensure access token is valid for every request
 app.use(async (req, res, next) => {
@@ -85,7 +87,8 @@ app.get('/api/status', (req, res) => {
 
     const platforms = [
         { platform: 'Realestate.com.au', status: 'Connected', lastSync: getLastSyncTimestamp('Realestate.com.au') },
-        { platform: 'Domain.com.au', status: memoryTokens.accessToken ? 'Connected' : 'Not Authorized', lastSync: getLastSyncTimestamp('Domain.com.au') }
+        { platform: 'Domain.com.au', status: memoryTokens.accessToken ? 'Connected' : 'Not Authorized', lastSync: getLastSyncTimestamp('Domain.com.au') },
+        { platform: 'Facebook & Instagram', status: 'Connected', lastSync: getLastSyncTimestamp('Facebook & Instagram') } // Added Facebook-Instagram platform
     ];
 
     res.json(platforms);

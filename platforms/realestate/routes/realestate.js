@@ -15,7 +15,7 @@ router.post('/sync', async (req, res) => {
         const { successCount = 0, failedCount = 0 } = result;
         const summary = `Realestate.com.au — Sync completed. Success: ${successCount}, Failed: ${failedCount}`;
 
-        //logSyncMessage(summary); // Log the sync result
+        logSyncMessage(summary); // Log the sync result
         res.status(200).json({ message: summary }); // Respond with summary message
     } catch (error) {
         const errorMessage = `Realestate.com.au — Sync failed. Error: ${error.message}`;
