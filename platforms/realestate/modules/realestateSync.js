@@ -12,7 +12,7 @@ export default async function realestateSync(sendProgressUpdate) {
     let failedCount = 0;
 
     try {
-        //logSyncMessage('Starting Realestate.com.au sync...');
+        logSyncMessage('Starting Realestate.com.au sync...');
 
         sendProgressUpdate({ step: 1, total: 5, message: 'Fetching property data...' });
         const apiData = await fetchDataFromAPI();
@@ -25,7 +25,11 @@ export default async function realestateSync(sendProgressUpdate) {
 
         const performanceDataMap = {};
         for (const property of apiData.propertyList.residential) {
-            const listingId = String(property.listingId).trim();
+            const listingId = property.listingId ? String(property.listingId).trim() : null;
+            if (!listingId) {
+                logErrorMessage('Property listing ID is missing or invalid.');
+                continue;
+            }
             try {
                 const performanceData = await fetchListingPerformanceData(listingId);
                 performanceDataMap[listingId] = performanceData;
@@ -56,7 +60,13 @@ export default async function realestateSync(sendProgressUpdate) {
 
         sendProgressUpdate({ step: 5, total: 5, message: 'Finalizing sync...' });
 
-        //logSyncMessage(`Realestate.com.au sync completed. Success: ${successCount}, Failed: ${failedCount}`);
+        logSyncMessage(
+            JSON.stringify({
+                summary: 'Realestate.com.au sync completed',
+                success: successCount,
+                failed: failedCount,
+            })
+        );
         return { success: true, successCount, failedCount };
     } catch (error) {
         logErrorMessage(`Realestate.com.au sync failed: ${error.message}`);

@@ -2,12 +2,14 @@
   "name": "pello-data-sync-dashboard",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "start": "node server.js",
-    "serve": "vite preview"
+    "dev:server": "nodemon api/server.js", 
+    "build": "vite build", 
+    "start": "node -r dotenv/config server.js", 
+    "serve": "vite preview", 
+    "start:prod": "vite build && node -r dotenv/config server.js" 
   },
   "dependencies": {
     "airtable": "^0.12.2",

@@ -5,14 +5,28 @@ import { logSyncMessage, logErrorMessage, logDebugMessage } from '../../shared/s
 
 // Initialize Airtable Base
 const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE_ID);
-const tableName = process.env.AIRTABLE_DOMAIN_LISTINGS_TABLE || 'Domain Listings API'; // Use env variable for table name
+const tableName = process.env.AIRTABLE_DOMAIN_LISTINGS_TABLE || 'Domain Listings API';
 
 // Agencies list
 const agencies = [
-    { name: "LNS", id: 2842 },
-    { name: "UNS", id: 36084 },
-    { name: "NS", id: 36082 },
+    { name: 'LNS', id: 2842 },
+    { name: 'UNS', id: 36084 },
+    { name: 'NS', id: 36082 },
 ];
+
+/**
+ * Validate Airtable table name.
+ */
+function validateTableName() {
+    if (!tableName) {
+        const errorMsg = 'Airtable table name is missing. Please check the environment variable: AIRTABLE_DOMAIN_LISTINGS_TABLE.';
+        logErrorMessage(errorMsg);
+        throw new Error(errorMsg);
+    }
+}
+
+// Ensure table name is valid at the start
+validateTableName();
 
 /**
  * Find a record in Airtable by "Listing ID".
@@ -40,17 +54,17 @@ async function findRecordByListingId(listingId) {
  */
 async function createOrUpdateAirtableRecord(fields) {
     try {
-        const existingRecord = await findRecordByListingId(fields["Listing ID"]);
+        const existingRecord = await findRecordByListingId(fields['Listing ID']);
 
         if (existingRecord) {
-            logSyncMessage(`Updating record with Listing ID: ${fields["Listing ID"]}`);
+            logSyncMessage(`Updating record with Listing ID: ${fields['Listing ID']}`);
             await base(tableName).update(existingRecord.id, { fields });
         } else {
-            logSyncMessage(`Creating new record with Listing ID: ${fields["Listing ID"]}`);
+            logSyncMessage(`Creating new record with Listing ID: ${fields['Listing ID']}`);
             await base(tableName).create([{ fields }]);
         }
     } catch (error) {
-        logErrorMessage(`Airtable error: ${JSON.stringify(error.response?.data || error.message, null, 2)}`);
+        logErrorMessage(`Error syncing record to Airtable for Listing ID: ${fields['Listing ID']} - ${error.message}`);
     }
 }
 
@@ -81,12 +95,12 @@ async function fetchListingsWithStatistics(agencyId, agencyName) {
                 const statistics = await fetchListingStatistics(listingId);
 
                 const fields = {
-                    "Listing ID": listingId,
-                    "Property Address": listing.addressParts?.displayAddress || null,
-                    "Suburb": listing.addressParts?.suburb || null,
-                    "Office": agencyName,
-                    "Total Listing Views": statistics?.totalListingViews || 0,
-                    "Total Enquiries": statistics?.totalEnquiries || 0,
+                    'Listing ID': listingId,
+                    'Property Address': listing.addressParts?.displayAddress || null,
+                    'Suburb': listing.addressParts?.suburb || null,
+                    'Office': agencyName,
+                    'Total Listing Views': statistics?.totalListingViews || 0,
+                    'Total Enquiries': statistics?.totalEnquiries || 0,
                 };
 
                 logDebugMessage(`Payload for ListingID ${listingId}: ${JSON.stringify(fields, null, 2)}`);
@@ -115,5 +129,6 @@ export async function fetchAllAgenciesListingsWithStatistics() {
         recordCounts[agency.name] = count;
     }
 
+    logSyncMessage('All agencies processed successfully.');
     return recordCounts;
 }

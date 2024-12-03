@@ -20,9 +20,9 @@ const logger = winston.createLogger({
         })
     ),
     transports: [
-        new winston.transports.Console({ level: 'warn' }),
-        new winston.transports.File({ filename: path.join(logDir, 'sync-logs.txt'), level: 'info' }),
-        new winston.transports.File({ filename: path.join(logDir, 'error-logs.txt'), level: 'error' })
+        new winston.transports.Console({ level: 'warn' }), // Only warn and above logs are shown in the console
+        new winston.transports.File({ filename: path.join(logDir, 'sync-logs.txt'), level: 'info' }), // Info-level logs
+        new winston.transports.File({ filename: path.join(logDir, 'error-logs.txt'), level: 'error' }) // Error-level logs
     ],
 });
 
@@ -36,7 +36,13 @@ const logClients = [];
  */
 function broadcastLog(level, message) {
     const logEntry = `[${new Date().toISOString()}] ${level.toUpperCase()}: ${message}`;
-    logClients.forEach(client => client.write(`data: ${logEntry}\n\n`));
+    logClients.forEach(client => {
+        try {
+            client.write(`data: ${logEntry}\n\n`);
+        } catch (err) {
+            logger.warn(`Failed to send log to SSE client: ${err.message}`);
+        }
+    });
 }
 
 /**
@@ -47,12 +53,12 @@ export function addLogClient(res) {
     logClients.push(res);
     res.on('close', () => {
         logClients.splice(logClients.indexOf(res), 1);
-        console.log(`Client disconnected: ${logClients.length} active log clients`);
+        logger.info(`Client disconnected. Active log clients: ${logClients.length}`);
     });
 }
 
 /**
- * Write logs to the sync log file and broadcast the message.
+ * Write sync logs and broadcast the message.
  * @param {string} message - Log message.
  */
 export function logSyncMessage(message) {
@@ -101,10 +107,33 @@ export function getLastSyncTimestamp(platform) {
             }
         }
     } catch (error) {
-        logger.error(`Failed to read log file: ${error.message}`);
+        logger.error(`Failed to read sync logs: ${error.message}`);
     }
 
     return 'N/A';
+}
+
+/**
+ * Clear old logs from the directory (optional cleanup function).
+ * @param {number} days - Number of days to retain logs.
+ */
+export function clearOldLogs(days = 30) {
+    const now = Date.now();
+    const retentionTime = days * 24 * 60 * 60 * 1000;
+
+    try {
+        fs.readdirSync(logDir).forEach(file => {
+            const filePath = path.join(logDir, file);
+            const stats = fs.statSync(filePath);
+
+            if (now - stats.mtimeMs > retentionTime) {
+                fs.unlinkSync(filePath);
+                logger.info(`Deleted old log file: ${file}`);
+            }
+        });
+    } catch (error) {
+        logger.error(`Error clearing old logs: ${error.message}`);
+    }
 }
 
 export default logger;

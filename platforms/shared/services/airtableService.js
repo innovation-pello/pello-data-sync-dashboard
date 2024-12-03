@@ -1,7 +1,7 @@
 import Airtable from 'airtable';
 import fs from 'fs';
 import path from 'path';
-import logger from './logger.js'; // Correct relative path for shared logger
+import logger from './logger.js'; // Shared logger
 
 const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE_ID);
 const tableName = process.env.AIRTABLE_TABLE_NAME;
@@ -21,7 +21,7 @@ async function findRecordByUniqueId(uniqueId) {
         return records.length > 0 ? records[0] : null;
     } catch (error) {
         logger.error(`Error finding record by Unique ID (${uniqueId}): ${error.message}`);
-        if (error.message.includes('ENOTFOUND')) {
+        if (error.code === 'ENOTFOUND') {
             logger.warn('Network issue detected. Consider retrying.');
         }
         throw error;
@@ -79,8 +79,8 @@ async function createOrUpdateRecord(record) {
         const existingRecord = await findRecordByUniqueId(uniqueId);
 
         if (existingRecord) {
-            //logger.info(`Updating record with ListingID: ${uniqueId}`);
-            await base(tableName).update(existingRecord.id, record.fields);
+            logger.info(`Updating record with ListingID: ${uniqueId}`);
+            await base(tableName).update(existingRecord.id, { fields: record.fields });
         } else {
             logger.info(`Creating new record with ListingID: ${uniqueId}`);
             await base(tableName).create([{ fields: record.fields }]);
@@ -100,7 +100,7 @@ function logRecordsToFile(records) {
     const logsFile = path.join(logsDir, 'failed-records.json');
 
     if (!fs.existsSync(logsDir)) {
-        fs.mkdirSync(logsDir);
+        fs.mkdirSync(logsDir, { recursive: true });
     }
 
     fs.writeFileSync(logsFile, JSON.stringify(records, null, 2));
@@ -143,6 +143,6 @@ export async function pushDataToAirtable(records) {
             logRecordsToFile(failedRecords);
         }
     } else {
-        //logger.info('All records successfully pushed to Airtable.');
+        logger.info('All records successfully pushed to Airtable.');
     }
 }

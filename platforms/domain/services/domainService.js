@@ -1,35 +1,37 @@
 import axios from 'axios';
-import { logErrorMessage, logSyncMessage } from '../../shared/services/logger.js'; // Shared logger for error and sync logging
+import { logErrorMessage, logSyncMessage } from '../../shared/services/logger.js';
+
+// Utility to validate environment variables
+function validateEnvVars(requiredVars) {
+    const missingVars = requiredVars.filter(varName => !process.env[varName]);
+    if (missingVars.length > 0) {
+        const errorMsg = `Missing required environment variables: ${missingVars.join(', ')}`;
+        logErrorMessage(errorMsg);
+        throw new Error(errorMsg);
+    }
+}
+
+// Validate required environment variables
+validateEnvVars(['DOMAIN_API_BASE_URL', 'DOMAIN_API_KEY']);
 
 // Load environment variables
 const DOMAIN_API_BASE_URL = process.env.DOMAIN_API_BASE_URL;
 const DOMAIN_API_KEY = process.env.DOMAIN_API_KEY;
 
 /**
- * Verify if DOMAIN_API_KEY is set.
- * Throws an error if not configured.
- */
-function verifyDomainApiKey() {
-    if (!DOMAIN_API_KEY) {
-        const errorMsg = 'DOMAIN_API_KEY is missing. Please authenticate with Domain.';
-        logErrorMessage(errorMsg);
-        throw new Error('Missing DOMAIN_API_KEY. Ensure the application is authorized.');
-    }
-}
-
-/**
  * Fetch property data from Domain API.
  * @returns {Promise<object>} Property data from Domain.
  */
 export async function fetchDomainData() {
-    verifyDomainApiKey(); // Ensure API key is present
+    const endpoint = `${DOMAIN_API_BASE_URL}/listings`;
 
+    logSyncMessage('Fetching property data from Domain API...');
     try {
-        logSyncMessage('Fetching property data from Domain API...');
-        const response = await axios.get(`${DOMAIN_API_BASE_URL}/listings`, {
-            headers: { Authorization: DOMAIN_API_KEY },
+        const response = await axios.get(endpoint, {
+            headers: { Authorization: `Bearer ${DOMAIN_API_KEY}` },
         });
-        logSyncMessage('Successfully fetched property data from Domain API.');
+
+        logSyncMessage(`Fetched ${response.data?.listings?.length || 0} properties from Domain API.`);
         return response.data;
     } catch (error) {
         handleApiError(error, 'Failed to fetch property data from Domain API');
@@ -42,14 +44,15 @@ export async function fetchDomainData() {
  * @returns {Promise<object>} Performance data for the listing.
  */
 export async function fetchDomainPerformanceData(listingId) {
-    verifyDomainApiKey(); // Ensure API key is present
+    const endpoint = `${DOMAIN_API_BASE_URL}/listings/${listingId}/performance`;
 
+    logSyncMessage(`Fetching performance data for Listing ID: ${listingId}`);
     try {
-        logSyncMessage(`Fetching performance data for Listing ID: ${listingId}`);
-        const response = await axios.get(`${DOMAIN_API_BASE_URL}/listings/${listingId}/performance`, {
-            headers: { Authorization: DOMAIN_API_KEY },
+        const response = await axios.get(endpoint, {
+            headers: { Authorization: `Bearer ${DOMAIN_API_KEY}` },
         });
-        logSyncMessage(`Successfully fetched performance data for Listing ID: ${listingId}`);
+
+        logSyncMessage(`Fetched performance data for Listing ID: ${listingId}.`);
         return response.data;
     } catch (error) {
         handleApiError(error, `Failed to fetch performance data for Listing ID ${listingId}`);
@@ -63,17 +66,18 @@ export async function fetchDomainPerformanceData(listingId) {
  */
 function handleApiError(error, message) {
     if (error.response) {
-        // Server responded with a status code outside the 2xx range
-        const errorMsg = `${message}: ${error.response.data?.error_description || error.response.statusText}`;
+        // API returned an error response
+        const errorMsg = `${message}: Status ${error.response.status} - ${error.response.statusText}.`;
         logErrorMessage(errorMsg);
+        logErrorMessage(`Response Data: ${JSON.stringify(error.response.data, null, 2)}`);
         throw new Error(errorMsg);
     } else if (error.request) {
-        // No response received from the server
+        // Request was made but no response received
         const errorMsg = `${message}: No response received from the Domain API.`;
         logErrorMessage(errorMsg);
         throw new Error(errorMsg);
     } else {
-        // Something went wrong while setting up the request
+        // Error setting up the request
         const errorMsg = `${message}: ${error.message}`;
         logErrorMessage(errorMsg);
         throw new Error(errorMsg);

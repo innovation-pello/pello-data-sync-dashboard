@@ -3,15 +3,25 @@ document.addEventListener('DOMContentLoaded', function () {
     const logsSection = document.getElementById('logs-section');
     const errorMessage = document.getElementById('error-message');
 
+    /**
+     * Display an error message.
+     * @param {string} message - The error message to display.
+     */
     function showError(message) {
         errorMessage.innerText = message;
         errorMessage.classList.remove('hidden');
     }
 
+    /**
+     * Hide the error message.
+     */
     function hideError() {
         errorMessage.classList.add('hidden');
     }
 
+    /**
+     * Fetch and display platform statuses.
+     */
     async function fetchStatus() {
         hideError();
 
@@ -22,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const data = await response.json();
             console.log('Platform statuses:', data);
 
-            // List of new platforms to display as disabled
+            // Define additional platforms as disabled.
             const additionalPlatforms = [
                 { platform: 'Pello Website Analytics', disabled: true },
                 { platform: 'iRealty EDM Analytics', disabled: true },
@@ -31,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { platform: 'PropertyMe API', disabled: true },
             ];
 
+            // Render all platforms (active and disabled).
             statusSection.innerHTML = [...data, ...additionalPlatforms].map(platform => {
                 const platformId = platform.platform.toLowerCase().trim().replace(/[\s\.&]/g, '');
 
@@ -68,6 +79,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    /**
+     * Fetch and display logs.
+     */
     async function fetchLogs() {
         hideError();
 
@@ -83,6 +97,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    /**
+     * Attach event listeners to "Sync Now" buttons.
+     */
     function attachSyncButtonListeners() {
         const syncButtons = document.querySelectorAll('[id^="sync-now-"]');
         syncButtons.forEach(button => {
@@ -98,6 +115,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    /**
+     * Trigger platform sync and handle progress updates via SSE.
+     * @param {string} platform - Platform identifier.
+     */
     window.syncPlatform = function (platform) {
         const endpointMap = {
             realestatecomau: 'realestate',

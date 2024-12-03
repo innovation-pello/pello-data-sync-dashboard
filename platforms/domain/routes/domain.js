@@ -8,12 +8,22 @@ import { logSyncMessage, logErrorMessage } from '../../shared/services/logger.js
 // Initialize Express router
 const router = express.Router();
 
+// Middleware to validate required environment variables
+router.use((req, res, next) => {
+    if (!process.env.DOMAIN_API_KEY) {
+        const errorMessage = 'Domain API key is missing. Please set DOMAIN_API_KEY in environment variables.';
+        logErrorMessage(errorMessage);
+        return res.status(500).json({ error: errorMessage });
+    }
+    next();
+});
+
 // Sync route for Domain.com.au
 router.post('/sync', async (req, res) => {
     try {
         logSyncMessage('Starting Domain.com.au sync...');
         const result = await domainSync(progress => {
-            sendProgressUpdate(progress); // Real-time progress updates
+            sendProgressUpdate(progress); // Use shared progress handler
         });
 
         const successCount = result.successCount || 0;
@@ -21,11 +31,11 @@ router.post('/sync', async (req, res) => {
         const summary = `Domain.com.au — Sync completed. Success: ${successCount}, Failed: ${failureCount}`;
 
         logSyncMessage(summary);
-        res.status(200).json({ message: summary });
+        res.status(200).json({ success: true, message: summary });
     } catch (error) {
         const errorMessage = `Domain.com.au — Sync failed. Error: ${error.message}`;
         logErrorMessage(errorMessage);
-        res.status(500).json({ message: errorMessage });
+        res.status(500).json({ success: false, message: errorMessage });
     }
 });
 
@@ -36,7 +46,8 @@ router.get('/progress', (req, res) => {
     res.setHeader('Connection', 'keep-alive');
     res.flushHeaders();
 
-    res.write('data: Connection established\n\n');
+    res.write('data: Connection established\n\n'); // Initial SSE message
+    logSyncMessage('Client connected to Domain.com.au progress updates.');
 
     req.on('close', () => {
         logSyncMessage('Client disconnected from Domain.com.au SSE.');
@@ -47,12 +58,12 @@ router.get('/progress', (req, res) => {
 router.get('/fetch-token', async (req, res) => {
     try {
         const accessToken = await fetchAccessToken();
-        res.json({ accessToken });
+        res.json({ success: true, accessToken });
         logSyncMessage('Fetched access token for Domain.com.au.');
     } catch (error) {
         const errorMessage = `Error fetching access token: ${error.message}`;
         logErrorMessage(errorMessage);
-        res.status(500).json({ error: 'Failed to fetch access token' });
+        res.status(500).json({ success: false, error: 'Failed to fetch access token' });
     }
 });
 

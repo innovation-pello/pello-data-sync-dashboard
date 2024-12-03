@@ -14,15 +14,25 @@ export async function fetchAvailableOptions(platform) {
     let table;
     let fieldsToFetch;
 
-    if (platform === 'domain') {
-        table = base('Domain Listings API copy');
-        fieldsToFetch = ['MOS', 'Listing Type', 'Office'];
-    } else if (platform === 'realestate') {
-        table = base('Realestate Listings API');
-        fieldsToFetch = ['Property Type', 'Region', 'Agency'];
-    } else {
+    // Map platform-specific table and fields
+    const platformConfig = {
+        domain: {
+            tableName: 'Domain Listings API copy',
+            fields: ['MOS', 'Listing Type', 'Office'],
+        },
+        realestate: {
+            tableName: 'Realestate Listings API',
+            fields: ['Property Type', 'Region', 'Agency'],
+        },
+    };
+
+    const config = platformConfig[platform];
+    if (!config) {
         throw new Error(`Unsupported platform: ${platform}`);
     }
+
+    table = base(config.tableName);
+    fieldsToFetch = config.fields;
 
     try {
         const records = await table.select({}).firstPage();
@@ -48,11 +58,14 @@ export async function fetchAvailableOptions(platform) {
 export async function createAirtableRecord(platform, fields) {
     let table;
 
-    if (platform === 'domain') {
-        table = base('Domain Listings API v2');
-    } else if (platform === 'realestate') {
-        table = base('Realestate Listings API v2');
-    } else {
+    // Map platform-specific table names
+    const platformConfig = {
+        domain: 'Domain Listings API v2',
+        realestate: 'Realestate Listings API v2',
+    };
+
+    table = base(platformConfig[platform]);
+    if (!table) {
         throw new Error(`Unsupported platform: ${platform}`);
     }
 

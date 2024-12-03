@@ -1,6 +1,6 @@
 import express from 'express';
 import realestateSync from '../modules/realestateSync.js'; // Correct sync logic path
-import { sendProgressUpdate, clients } from '../../../server.js'; // Correct progress handling path
+import { sendProgressUpdate } from '../../../server.js'; // Correct progress handling path
 import { logSyncMessage, logErrorMessage } from '../../shared/services/logger.js'; // Correct logger path
 
 const router = express.Router();
@@ -8,21 +8,27 @@ const router = express.Router();
 // Sync route for Realestate.com.au
 router.post('/sync', async (req, res) => {
     try {
-        //console.log('Starting Realestate.com.au sync...');
-        
+        logSyncMessage('Starting Realestate.com.au sync...');
         const result = await realestateSync(sendProgressUpdate); // Pass sendProgressUpdate directly
         
         const { successCount = 0, failedCount = 0 } = result;
-        const summary = `Realestate.com.au — Sync completed. Success: ${successCount}, Failed: ${failedCount}`;
+        const summary = {
+            success: true,
+            message: `Realestate.com.au — Sync completed.`,
+            data: { successCount, failedCount },
+        };
 
-        logSyncMessage(summary); // Log the sync result
-        res.status(200).json({ message: summary }); // Respond with summary message
+        logSyncMessage(`Sync Result: ${JSON.stringify(summary.data)}`); // Log detailed sync result
+        res.status(200).json(summary); // Respond with summary
     } catch (error) {
-        const errorMessage = `Realestate.com.au — Sync failed. Error: ${error.message}`;
+        const errorMessage = {
+            success: false,
+            message: `Realestate.com.au — Sync failed.`,
+            error: error.message,
+        };
 
-        logErrorMessage(errorMessage); // Log the error
-        console.error(errorMessage); // Log to console
-        res.status(500).json({ message: errorMessage }); // Respond with error message
+        logErrorMessage(`Sync Error: ${error.message}`); // Log detailed error
+        res.status(500).json(errorMessage); // Respond with error details
     }
 });
 
@@ -33,15 +39,11 @@ router.get('/progress', (req, res) => {
     res.setHeader('Connection', 'keep-alive');
     res.flushHeaders(); // Establish SSE connection
 
-    clients.push(res); // Add the client to active SSE clients
-    console.log(`Client connected to Realestate progress SSE. Active clients: ${clients.length}`);
+    res.write('data: Connection established\n\n'); // Initial SSE event
 
     req.on('close', () => {
-        clients.splice(clients.indexOf(res), 1); // Remove client on disconnect
-        console.log(`Client disconnected from Realestate progress SSE. Active clients: ${clients.length}`);
+        logSyncMessage('Client disconnected from Realestate progress SSE.');
     });
-
-    res.write('data: Connection established\n\n'); // Initial SSE event
 });
 
 export default router;

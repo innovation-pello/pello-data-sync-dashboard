@@ -11,6 +11,7 @@ import { fileURLToPath } from 'url';
 import { getLastSyncTimestamp, logSyncMessage, addLogClient } from './platforms/shared/services/logger.js';
 import { fetchAccessToken, memoryTokens } from './platforms/shared/services/auth.js';
 
+
 // Determine __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -49,10 +50,10 @@ import realestateRoutes from './platforms/realestate/routes/realestate.js';
 import domainRoutes from './platforms/domain/routes/domain.js';
 import analyticsRoutes from './platforms/facebook-instagram/routes/analytics.js'; // Facebook-Instagram platform routes
 
-// Use routes
+// Use platform-specific routes
 app.use('/api/realestate', realestateRoutes);
 app.use('/api/domain', domainRoutes);
-app.use('/api/analytics', analyticsRoutes); // New Facebook-Instagram analytics routes
+app.use('/api/analytics', analyticsRoutes); // Facebook-Instagram analytics routes
 
 // Middleware to ensure access token is valid for every request
 app.use(async (req, res, next) => {
@@ -79,6 +80,9 @@ app.get('/logs/stream', (req, res) => {
     res.write('data: Connection established\n\n'); // Initial connection message
 
     console.log('Client connected to /logs/stream');
+    req.on('close', () => {
+        console.log('Client disconnected from logs stream.');
+    });
 });
 
 // Platform Status Route
@@ -88,7 +92,7 @@ app.get('/api/status', (req, res) => {
     const platforms = [
         { platform: 'Realestate.com.au', status: 'Connected', lastSync: getLastSyncTimestamp('Realestate.com.au') },
         { platform: 'Domain.com.au', status: memoryTokens.accessToken ? 'Connected' : 'Not Authorized', lastSync: getLastSyncTimestamp('Domain.com.au') },
-        { platform: 'Facebook & Instagram', status: 'Connected', lastSync: getLastSyncTimestamp('Facebook & Instagram') } // Added Facebook-Instagram platform
+        { platform: 'Facebook & Instagram', status: memoryTokens.accessToken ? 'Connected' : 'Not Authorized', lastSync: getLastSyncTimestamp('Facebook & Instagram') }
     ];
 
     res.json(platforms);

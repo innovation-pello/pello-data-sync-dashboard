@@ -6,23 +6,41 @@ import { pushDataToAirtable } from '../../shared/services/airtableService.js'; /
 import { logSyncMessage, logErrorMessage } from '../../shared/services/logger.js'; // Shared logger
 
 // Utility function to parse XML data to JSON
-const parseXML = (xml) => {
-    return new Promise((resolve, reject) => {
+const parseXML = (xml) =>
+    new Promise((resolve, reject) => {
         xml2js.parseString(xml, { explicitArray: false }, (err, result) => {
-            if (err) reject(new Error(`XML Parsing Error: ${err.message}`));
-            else resolve(result);
+            if (err) {
+                reject(new Error(`XML Parsing Error: ${err.message}`));
+            } else {
+                resolve(result);
+            }
         });
     });
-};
+
+/**
+ * Validate required environment variables.
+ */
+function validateEnvVariables() {
+    const requiredVars = [
+        'REALESTATE_API_URL',
+        'REALESTATE_PERFORMANCE_API_URL',
+    ];
+    for (const variable of requiredVars) {
+        if (!process.env[variable]) {
+            throw new Error(`Missing required environment variable: ${variable}`);
+        }
+    }
+}
 
 /**
  * Fetch property data from the Realestate API.
  * @returns {Promise<object>} Parsed property data.
  */
 export async function fetchDataFromAPI() {
+    validateEnvVariables();
     try {
         const accessToken = await fetchRealestateToken(); // Use platform-specific token
-        //logSyncMessage('Fetching property data from Realestate API...');
+        logSyncMessage('Fetching property data from Realestate API...');
 
         const response = await axios.get(process.env.REALESTATE_API_URL, {
             headers: {
@@ -33,10 +51,19 @@ export async function fetchDataFromAPI() {
         });
 
         const jsonData = await parseXML(response.data);
-        //logSyncMessage(`Property data successfully fetched. Total Properties: ${jsonData.propertyList.residential.length}`);
+        logSyncMessage(
+            `Property data successfully fetched. Total Properties: ${
+                jsonData.propertyList.residential?.length || 0
+            }`
+        );
         return jsonData;
     } catch (error) {
         logErrorMessage(`Error fetching property data: ${error.message}`);
+        if (error.response) {
+            logErrorMessage(
+                `Response Error: Status ${error.response.status}, Data: ${JSON.stringify(error.response.data)}`
+            );
+        }
         throw new Error('Failed to fetch data from Realestate API.');
     }
 }
@@ -47,12 +74,18 @@ export async function fetchDataFromAPI() {
  * @returns {Promise<object|null>} Performance data or null if not found.
  */
 export async function fetchListingPerformanceData(listingId) {
+    validateEnvVariables();
+    if (!listingId) {
+        logErrorMessage('Listing ID is required to fetch performance data.');
+        return null;
+    }
+
     try {
         const accessToken = await fetchRealestateToken(); // Use platform-specific token
-        //logSyncMessage(`Fetching performance data for Listing ID: ${listingId}...`);
+        logSyncMessage(`Fetching performance data for Listing ID: ${listingId}...`);
 
         const url = `${process.env.REALESTATE_PERFORMANCE_API_URL}${listingId}`;
-        //logSyncMessage(`Requesting Performance Data from URL: ${url}`);
+        logSyncMessage(`Requesting Performance Data from URL: ${url}`);
 
         const response = await axios.get(url, {
             headers: {
@@ -90,6 +123,11 @@ export async function syncSingleListingToAirtable() {
 
         const property = properties[0]; // Process the first listing
         const listingId = String(property.listingId).trim();
+
+        if (!listingId) {
+            logErrorMessage('Listing ID is missing in the first property.');
+            return;
+        }
 
         logSyncMessage(`Processing Listing ID: ${listingId}...`);
         const performanceData = await fetchListingPerformanceData(listingId);

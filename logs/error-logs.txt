@@ -2603,3 +2603,1324 @@
 [2024-11-20 13:21:54] ERROR: Error fetching Domain listings: Request failed with status code 404
 [2024-11-20 13:21:54] ERROR: Domain.com.au sync failed: Request failed with status code 404
 [2024-11-20 13:21:54] ERROR: Domain.com.au — Sync failed. Error: Request failed with status code 404
+[2024-11-29 11:00:44] ERROR: Error fetching performance data for Listing ID 146743304: Request failed with status code 404
+[2024-11-29 11:00:44] ERROR: Error Response Data: {
+  "errors": [
+    {
+      "status": 404,
+      "title": "Not Found",
+      "detail": "The requested resource cannot be found",
+      "meta": {
+        "transactionId": "eee0d7b7-5569-4df6-8d6b-31fdea12874c"
+      }
+    }
+  ]
+}
+[2024-11-29 11:00:51] ERROR: Error creating/updating record with ListingID 145592036: Unknown field name: "fields"
+[2024-11-29 11:00:51] ERROR: Failed to push record with ListingID 145592036: Unknown field name: "fields"
+[2024-11-29 11:00:51] ERROR: Error creating/updating record with ListingID 145592036: Unknown field name: "fields"
+[2024-11-29 11:00:51] ERROR: Retry failed for ListingID 145592036: Unknown field name: "fields"
+[2024-11-29 11:00:52] ERROR: Error creating/updating record with ListingID 145641028: Unknown field name: "fields"
+[2024-11-29 11:00:52] ERROR: Failed to push record with ListingID 145641028: Unknown field name: "fields"
+[2024-11-29 11:00:53] ERROR: Error creating/updating record with ListingID 145641028: Unknown field name: "fields"
+[2024-11-29 11:00:53] ERROR: Retry failed for ListingID 145641028: Unknown field name: "fields"
+[2024-11-29 11:00:53] ERROR: Error creating/updating record with ListingID 145757172: Unknown field name: "fields"
+[2024-11-29 11:00:53] ERROR: Failed to push record with ListingID 145757172: Unknown field name: "fields"
+[2024-11-29 11:00:54] ERROR: Error creating/updating record with ListingID 145757172: Unknown field name: "fields"
+[2024-11-29 11:00:54] ERROR: Retry failed for ListingID 145757172: Unknown field name: "fields"
+[2024-11-29 11:00:55] ERROR: Error creating/updating record with ListingID 145911736: Unknown field name: "fields"
+[2024-11-29 11:00:55] ERROR: Failed to push record with ListingID 145911736: Unknown field name: "fields"
+[2024-11-29 11:00:56] ERROR: Error creating/updating record with ListingID 145911736: Unknown field name: "fields"
+[2024-11-29 11:00:56] ERROR: Retry failed for ListingID 145911736: Unknown field name: "fields"
+[2024-11-29 11:00:57] ERROR: Error creating/updating record with ListingID 145944152: Unknown field name: "fields"
+[2024-11-29 11:00:57] ERROR: Failed to push record with ListingID 145944152: Unknown field name: "fields"
+[2024-11-29 11:00:57] ERROR: Error creating/updating record with ListingID 145944152: Unknown field name: "fields"
+[2024-11-29 11:00:57] ERROR: Retry failed for ListingID 145944152: Unknown field name: "fields"
+[2024-11-29 11:00:58] ERROR: Error creating/updating record with ListingID 145995832: Unknown field name: "fields"
+[2024-11-29 11:00:58] ERROR: Failed to push record with ListingID 145995832: Unknown field name: "fields"
+[2024-11-29 11:00:59] ERROR: Error creating/updating record with ListingID 145995832: Unknown field name: "fields"
+[2024-11-29 11:00:59] ERROR: Retry failed for ListingID 145995832: Unknown field name: "fields"
+[2024-11-29 11:01:00] ERROR: Error creating/updating record with ListingID 146072780: Unknown field name: "fields"
+[2024-11-29 11:01:00] ERROR: Failed to push record with ListingID 146072780: Unknown field name: "fields"
+[2024-11-29 11:01:00] ERROR: Error creating/updating record with ListingID 146072780: Unknown field name: "fields"
+[2024-11-29 11:01:00] ERROR: Retry failed for ListingID 146072780: Unknown field name: "fields"
+[2024-11-29 11:01:01] ERROR: Error creating/updating record with ListingID 146074608: Unknown field name: "fields"
+[2024-11-29 11:01:01] ERROR: Failed to push record with ListingID 146074608: Unknown field name: "fields"
+[2024-11-29 11:01:02] ERROR: Error creating/updating record with ListingID 146074608: Unknown field name: "fields"
+[2024-11-29 11:01:02] ERROR: Retry failed for ListingID 146074608: Unknown field name: "fields"
+[2024-11-29 11:01:02] ERROR: Error creating/updating record with ListingID 146153620: Unknown field name: "fields"
+[2024-11-29 11:01:02] ERROR: Failed to push record with ListingID 146153620: Unknown field name: "fields"
+[2024-11-29 11:01:03] ERROR: Error creating/updating record with ListingID 146153620: Unknown field name: "fields"
+[2024-11-29 11:01:03] ERROR: Retry failed for ListingID 146153620: Unknown field name: "fields"
+[2024-11-29 11:01:04] ERROR: Error creating/updating record with ListingID 146185656: Unknown field name: "fields"
+[2024-11-29 11:01:04] ERROR: Failed to push record with ListingID 146185656: Unknown field name: "fields"
+[2024-11-29 11:01:04] ERROR: Error creating/updating record with ListingID 146185656: Unknown field name: "fields"
+[2024-11-29 11:01:04] ERROR: Retry failed for ListingID 146185656: Unknown field name: "fields"
+[2024-11-29 11:01:05] ERROR: Error creating/updating record with ListingID 146217828: Unknown field name: "fields"
+[2024-11-29 11:01:05] ERROR: Failed to push record with ListingID 146217828: Unknown field name: "fields"
+[2024-11-29 11:01:06] ERROR: Error creating/updating record with ListingID 146217828: Unknown field name: "fields"
+[2024-11-29 11:01:06] ERROR: Retry failed for ListingID 146217828: Unknown field name: "fields"
+[2024-11-29 11:01:07] ERROR: Error creating/updating record with ListingID 146259396: Unknown field name: "fields"
+[2024-11-29 11:01:07] ERROR: Failed to push record with ListingID 146259396: Unknown field name: "fields"
+[2024-11-29 11:01:07] ERROR: Error creating/updating record with ListingID 146259396: Unknown field name: "fields"
+[2024-11-29 11:01:07] ERROR: Retry failed for ListingID 146259396: Unknown field name: "fields"
+[2024-11-29 11:01:08] ERROR: Error creating/updating record with ListingID 146267676: Unknown field name: "fields"
+[2024-11-29 11:01:08] ERROR: Failed to push record with ListingID 146267676: Unknown field name: "fields"
+[2024-11-29 11:01:09] ERROR: Error creating/updating record with ListingID 146267676: Unknown field name: "fields"
+[2024-11-29 11:01:09] ERROR: Retry failed for ListingID 146267676: Unknown field name: "fields"
+[2024-11-29 11:01:09] ERROR: Error creating/updating record with ListingID 146268104: Unknown field name: "fields"
+[2024-11-29 11:01:09] ERROR: Failed to push record with ListingID 146268104: Unknown field name: "fields"
+[2024-11-29 11:01:10] ERROR: Error creating/updating record with ListingID 146268104: Unknown field name: "fields"
+[2024-11-29 11:01:10] ERROR: Retry failed for ListingID 146268104: Unknown field name: "fields"
+[2024-11-29 11:01:11] ERROR: Error creating/updating record with ListingID 146268540: Unknown field name: "fields"
+[2024-11-29 11:01:11] ERROR: Failed to push record with ListingID 146268540: Unknown field name: "fields"
+[2024-11-29 11:01:12] ERROR: Error creating/updating record with ListingID 146268540: Unknown field name: "fields"
+[2024-11-29 11:01:12] ERROR: Retry failed for ListingID 146268540: Unknown field name: "fields"
+[2024-11-29 11:01:12] ERROR: Error creating/updating record with ListingID 146276944: Unknown field name: "fields"
+[2024-11-29 11:01:12] ERROR: Failed to push record with ListingID 146276944: Unknown field name: "fields"
+[2024-11-29 11:01:13] ERROR: Error creating/updating record with ListingID 146276944: Unknown field name: "fields"
+[2024-11-29 11:01:13] ERROR: Retry failed for ListingID 146276944: Unknown field name: "fields"
+[2024-11-29 11:01:14] ERROR: Error creating/updating record with ListingID 146288568: Unknown field name: "fields"
+[2024-11-29 11:01:14] ERROR: Failed to push record with ListingID 146288568: Unknown field name: "fields"
+[2024-11-29 11:01:15] ERROR: Error creating/updating record with ListingID 146288568: Unknown field name: "fields"
+[2024-11-29 11:01:15] ERROR: Retry failed for ListingID 146288568: Unknown field name: "fields"
+[2024-11-29 11:01:15] ERROR: Error creating/updating record with ListingID 146288752: Unknown field name: "fields"
+[2024-11-29 11:01:15] ERROR: Failed to push record with ListingID 146288752: Unknown field name: "fields"
+[2024-11-29 11:01:16] ERROR: Error creating/updating record with ListingID 146288752: Unknown field name: "fields"
+[2024-11-29 11:01:16] ERROR: Retry failed for ListingID 146288752: Unknown field name: "fields"
+[2024-11-29 11:01:17] ERROR: Error creating/updating record with ListingID 146293692: Unknown field name: "fields"
+[2024-11-29 11:01:17] ERROR: Failed to push record with ListingID 146293692: Unknown field name: "fields"
+[2024-11-29 11:01:18] ERROR: Error creating/updating record with ListingID 146293692: Unknown field name: "fields"
+[2024-11-29 11:01:18] ERROR: Retry failed for ListingID 146293692: Unknown field name: "fields"
+[2024-11-29 11:01:18] ERROR: Error creating/updating record with ListingID 146324812: Unknown field name: "fields"
+[2024-11-29 11:01:18] ERROR: Failed to push record with ListingID 146324812: Unknown field name: "fields"
+[2024-11-29 11:01:19] ERROR: Error creating/updating record with ListingID 146324812: Unknown field name: "fields"
+[2024-11-29 11:01:19] ERROR: Retry failed for ListingID 146324812: Unknown field name: "fields"
+[2024-11-29 11:01:20] ERROR: Error creating/updating record with ListingID 146333108: Unknown field name: "fields"
+[2024-11-29 11:01:20] ERROR: Failed to push record with ListingID 146333108: Unknown field name: "fields"
+[2024-11-29 11:01:20] ERROR: Error creating/updating record with ListingID 146333108: Unknown field name: "fields"
+[2024-11-29 11:01:20] ERROR: Retry failed for ListingID 146333108: Unknown field name: "fields"
+[2024-11-29 11:01:21] ERROR: Error creating/updating record with ListingID 146335276: Unknown field name: "fields"
+[2024-11-29 11:01:21] ERROR: Failed to push record with ListingID 146335276: Unknown field name: "fields"
+[2024-11-29 11:01:22] ERROR: Error creating/updating record with ListingID 146335276: Unknown field name: "fields"
+[2024-11-29 11:01:22] ERROR: Retry failed for ListingID 146335276: Unknown field name: "fields"
+[2024-11-29 11:01:22] ERROR: Error creating/updating record with ListingID 146347908: Unknown field name: "fields"
+[2024-11-29 11:01:22] ERROR: Failed to push record with ListingID 146347908: Unknown field name: "fields"
+[2024-11-29 11:01:23] ERROR: Error creating/updating record with ListingID 146347908: Unknown field name: "fields"
+[2024-11-29 11:01:23] ERROR: Retry failed for ListingID 146347908: Unknown field name: "fields"
+[2024-11-29 11:01:24] ERROR: Error creating/updating record with ListingID 146350232: Unknown field name: "fields"
+[2024-11-29 11:01:24] ERROR: Failed to push record with ListingID 146350232: Unknown field name: "fields"
+[2024-11-29 11:01:24] ERROR: Error creating/updating record with ListingID 146350232: Unknown field name: "fields"
+[2024-11-29 11:01:24] ERROR: Retry failed for ListingID 146350232: Unknown field name: "fields"
+[2024-11-29 11:01:25] ERROR: Error creating/updating record with ListingID 146356120: Unknown field name: "fields"
+[2024-11-29 11:01:25] ERROR: Failed to push record with ListingID 146356120: Unknown field name: "fields"
+[2024-11-29 11:01:26] ERROR: Error creating/updating record with ListingID 146356120: Unknown field name: "fields"
+[2024-11-29 11:01:26] ERROR: Retry failed for ListingID 146356120: Unknown field name: "fields"
+[2024-11-29 11:01:26] ERROR: Error creating/updating record with ListingID 146401564: Unknown field name: "fields"
+[2024-11-29 11:01:26] ERROR: Failed to push record with ListingID 146401564: Unknown field name: "fields"
+[2024-11-29 11:01:27] ERROR: Error creating/updating record with ListingID 146401564: Unknown field name: "fields"
+[2024-11-29 11:01:27] ERROR: Retry failed for ListingID 146401564: Unknown field name: "fields"
+[2024-11-29 11:01:28] ERROR: Error creating/updating record with ListingID 146406816: Unknown field name: "fields"
+[2024-11-29 11:01:28] ERROR: Failed to push record with ListingID 146406816: Unknown field name: "fields"
+[2024-11-29 11:01:28] ERROR: Error creating/updating record with ListingID 146406816: Unknown field name: "fields"
+[2024-11-29 11:01:28] ERROR: Retry failed for ListingID 146406816: Unknown field name: "fields"
+[2024-11-29 11:01:29] ERROR: Error creating/updating record with ListingID 146411392: Unknown field name: "fields"
+[2024-11-29 11:01:29] ERROR: Failed to push record with ListingID 146411392: Unknown field name: "fields"
+[2024-11-29 11:01:30] ERROR: Error creating/updating record with ListingID 146411392: Unknown field name: "fields"
+[2024-11-29 11:01:30] ERROR: Retry failed for ListingID 146411392: Unknown field name: "fields"
+[2024-11-29 11:01:30] ERROR: Error creating/updating record with ListingID 146413684: Unknown field name: "fields"
+[2024-11-29 11:01:30] ERROR: Failed to push record with ListingID 146413684: Unknown field name: "fields"
+[2024-11-29 11:01:31] ERROR: Error creating/updating record with ListingID 146413684: Unknown field name: "fields"
+[2024-11-29 11:01:31] ERROR: Retry failed for ListingID 146413684: Unknown field name: "fields"
+[2024-11-29 11:01:32] ERROR: Error creating/updating record with ListingID 146429056: Unknown field name: "fields"
+[2024-11-29 11:01:32] ERROR: Failed to push record with ListingID 146429056: Unknown field name: "fields"
+[2024-11-29 11:01:33] ERROR: Error creating/updating record with ListingID 146429056: Unknown field name: "fields"
+[2024-11-29 11:01:33] ERROR: Retry failed for ListingID 146429056: Unknown field name: "fields"
+[2024-11-29 11:01:33] ERROR: Error creating/updating record with ListingID 146432024: Unknown field name: "fields"
+[2024-11-29 11:01:33] ERROR: Failed to push record with ListingID 146432024: Unknown field name: "fields"
+[2024-11-29 11:01:34] ERROR: Error creating/updating record with ListingID 146432024: Unknown field name: "fields"
+[2024-11-29 11:01:34] ERROR: Retry failed for ListingID 146432024: Unknown field name: "fields"
+[2024-11-29 11:01:35] ERROR: Error creating/updating record with ListingID 146452008: Unknown field name: "fields"
+[2024-11-29 11:01:35] ERROR: Failed to push record with ListingID 146452008: Unknown field name: "fields"
+[2024-11-29 11:01:35] ERROR: Error creating/updating record with ListingID 146452008: Unknown field name: "fields"
+[2024-11-29 11:01:35] ERROR: Retry failed for ListingID 146452008: Unknown field name: "fields"
+[2024-11-29 11:01:36] ERROR: Error creating/updating record with ListingID 146452016: Unknown field name: "fields"
+[2024-11-29 11:01:36] ERROR: Failed to push record with ListingID 146452016: Unknown field name: "fields"
+[2024-11-29 11:01:37] ERROR: Error creating/updating record with ListingID 146452016: Unknown field name: "fields"
+[2024-11-29 11:01:37] ERROR: Retry failed for ListingID 146452016: Unknown field name: "fields"
+[2024-11-29 11:01:37] ERROR: Error creating/updating record with ListingID 146476804: Unknown field name: "fields"
+[2024-11-29 11:01:37] ERROR: Failed to push record with ListingID 146476804: Unknown field name: "fields"
+[2024-11-29 11:01:38] ERROR: Error creating/updating record with ListingID 146476804: Unknown field name: "fields"
+[2024-11-29 11:01:38] ERROR: Retry failed for ListingID 146476804: Unknown field name: "fields"
+[2024-11-29 11:01:39] ERROR: Error creating/updating record with ListingID 146491644: Unknown field name: "fields"
+[2024-11-29 11:01:39] ERROR: Failed to push record with ListingID 146491644: Unknown field name: "fields"
+[2024-11-29 11:01:40] ERROR: Error creating/updating record with ListingID 146491644: Unknown field name: "fields"
+[2024-11-29 11:01:40] ERROR: Retry failed for ListingID 146491644: Unknown field name: "fields"
+[2024-11-29 11:01:40] ERROR: Error creating/updating record with ListingID 146496520: Unknown field name: "fields"
+[2024-11-29 11:01:40] ERROR: Failed to push record with ListingID 146496520: Unknown field name: "fields"
+[2024-11-29 11:01:41] ERROR: Error creating/updating record with ListingID 146496520: Unknown field name: "fields"
+[2024-11-29 11:01:41] ERROR: Retry failed for ListingID 146496520: Unknown field name: "fields"
+[2024-11-29 11:01:42] ERROR: Error creating/updating record with ListingID 146521700: Unknown field name: "fields"
+[2024-11-29 11:01:42] ERROR: Failed to push record with ListingID 146521700: Unknown field name: "fields"
+[2024-11-29 11:01:42] ERROR: Error creating/updating record with ListingID 146521700: Unknown field name: "fields"
+[2024-11-29 11:01:42] ERROR: Retry failed for ListingID 146521700: Unknown field name: "fields"
+[2024-11-29 11:01:43] ERROR: Error creating/updating record with ListingID 146528232: Unknown field name: "fields"
+[2024-11-29 11:01:43] ERROR: Failed to push record with ListingID 146528232: Unknown field name: "fields"
+[2024-11-29 11:01:44] ERROR: Error creating/updating record with ListingID 146528232: Unknown field name: "fields"
+[2024-11-29 11:01:44] ERROR: Retry failed for ListingID 146528232: Unknown field name: "fields"
+[2024-11-29 11:01:44] ERROR: Error creating/updating record with ListingID 146543092: Unknown field name: "fields"
+[2024-11-29 11:01:44] ERROR: Failed to push record with ListingID 146543092: Unknown field name: "fields"
+[2024-11-29 11:01:45] ERROR: Error creating/updating record with ListingID 146543092: Unknown field name: "fields"
+[2024-11-29 11:01:45] ERROR: Retry failed for ListingID 146543092: Unknown field name: "fields"
+[2024-11-29 11:01:46] ERROR: Error creating/updating record with ListingID 146543872: Unknown field name: "fields"
+[2024-11-29 11:01:46] ERROR: Failed to push record with ListingID 146543872: Unknown field name: "fields"
+[2024-11-29 11:01:46] ERROR: Error creating/updating record with ListingID 146543872: Unknown field name: "fields"
+[2024-11-29 11:01:46] ERROR: Retry failed for ListingID 146543872: Unknown field name: "fields"
+[2024-11-29 11:01:47] ERROR: Error creating/updating record with ListingID 146544608: Unknown field name: "fields"
+[2024-11-29 11:01:47] ERROR: Failed to push record with ListingID 146544608: Unknown field name: "fields"
+[2024-11-29 11:01:48] ERROR: Error creating/updating record with ListingID 146544608: Unknown field name: "fields"
+[2024-11-29 11:01:48] ERROR: Retry failed for ListingID 146544608: Unknown field name: "fields"
+[2024-11-29 11:01:48] ERROR: Error creating/updating record with ListingID 146550128: Unknown field name: "fields"
+[2024-11-29 11:01:48] ERROR: Failed to push record with ListingID 146550128: Unknown field name: "fields"
+[2024-11-29 11:01:49] ERROR: Error creating/updating record with ListingID 146550128: Unknown field name: "fields"
+[2024-11-29 11:01:49] ERROR: Retry failed for ListingID 146550128: Unknown field name: "fields"
+[2024-11-29 11:01:50] ERROR: Error creating/updating record with ListingID 146551648: Unknown field name: "fields"
+[2024-11-29 11:01:50] ERROR: Failed to push record with ListingID 146551648: Unknown field name: "fields"
+[2024-11-29 11:01:50] ERROR: Error creating/updating record with ListingID 146551648: Unknown field name: "fields"
+[2024-11-29 11:01:50] ERROR: Retry failed for ListingID 146551648: Unknown field name: "fields"
+[2024-11-29 11:01:51] ERROR: Error creating/updating record with ListingID 146552164: Unknown field name: "fields"
+[2024-11-29 11:01:51] ERROR: Failed to push record with ListingID 146552164: Unknown field name: "fields"
+[2024-11-29 11:01:52] ERROR: Error creating/updating record with ListingID 146552164: Unknown field name: "fields"
+[2024-11-29 11:01:52] ERROR: Retry failed for ListingID 146552164: Unknown field name: "fields"
+[2024-11-29 11:01:52] ERROR: Error creating/updating record with ListingID 146553840: Unknown field name: "fields"
+[2024-11-29 11:01:52] ERROR: Failed to push record with ListingID 146553840: Unknown field name: "fields"
+[2024-11-29 11:01:53] ERROR: Error creating/updating record with ListingID 146553840: Unknown field name: "fields"
+[2024-11-29 11:01:53] ERROR: Retry failed for ListingID 146553840: Unknown field name: "fields"
+[2024-11-29 11:01:54] ERROR: Error creating/updating record with ListingID 146558208: Unknown field name: "fields"
+[2024-11-29 11:01:54] ERROR: Failed to push record with ListingID 146558208: Unknown field name: "fields"
+[2024-11-29 11:01:54] ERROR: Error creating/updating record with ListingID 146558208: Unknown field name: "fields"
+[2024-11-29 11:01:54] ERROR: Retry failed for ListingID 146558208: Unknown field name: "fields"
+[2024-11-29 11:01:55] ERROR: Error creating/updating record with ListingID 146559912: Unknown field name: "fields"
+[2024-11-29 11:01:55] ERROR: Failed to push record with ListingID 146559912: Unknown field name: "fields"
+[2024-11-29 11:01:56] ERROR: Error creating/updating record with ListingID 146559912: Unknown field name: "fields"
+[2024-11-29 11:01:56] ERROR: Retry failed for ListingID 146559912: Unknown field name: "fields"
+[2024-11-29 11:01:56] ERROR: Error creating/updating record with ListingID 146571808: Unknown field name: "fields"
+[2024-11-29 11:01:56] ERROR: Failed to push record with ListingID 146571808: Unknown field name: "fields"
+[2024-11-29 11:01:57] ERROR: Error creating/updating record with ListingID 146571808: Unknown field name: "fields"
+[2024-11-29 11:01:57] ERROR: Retry failed for ListingID 146571808: Unknown field name: "fields"
+[2024-11-29 11:01:58] ERROR: Error creating/updating record with ListingID 146621888: Unknown field name: "fields"
+[2024-11-29 11:01:58] ERROR: Failed to push record with ListingID 146621888: Unknown field name: "fields"
+[2024-11-29 11:01:58] ERROR: Error creating/updating record with ListingID 146621888: Unknown field name: "fields"
+[2024-11-29 11:01:58] ERROR: Retry failed for ListingID 146621888: Unknown field name: "fields"
+[2024-11-29 11:01:59] ERROR: Error creating/updating record with ListingID 146626916: Unknown field name: "fields"
+[2024-11-29 11:01:59] ERROR: Failed to push record with ListingID 146626916: Unknown field name: "fields"
+[2024-11-29 11:02:00] ERROR: Error creating/updating record with ListingID 146626916: Unknown field name: "fields"
+[2024-11-29 11:02:00] ERROR: Retry failed for ListingID 146626916: Unknown field name: "fields"
+[2024-11-29 11:02:00] ERROR: Error creating/updating record with ListingID 146630748: Unknown field name: "fields"
+[2024-11-29 11:02:00] ERROR: Failed to push record with ListingID 146630748: Unknown field name: "fields"
+[2024-11-29 11:02:01] ERROR: Error creating/updating record with ListingID 146630748: Unknown field name: "fields"
+[2024-11-29 11:02:01] ERROR: Retry failed for ListingID 146630748: Unknown field name: "fields"
+[2024-11-29 11:02:02] ERROR: Error creating/updating record with ListingID 146633828: Unknown field name: "fields"
+[2024-11-29 11:02:02] ERROR: Failed to push record with ListingID 146633828: Unknown field name: "fields"
+[2024-11-29 11:02:02] ERROR: Error creating/updating record with ListingID 146633828: Unknown field name: "fields"
+[2024-11-29 11:02:02] ERROR: Retry failed for ListingID 146633828: Unknown field name: "fields"
+[2024-11-29 11:02:03] ERROR: Error creating/updating record with ListingID 146697880: Unknown field name: "PageViews"
+[2024-11-29 11:02:03] ERROR: Failed to push record with ListingID 146697880: Unknown field name: "PageViews"
+[2024-11-29 11:02:04] ERROR: Error creating/updating record with ListingID 146697880: Unknown field name: "PageViews"
+[2024-11-29 11:02:04] ERROR: Retry failed for ListingID 146697880: Unknown field name: "PageViews"
+[2024-11-29 11:02:04] ERROR: Error creating/updating record with ListingID 146700252: Unknown field name: "PageViews"
+[2024-11-29 11:02:04] ERROR: Failed to push record with ListingID 146700252: Unknown field name: "PageViews"
+[2024-11-29 11:02:05] ERROR: Error creating/updating record with ListingID 146700252: Unknown field name: "PageViews"
+[2024-11-29 11:02:05] ERROR: Retry failed for ListingID 146700252: Unknown field name: "PageViews"
+[2024-11-29 11:02:06] ERROR: Error creating/updating record with ListingID 146730940: Unknown field name: "PageViews"
+[2024-11-29 11:02:06] ERROR: Failed to push record with ListingID 146730940: Unknown field name: "PageViews"
+[2024-11-29 11:02:06] ERROR: Error creating/updating record with ListingID 146730940: Unknown field name: "PageViews"
+[2024-11-29 11:02:06] ERROR: Retry failed for ListingID 146730940: Unknown field name: "PageViews"
+[2024-11-29 11:02:07] ERROR: Error creating/updating record with ListingID 146731692: Unknown field name: "PageViews"
+[2024-11-29 11:02:07] ERROR: Failed to push record with ListingID 146731692: Unknown field name: "PageViews"
+[2024-11-29 11:02:08] ERROR: Error creating/updating record with ListingID 146731692: Unknown field name: "PageViews"
+[2024-11-29 11:02:08] ERROR: Retry failed for ListingID 146731692: Unknown field name: "PageViews"
+[2024-11-29 11:02:08] ERROR: Error creating/updating record with ListingID 146745056: Unknown field name: "PageViews"
+[2024-11-29 11:02:08] ERROR: Failed to push record with ListingID 146745056: Unknown field name: "PageViews"
+[2024-11-29 11:02:09] ERROR: Error creating/updating record with ListingID 146745056: Unknown field name: "PageViews"
+[2024-11-29 11:02:09] ERROR: Retry failed for ListingID 146745056: Unknown field name: "PageViews"
+[2024-11-29 11:06:53] ERROR: Error fetching performance data for Listing ID 146743304: Request failed with status code 404
+[2024-11-29 11:06:53] ERROR: Error Response Data: {
+  "errors": [
+    {
+      "status": 404,
+      "title": "Not Found",
+      "detail": "The requested resource cannot be found",
+      "meta": {
+        "transactionId": "ce6f5e05-e21a-4229-ba71-957b381fa976"
+      }
+    }
+  ]
+}
+[2024-11-29 11:06:59] ERROR: Error creating/updating record with ListingID 145592036: Unknown field name: "fields"
+[2024-11-29 11:06:59] ERROR: Failed to push record with ListingID 145592036: Unknown field name: "fields"
+[2024-11-29 11:07:00] ERROR: Error creating/updating record with ListingID 145592036: Unknown field name: "fields"
+[2024-11-29 11:07:00] ERROR: Retry failed for ListingID 145592036: Unknown field name: "fields"
+[2024-11-29 11:07:00] ERROR: Error creating/updating record with ListingID 145641028: Unknown field name: "fields"
+[2024-11-29 11:07:00] ERROR: Failed to push record with ListingID 145641028: Unknown field name: "fields"
+[2024-11-29 11:07:01] ERROR: Error creating/updating record with ListingID 145641028: Unknown field name: "fields"
+[2024-11-29 11:07:01] ERROR: Retry failed for ListingID 145641028: Unknown field name: "fields"
+[2024-11-29 11:07:02] ERROR: Error creating/updating record with ListingID 145757172: Unknown field name: "fields"
+[2024-11-29 11:07:02] ERROR: Failed to push record with ListingID 145757172: Unknown field name: "fields"
+[2024-11-29 11:07:02] ERROR: Error creating/updating record with ListingID 145757172: Unknown field name: "fields"
+[2024-11-29 11:07:02] ERROR: Retry failed for ListingID 145757172: Unknown field name: "fields"
+[2024-11-29 11:07:03] ERROR: Error creating/updating record with ListingID 145911736: Unknown field name: "fields"
+[2024-11-29 11:07:03] ERROR: Failed to push record with ListingID 145911736: Unknown field name: "fields"
+[2024-11-29 11:07:04] ERROR: Error creating/updating record with ListingID 145911736: Unknown field name: "fields"
+[2024-11-29 11:07:04] ERROR: Retry failed for ListingID 145911736: Unknown field name: "fields"
+[2024-11-29 11:07:05] ERROR: Error creating/updating record with ListingID 145944152: Unknown field name: "fields"
+[2024-11-29 11:07:05] ERROR: Failed to push record with ListingID 145944152: Unknown field name: "fields"
+[2024-11-29 11:07:05] ERROR: Error creating/updating record with ListingID 145944152: Unknown field name: "fields"
+[2024-11-29 11:07:05] ERROR: Retry failed for ListingID 145944152: Unknown field name: "fields"
+[2024-11-29 11:07:06] ERROR: Error creating/updating record with ListingID 145995832: Unknown field name: "fields"
+[2024-11-29 11:07:06] ERROR: Failed to push record with ListingID 145995832: Unknown field name: "fields"
+[2024-11-29 11:07:07] ERROR: Error creating/updating record with ListingID 145995832: Unknown field name: "fields"
+[2024-11-29 11:07:07] ERROR: Retry failed for ListingID 145995832: Unknown field name: "fields"
+[2024-11-29 11:07:07] ERROR: Error creating/updating record with ListingID 146072780: Unknown field name: "fields"
+[2024-11-29 11:07:07] ERROR: Failed to push record with ListingID 146072780: Unknown field name: "fields"
+[2024-11-29 11:07:08] ERROR: Error creating/updating record with ListingID 146072780: Unknown field name: "fields"
+[2024-11-29 11:07:08] ERROR: Retry failed for ListingID 146072780: Unknown field name: "fields"
+[2024-11-29 11:07:09] ERROR: Error creating/updating record with ListingID 146074608: Unknown field name: "fields"
+[2024-11-29 11:07:09] ERROR: Failed to push record with ListingID 146074608: Unknown field name: "fields"
+[2024-11-29 11:07:09] ERROR: Error creating/updating record with ListingID 146074608: Unknown field name: "fields"
+[2024-11-29 11:07:09] ERROR: Retry failed for ListingID 146074608: Unknown field name: "fields"
+[2024-11-29 11:07:10] ERROR: Error creating/updating record with ListingID 146153620: Unknown field name: "fields"
+[2024-11-29 11:07:10] ERROR: Failed to push record with ListingID 146153620: Unknown field name: "fields"
+[2024-11-29 11:07:11] ERROR: Error creating/updating record with ListingID 146153620: Unknown field name: "fields"
+[2024-11-29 11:07:11] ERROR: Retry failed for ListingID 146153620: Unknown field name: "fields"
+[2024-11-29 11:07:11] ERROR: Error creating/updating record with ListingID 146185656: Unknown field name: "fields"
+[2024-11-29 11:07:11] ERROR: Failed to push record with ListingID 146185656: Unknown field name: "fields"
+[2024-11-29 11:07:12] ERROR: Error creating/updating record with ListingID 146185656: Unknown field name: "fields"
+[2024-11-29 11:07:12] ERROR: Retry failed for ListingID 146185656: Unknown field name: "fields"
+[2024-11-29 11:07:13] ERROR: Error creating/updating record with ListingID 146217828: Unknown field name: "fields"
+[2024-11-29 11:07:13] ERROR: Failed to push record with ListingID 146217828: Unknown field name: "fields"
+[2024-11-29 11:07:13] ERROR: Error creating/updating record with ListingID 146217828: Unknown field name: "fields"
+[2024-11-29 11:07:13] ERROR: Retry failed for ListingID 146217828: Unknown field name: "fields"
+[2024-11-29 11:07:14] ERROR: Error creating/updating record with ListingID 146259396: Unknown field name: "fields"
+[2024-11-29 11:07:14] ERROR: Failed to push record with ListingID 146259396: Unknown field name: "fields"
+[2024-11-29 11:07:15] ERROR: Error creating/updating record with ListingID 146259396: Unknown field name: "fields"
+[2024-11-29 11:07:15] ERROR: Retry failed for ListingID 146259396: Unknown field name: "fields"
+[2024-11-29 11:07:15] ERROR: Error creating/updating record with ListingID 146267676: Unknown field name: "fields"
+[2024-11-29 11:07:15] ERROR: Failed to push record with ListingID 146267676: Unknown field name: "fields"
+[2024-11-29 11:07:16] ERROR: Error creating/updating record with ListingID 146267676: Unknown field name: "fields"
+[2024-11-29 11:07:16] ERROR: Retry failed for ListingID 146267676: Unknown field name: "fields"
+[2024-11-29 11:07:17] ERROR: Error creating/updating record with ListingID 146268104: Unknown field name: "fields"
+[2024-11-29 11:07:17] ERROR: Failed to push record with ListingID 146268104: Unknown field name: "fields"
+[2024-11-29 11:07:17] ERROR: Error creating/updating record with ListingID 146268104: Unknown field name: "fields"
+[2024-11-29 11:07:17] ERROR: Retry failed for ListingID 146268104: Unknown field name: "fields"
+[2024-11-29 11:07:18] ERROR: Error creating/updating record with ListingID 146268540: Unknown field name: "fields"
+[2024-11-29 11:07:18] ERROR: Failed to push record with ListingID 146268540: Unknown field name: "fields"
+[2024-11-29 11:07:19] ERROR: Error creating/updating record with ListingID 146268540: Unknown field name: "fields"
+[2024-11-29 11:07:19] ERROR: Retry failed for ListingID 146268540: Unknown field name: "fields"
+[2024-11-29 11:07:19] ERROR: Error creating/updating record with ListingID 146276944: Unknown field name: "fields"
+[2024-11-29 11:07:19] ERROR: Failed to push record with ListingID 146276944: Unknown field name: "fields"
+[2024-11-29 11:07:20] ERROR: Error creating/updating record with ListingID 146276944: Unknown field name: "fields"
+[2024-11-29 11:07:20] ERROR: Retry failed for ListingID 146276944: Unknown field name: "fields"
+[2024-11-29 11:07:21] ERROR: Error creating/updating record with ListingID 146288568: Unknown field name: "fields"
+[2024-11-29 11:07:21] ERROR: Failed to push record with ListingID 146288568: Unknown field name: "fields"
+[2024-11-29 11:07:21] ERROR: Error creating/updating record with ListingID 146288568: Unknown field name: "fields"
+[2024-11-29 11:07:21] ERROR: Retry failed for ListingID 146288568: Unknown field name: "fields"
+[2024-11-29 11:07:22] ERROR: Error creating/updating record with ListingID 146288752: Unknown field name: "fields"
+[2024-11-29 11:07:22] ERROR: Failed to push record with ListingID 146288752: Unknown field name: "fields"
+[2024-11-29 11:07:23] ERROR: Error creating/updating record with ListingID 146288752: Unknown field name: "fields"
+[2024-11-29 11:07:23] ERROR: Retry failed for ListingID 146288752: Unknown field name: "fields"
+[2024-11-29 11:07:23] ERROR: Error creating/updating record with ListingID 146293692: Unknown field name: "fields"
+[2024-11-29 11:07:23] ERROR: Failed to push record with ListingID 146293692: Unknown field name: "fields"
+[2024-11-29 11:07:24] ERROR: Error creating/updating record with ListingID 146293692: Unknown field name: "fields"
+[2024-11-29 11:07:24] ERROR: Retry failed for ListingID 146293692: Unknown field name: "fields"
+[2024-11-29 11:07:25] ERROR: Error creating/updating record with ListingID 146324812: Unknown field name: "fields"
+[2024-11-29 11:07:25] ERROR: Failed to push record with ListingID 146324812: Unknown field name: "fields"
+[2024-11-29 11:07:25] ERROR: Error creating/updating record with ListingID 146324812: Unknown field name: "fields"
+[2024-11-29 11:07:25] ERROR: Retry failed for ListingID 146324812: Unknown field name: "fields"
+[2024-11-29 11:07:26] ERROR: Error creating/updating record with ListingID 146333108: Unknown field name: "fields"
+[2024-11-29 11:07:26] ERROR: Failed to push record with ListingID 146333108: Unknown field name: "fields"
+[2024-11-29 11:07:28] ERROR: Error creating/updating record with ListingID 146333108: Unknown field name: "fields"
+[2024-11-29 11:07:28] ERROR: Retry failed for ListingID 146333108: Unknown field name: "fields"
+[2024-11-29 11:07:28] ERROR: Error creating/updating record with ListingID 146335276: Unknown field name: "fields"
+[2024-11-29 11:07:28] ERROR: Failed to push record with ListingID 146335276: Unknown field name: "fields"
+[2024-11-29 11:07:29] ERROR: Error creating/updating record with ListingID 146335276: Unknown field name: "fields"
+[2024-11-29 11:07:29] ERROR: Retry failed for ListingID 146335276: Unknown field name: "fields"
+[2024-11-29 11:07:30] ERROR: Error creating/updating record with ListingID 146347908: Unknown field name: "fields"
+[2024-11-29 11:07:30] ERROR: Failed to push record with ListingID 146347908: Unknown field name: "fields"
+[2024-11-29 11:07:30] ERROR: Error creating/updating record with ListingID 146347908: Unknown field name: "fields"
+[2024-11-29 11:07:30] ERROR: Retry failed for ListingID 146347908: Unknown field name: "fields"
+[2024-11-29 11:07:31] ERROR: Error creating/updating record with ListingID 146350232: Unknown field name: "fields"
+[2024-11-29 11:07:31] ERROR: Failed to push record with ListingID 146350232: Unknown field name: "fields"
+[2024-11-29 11:07:32] ERROR: Error creating/updating record with ListingID 146350232: Unknown field name: "fields"
+[2024-11-29 11:07:32] ERROR: Retry failed for ListingID 146350232: Unknown field name: "fields"
+[2024-11-29 11:07:32] ERROR: Error creating/updating record with ListingID 146356120: Unknown field name: "fields"
+[2024-11-29 11:07:32] ERROR: Failed to push record with ListingID 146356120: Unknown field name: "fields"
+[2024-11-29 11:07:33] ERROR: Error creating/updating record with ListingID 146356120: Unknown field name: "fields"
+[2024-11-29 11:07:33] ERROR: Retry failed for ListingID 146356120: Unknown field name: "fields"
+[2024-11-29 11:07:34] ERROR: Error creating/updating record with ListingID 146401564: Unknown field name: "fields"
+[2024-11-29 11:07:34] ERROR: Failed to push record with ListingID 146401564: Unknown field name: "fields"
+[2024-11-29 11:07:34] ERROR: Error creating/updating record with ListingID 146401564: Unknown field name: "fields"
+[2024-11-29 11:07:34] ERROR: Retry failed for ListingID 146401564: Unknown field name: "fields"
+[2024-11-29 11:07:35] ERROR: Error creating/updating record with ListingID 146406816: Unknown field name: "fields"
+[2024-11-29 11:07:35] ERROR: Failed to push record with ListingID 146406816: Unknown field name: "fields"
+[2024-11-29 11:07:36] ERROR: Error creating/updating record with ListingID 146406816: Unknown field name: "fields"
+[2024-11-29 11:07:36] ERROR: Retry failed for ListingID 146406816: Unknown field name: "fields"
+[2024-11-29 11:07:36] ERROR: Error creating/updating record with ListingID 146411392: Unknown field name: "fields"
+[2024-11-29 11:07:36] ERROR: Failed to push record with ListingID 146411392: Unknown field name: "fields"
+[2024-11-29 11:07:37] ERROR: Error creating/updating record with ListingID 146411392: Unknown field name: "fields"
+[2024-11-29 11:07:37] ERROR: Retry failed for ListingID 146411392: Unknown field name: "fields"
+[2024-11-29 11:07:38] ERROR: Error creating/updating record with ListingID 146413684: Unknown field name: "fields"
+[2024-11-29 11:07:38] ERROR: Failed to push record with ListingID 146413684: Unknown field name: "fields"
+[2024-11-29 11:07:38] ERROR: Error creating/updating record with ListingID 146413684: Unknown field name: "fields"
+[2024-11-29 11:07:38] ERROR: Retry failed for ListingID 146413684: Unknown field name: "fields"
+[2024-11-29 11:07:39] ERROR: Error creating/updating record with ListingID 146429056: Unknown field name: "fields"
+[2024-11-29 11:07:39] ERROR: Failed to push record with ListingID 146429056: Unknown field name: "fields"
+[2024-11-29 11:07:40] ERROR: Error creating/updating record with ListingID 146429056: Unknown field name: "fields"
+[2024-11-29 11:07:40] ERROR: Retry failed for ListingID 146429056: Unknown field name: "fields"
+[2024-11-29 11:07:40] ERROR: Error creating/updating record with ListingID 146432024: Unknown field name: "fields"
+[2024-11-29 11:07:40] ERROR: Failed to push record with ListingID 146432024: Unknown field name: "fields"
+[2024-11-29 11:07:41] ERROR: Error creating/updating record with ListingID 146432024: Unknown field name: "fields"
+[2024-11-29 11:07:41] ERROR: Retry failed for ListingID 146432024: Unknown field name: "fields"
+[2024-11-29 11:07:42] ERROR: Error creating/updating record with ListingID 146452008: Unknown field name: "fields"
+[2024-11-29 11:07:42] ERROR: Failed to push record with ListingID 146452008: Unknown field name: "fields"
+[2024-11-29 11:07:42] ERROR: Error creating/updating record with ListingID 146452008: Unknown field name: "fields"
+[2024-11-29 11:07:42] ERROR: Retry failed for ListingID 146452008: Unknown field name: "fields"
+[2024-11-29 11:07:43] ERROR: Error creating/updating record with ListingID 146452016: Unknown field name: "fields"
+[2024-11-29 11:07:43] ERROR: Failed to push record with ListingID 146452016: Unknown field name: "fields"
+[2024-11-29 11:07:44] ERROR: Error creating/updating record with ListingID 146452016: Unknown field name: "fields"
+[2024-11-29 11:07:44] ERROR: Retry failed for ListingID 146452016: Unknown field name: "fields"
+[2024-11-29 11:07:44] ERROR: Error creating/updating record with ListingID 146476804: Unknown field name: "fields"
+[2024-11-29 11:07:44] ERROR: Failed to push record with ListingID 146476804: Unknown field name: "fields"
+[2024-11-29 11:07:45] ERROR: Error creating/updating record with ListingID 146476804: Unknown field name: "fields"
+[2024-11-29 11:07:45] ERROR: Retry failed for ListingID 146476804: Unknown field name: "fields"
+[2024-11-29 11:07:46] ERROR: Error creating/updating record with ListingID 146491644: Unknown field name: "fields"
+[2024-11-29 11:07:46] ERROR: Failed to push record with ListingID 146491644: Unknown field name: "fields"
+[2024-11-29 11:07:46] ERROR: Error creating/updating record with ListingID 146491644: Unknown field name: "fields"
+[2024-11-29 11:07:46] ERROR: Retry failed for ListingID 146491644: Unknown field name: "fields"
+[2024-11-29 11:07:47] ERROR: Error creating/updating record with ListingID 146496520: Unknown field name: "fields"
+[2024-11-29 11:07:47] ERROR: Failed to push record with ListingID 146496520: Unknown field name: "fields"
+[2024-11-29 11:07:48] ERROR: Error creating/updating record with ListingID 146496520: Unknown field name: "fields"
+[2024-11-29 11:07:48] ERROR: Retry failed for ListingID 146496520: Unknown field name: "fields"
+[2024-11-29 11:07:48] ERROR: Error creating/updating record with ListingID 146521700: Unknown field name: "fields"
+[2024-11-29 11:07:48] ERROR: Failed to push record with ListingID 146521700: Unknown field name: "fields"
+[2024-11-29 11:07:49] ERROR: Error creating/updating record with ListingID 146521700: Unknown field name: "fields"
+[2024-11-29 11:07:49] ERROR: Retry failed for ListingID 146521700: Unknown field name: "fields"
+[2024-11-29 11:07:50] ERROR: Error creating/updating record with ListingID 146528232: Unknown field name: "fields"
+[2024-11-29 11:07:50] ERROR: Failed to push record with ListingID 146528232: Unknown field name: "fields"
+[2024-11-29 11:07:50] ERROR: Error creating/updating record with ListingID 146528232: Unknown field name: "fields"
+[2024-11-29 11:07:50] ERROR: Retry failed for ListingID 146528232: Unknown field name: "fields"
+[2024-11-29 11:07:51] ERROR: Error creating/updating record with ListingID 146543092: Unknown field name: "fields"
+[2024-11-29 11:07:51] ERROR: Failed to push record with ListingID 146543092: Unknown field name: "fields"
+[2024-11-29 11:07:52] ERROR: Error creating/updating record with ListingID 146543092: Unknown field name: "fields"
+[2024-11-29 11:07:52] ERROR: Retry failed for ListingID 146543092: Unknown field name: "fields"
+[2024-11-29 11:07:52] ERROR: Error creating/updating record with ListingID 146543872: Unknown field name: "fields"
+[2024-11-29 11:07:52] ERROR: Failed to push record with ListingID 146543872: Unknown field name: "fields"
+[2024-11-29 11:07:53] ERROR: Error creating/updating record with ListingID 146543872: Unknown field name: "fields"
+[2024-11-29 11:07:53] ERROR: Retry failed for ListingID 146543872: Unknown field name: "fields"
+[2024-11-29 11:07:54] ERROR: Error creating/updating record with ListingID 146544608: Unknown field name: "fields"
+[2024-11-29 11:07:54] ERROR: Failed to push record with ListingID 146544608: Unknown field name: "fields"
+[2024-11-29 11:07:54] ERROR: Error creating/updating record with ListingID 146544608: Unknown field name: "fields"
+[2024-11-29 11:07:54] ERROR: Retry failed for ListingID 146544608: Unknown field name: "fields"
+[2024-11-29 11:07:55] ERROR: Error creating/updating record with ListingID 146550128: Unknown field name: "fields"
+[2024-11-29 11:07:55] ERROR: Failed to push record with ListingID 146550128: Unknown field name: "fields"
+[2024-11-29 11:07:55] ERROR: Error creating/updating record with ListingID 146550128: Unknown field name: "fields"
+[2024-11-29 11:07:55] ERROR: Retry failed for ListingID 146550128: Unknown field name: "fields"
+[2024-11-29 11:07:56] ERROR: Error creating/updating record with ListingID 146551648: Unknown field name: "fields"
+[2024-11-29 11:07:56] ERROR: Failed to push record with ListingID 146551648: Unknown field name: "fields"
+[2024-11-29 11:07:57] ERROR: Error creating/updating record with ListingID 146551648: Unknown field name: "fields"
+[2024-11-29 11:07:57] ERROR: Retry failed for ListingID 146551648: Unknown field name: "fields"
+[2024-11-29 11:07:57] ERROR: Error creating/updating record with ListingID 146552164: Unknown field name: "fields"
+[2024-11-29 11:07:57] ERROR: Failed to push record with ListingID 146552164: Unknown field name: "fields"
+[2024-11-29 11:07:58] ERROR: Error creating/updating record with ListingID 146552164: Unknown field name: "fields"
+[2024-11-29 11:07:58] ERROR: Retry failed for ListingID 146552164: Unknown field name: "fields"
+[2024-11-29 11:07:59] ERROR: Error creating/updating record with ListingID 146553840: Unknown field name: "fields"
+[2024-11-29 11:07:59] ERROR: Failed to push record with ListingID 146553840: Unknown field name: "fields"
+[2024-11-29 11:07:59] ERROR: Error creating/updating record with ListingID 146553840: Unknown field name: "fields"
+[2024-11-29 11:07:59] ERROR: Retry failed for ListingID 146553840: Unknown field name: "fields"
+[2024-11-29 11:08:00] ERROR: Error creating/updating record with ListingID 146558208: Unknown field name: "fields"
+[2024-11-29 11:08:00] ERROR: Failed to push record with ListingID 146558208: Unknown field name: "fields"
+[2024-11-29 11:08:01] ERROR: Error creating/updating record with ListingID 146558208: Unknown field name: "fields"
+[2024-11-29 11:08:01] ERROR: Retry failed for ListingID 146558208: Unknown field name: "fields"
+[2024-11-29 11:08:01] ERROR: Error creating/updating record with ListingID 146559912: Unknown field name: "fields"
+[2024-11-29 11:08:01] ERROR: Failed to push record with ListingID 146559912: Unknown field name: "fields"
+[2024-11-29 11:08:02] ERROR: Error creating/updating record with ListingID 146559912: Unknown field name: "fields"
+[2024-11-29 11:08:02] ERROR: Retry failed for ListingID 146559912: Unknown field name: "fields"
+[2024-11-29 11:08:03] ERROR: Error creating/updating record with ListingID 146571808: Unknown field name: "fields"
+[2024-11-29 11:08:03] ERROR: Failed to push record with ListingID 146571808: Unknown field name: "fields"
+[2024-11-29 11:08:03] ERROR: Error creating/updating record with ListingID 146571808: Unknown field name: "fields"
+[2024-11-29 11:08:03] ERROR: Retry failed for ListingID 146571808: Unknown field name: "fields"
+[2024-11-29 11:08:04] ERROR: Error creating/updating record with ListingID 146621888: Unknown field name: "fields"
+[2024-11-29 11:08:04] ERROR: Failed to push record with ListingID 146621888: Unknown field name: "fields"
+[2024-11-29 11:08:05] ERROR: Error creating/updating record with ListingID 146621888: Unknown field name: "fields"
+[2024-11-29 11:08:05] ERROR: Retry failed for ListingID 146621888: Unknown field name: "fields"
+[2024-11-29 11:08:05] ERROR: Error creating/updating record with ListingID 146626916: Unknown field name: "fields"
+[2024-11-29 11:08:05] ERROR: Failed to push record with ListingID 146626916: Unknown field name: "fields"
+[2024-11-29 11:08:06] ERROR: Error creating/updating record with ListingID 146626916: Unknown field name: "fields"
+[2024-11-29 11:08:06] ERROR: Retry failed for ListingID 146626916: Unknown field name: "fields"
+[2024-11-29 11:08:06] ERROR: Error creating/updating record with ListingID 146630748: Unknown field name: "fields"
+[2024-11-29 11:08:06] ERROR: Failed to push record with ListingID 146630748: Unknown field name: "fields"
+[2024-11-29 11:08:07] ERROR: Error creating/updating record with ListingID 146630748: Unknown field name: "fields"
+[2024-11-29 11:08:07] ERROR: Retry failed for ListingID 146630748: Unknown field name: "fields"
+[2024-11-29 11:08:08] ERROR: Error creating/updating record with ListingID 146633828: Unknown field name: "fields"
+[2024-11-29 11:08:08] ERROR: Failed to push record with ListingID 146633828: Unknown field name: "fields"
+[2024-11-29 11:08:08] ERROR: Error creating/updating record with ListingID 146633828: Unknown field name: "fields"
+[2024-11-29 11:08:08] ERROR: Retry failed for ListingID 146633828: Unknown field name: "fields"
+[2024-11-29 11:08:09] ERROR: Error creating/updating record with ListingID 146697880: Unknown field name: "PageViews"
+[2024-11-29 11:08:09] ERROR: Failed to push record with ListingID 146697880: Unknown field name: "PageViews"
+[2024-11-29 11:08:10] ERROR: Error creating/updating record with ListingID 146697880: Unknown field name: "PageViews"
+[2024-11-29 11:08:10] ERROR: Retry failed for ListingID 146697880: Unknown field name: "PageViews"
+[2024-11-29 11:08:10] ERROR: Error creating/updating record with ListingID 146700252: Unknown field name: "PageViews"
+[2024-11-29 11:08:10] ERROR: Failed to push record with ListingID 146700252: Unknown field name: "PageViews"
+[2024-11-29 11:08:11] ERROR: Error creating/updating record with ListingID 146700252: Unknown field name: "PageViews"
+[2024-11-29 11:08:11] ERROR: Retry failed for ListingID 146700252: Unknown field name: "PageViews"
+[2024-11-29 11:08:12] ERROR: Error creating/updating record with ListingID 146730940: Unknown field name: "PageViews"
+[2024-11-29 11:08:12] ERROR: Failed to push record with ListingID 146730940: Unknown field name: "PageViews"
+[2024-11-29 11:08:13] ERROR: Error creating/updating record with ListingID 146730940: Unknown field name: "PageViews"
+[2024-11-29 11:08:13] ERROR: Retry failed for ListingID 146730940: Unknown field name: "PageViews"
+[2024-11-29 11:08:13] ERROR: Error creating/updating record with ListingID 146731692: Unknown field name: "PageViews"
+[2024-11-29 11:08:13] ERROR: Failed to push record with ListingID 146731692: Unknown field name: "PageViews"
+[2024-11-29 11:08:14] ERROR: Error creating/updating record with ListingID 146731692: Unknown field name: "PageViews"
+[2024-11-29 11:08:14] ERROR: Retry failed for ListingID 146731692: Unknown field name: "PageViews"
+[2024-11-29 11:08:14] ERROR: Error creating/updating record with ListingID 146745056: Unknown field name: "PageViews"
+[2024-11-29 11:08:14] ERROR: Failed to push record with ListingID 146745056: Unknown field name: "PageViews"
+[2024-11-29 11:08:15] ERROR: Error creating/updating record with ListingID 146745056: Unknown field name: "PageViews"
+[2024-11-29 11:08:15] ERROR: Retry failed for ListingID 146745056: Unknown field name: "PageViews"
+[2024-12-03 10:12:20] ERROR: Error fetching performance data for Listing ID 146768252: Request failed with status code 404
+[2024-12-03 10:12:20] ERROR: Error Response Data: {
+  "errors": [
+    {
+      "status": 404,
+      "title": "Not Found",
+      "detail": "The requested resource cannot be found",
+      "meta": {
+        "transactionId": "9fee7a33-38d0-4b93-a2d0-5b3bccb6ec74"
+      }
+    }
+  ]
+}
+[2024-12-03 10:12:21] ERROR: Error finding record by Unique ID (145592036): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:21] ERROR: Error creating/updating record with ListingID 145592036: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:21] ERROR: Failed to push record with ListingID 145592036: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:21] ERROR: Error finding record by Unique ID (145592036): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:21] ERROR: Error creating/updating record with ListingID 145592036: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:21] ERROR: Retry failed for ListingID 145592036: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:22] ERROR: Error finding record by Unique ID (145641028): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:22] ERROR: Error creating/updating record with ListingID 145641028: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:22] ERROR: Failed to push record with ListingID 145641028: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:22] ERROR: Error finding record by Unique ID (145641028): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:22] ERROR: Error creating/updating record with ListingID 145641028: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:22] ERROR: Retry failed for ListingID 145641028: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:22] ERROR: Error finding record by Unique ID (145757172): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:22] ERROR: Error creating/updating record with ListingID 145757172: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:22] ERROR: Failed to push record with ListingID 145757172: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:22] ERROR: Error finding record by Unique ID (145757172): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:22] ERROR: Error creating/updating record with ListingID 145757172: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:22] ERROR: Retry failed for ListingID 145757172: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:23] ERROR: Error finding record by Unique ID (145911736): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:23] ERROR: Error creating/updating record with ListingID 145911736: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:23] ERROR: Failed to push record with ListingID 145911736: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:23] ERROR: Error finding record by Unique ID (145911736): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:23] ERROR: Error creating/updating record with ListingID 145911736: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:23] ERROR: Retry failed for ListingID 145911736: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:24] ERROR: Error finding record by Unique ID (145944152): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:24] ERROR: Error creating/updating record with ListingID 145944152: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:24] ERROR: Failed to push record with ListingID 145944152: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:24] ERROR: Error finding record by Unique ID (145944152): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:24] ERROR: Error creating/updating record with ListingID 145944152: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:24] ERROR: Retry failed for ListingID 145944152: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:24] ERROR: Error finding record by Unique ID (145995832): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:24] ERROR: Error creating/updating record with ListingID 145995832: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:24] ERROR: Failed to push record with ListingID 145995832: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:25] ERROR: Error finding record by Unique ID (145995832): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:25] ERROR: Error creating/updating record with ListingID 145995832: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:25] ERROR: Retry failed for ListingID 145995832: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:25] ERROR: Error finding record by Unique ID (146072780): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:25] ERROR: Error creating/updating record with ListingID 146072780: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:25] ERROR: Failed to push record with ListingID 146072780: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:25] ERROR: Error finding record by Unique ID (146072780): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:25] ERROR: Error creating/updating record with ListingID 146072780: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:25] ERROR: Retry failed for ListingID 146072780: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:26] ERROR: Error finding record by Unique ID (146153620): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:26] ERROR: Error creating/updating record with ListingID 146153620: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:26] ERROR: Failed to push record with ListingID 146153620: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:26] ERROR: Error finding record by Unique ID (146153620): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:26] ERROR: Error creating/updating record with ListingID 146153620: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:26] ERROR: Retry failed for ListingID 146153620: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:26] ERROR: Error finding record by Unique ID (146185656): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:26] ERROR: Error creating/updating record with ListingID 146185656: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:26] ERROR: Failed to push record with ListingID 146185656: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:27] ERROR: Error finding record by Unique ID (146185656): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:27] ERROR: Error creating/updating record with ListingID 146185656: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:27] ERROR: Retry failed for ListingID 146185656: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:27] ERROR: Error finding record by Unique ID (146217828): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:27] ERROR: Error creating/updating record with ListingID 146217828: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:27] ERROR: Failed to push record with ListingID 146217828: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:27] ERROR: Error finding record by Unique ID (146217828): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:27] ERROR: Error creating/updating record with ListingID 146217828: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:27] ERROR: Retry failed for ListingID 146217828: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:28] ERROR: Error finding record by Unique ID (146259396): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:28] ERROR: Error creating/updating record with ListingID 146259396: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:28] ERROR: Failed to push record with ListingID 146259396: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:28] ERROR: Error finding record by Unique ID (146259396): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:28] ERROR: Error creating/updating record with ListingID 146259396: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:28] ERROR: Retry failed for ListingID 146259396: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:28] ERROR: Error finding record by Unique ID (146267676): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:28] ERROR: Error creating/updating record with ListingID 146267676: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:28] ERROR: Failed to push record with ListingID 146267676: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:29] ERROR: Error finding record by Unique ID (146267676): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:29] ERROR: Error creating/updating record with ListingID 146267676: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:29] ERROR: Retry failed for ListingID 146267676: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:29] ERROR: Error finding record by Unique ID (146268104): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:29] ERROR: Error creating/updating record with ListingID 146268104: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:29] ERROR: Failed to push record with ListingID 146268104: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:30] ERROR: Error finding record by Unique ID (146268104): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:30] ERROR: Error creating/updating record with ListingID 146268104: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:30] ERROR: Retry failed for ListingID 146268104: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:30] ERROR: Error finding record by Unique ID (146268540): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:30] ERROR: Error creating/updating record with ListingID 146268540: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:30] ERROR: Failed to push record with ListingID 146268540: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:30] ERROR: Error finding record by Unique ID (146268540): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:30] ERROR: Error creating/updating record with ListingID 146268540: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:30] ERROR: Retry failed for ListingID 146268540: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:31] ERROR: Error finding record by Unique ID (146276944): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:31] ERROR: Error creating/updating record with ListingID 146276944: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:31] ERROR: Failed to push record with ListingID 146276944: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:31] ERROR: Error finding record by Unique ID (146276944): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:31] ERROR: Error creating/updating record with ListingID 146276944: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:31] ERROR: Retry failed for ListingID 146276944: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:31] ERROR: Error finding record by Unique ID (146288568): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:31] ERROR: Error creating/updating record with ListingID 146288568: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:31] ERROR: Failed to push record with ListingID 146288568: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:32] ERROR: Error finding record by Unique ID (146288568): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:32] ERROR: Error creating/updating record with ListingID 146288568: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:32] ERROR: Retry failed for ListingID 146288568: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:32] ERROR: Error finding record by Unique ID (146288752): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:32] ERROR: Error creating/updating record with ListingID 146288752: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:32] ERROR: Failed to push record with ListingID 146288752: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:32] ERROR: Error finding record by Unique ID (146288752): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:32] ERROR: Error creating/updating record with ListingID 146288752: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:32] ERROR: Retry failed for ListingID 146288752: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:33] ERROR: Error finding record by Unique ID (146293692): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:33] ERROR: Error creating/updating record with ListingID 146293692: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:33] ERROR: Failed to push record with ListingID 146293692: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:33] ERROR: Error finding record by Unique ID (146293692): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:33] ERROR: Error creating/updating record with ListingID 146293692: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:33] ERROR: Retry failed for ListingID 146293692: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:33] ERROR: Error finding record by Unique ID (146324812): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:33] ERROR: Error creating/updating record with ListingID 146324812: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:33] ERROR: Failed to push record with ListingID 146324812: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:34] ERROR: Error finding record by Unique ID (146324812): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:34] ERROR: Error creating/updating record with ListingID 146324812: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:34] ERROR: Retry failed for ListingID 146324812: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:34] ERROR: Error finding record by Unique ID (146335276): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:34] ERROR: Error creating/updating record with ListingID 146335276: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:34] ERROR: Failed to push record with ListingID 146335276: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:35] ERROR: Error finding record by Unique ID (146335276): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:35] ERROR: Error creating/updating record with ListingID 146335276: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:35] ERROR: Retry failed for ListingID 146335276: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:35] ERROR: Error finding record by Unique ID (146347908): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:35] ERROR: Error creating/updating record with ListingID 146347908: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:35] ERROR: Failed to push record with ListingID 146347908: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:35] ERROR: Error finding record by Unique ID (146347908): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:35] ERROR: Error creating/updating record with ListingID 146347908: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:35] ERROR: Retry failed for ListingID 146347908: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:36] ERROR: Error finding record by Unique ID (146350232): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:36] ERROR: Error creating/updating record with ListingID 146350232: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:36] ERROR: Failed to push record with ListingID 146350232: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:36] ERROR: Error finding record by Unique ID (146350232): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:36] ERROR: Error creating/updating record with ListingID 146350232: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:36] ERROR: Retry failed for ListingID 146350232: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:36] ERROR: Error finding record by Unique ID (146401564): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:36] ERROR: Error creating/updating record with ListingID 146401564: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:36] ERROR: Failed to push record with ListingID 146401564: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:37] ERROR: Error finding record by Unique ID (146401564): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:37] ERROR: Error creating/updating record with ListingID 146401564: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:37] ERROR: Retry failed for ListingID 146401564: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:37] ERROR: Error finding record by Unique ID (146411392): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:37] ERROR: Error creating/updating record with ListingID 146411392: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:37] ERROR: Failed to push record with ListingID 146411392: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:37] ERROR: Error finding record by Unique ID (146411392): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:37] ERROR: Error creating/updating record with ListingID 146411392: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:37] ERROR: Retry failed for ListingID 146411392: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:38] ERROR: Error finding record by Unique ID (146413684): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:38] ERROR: Error creating/updating record with ListingID 146413684: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:38] ERROR: Failed to push record with ListingID 146413684: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:38] ERROR: Error finding record by Unique ID (146413684): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:38] ERROR: Error creating/updating record with ListingID 146413684: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:38] ERROR: Retry failed for ListingID 146413684: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:39] ERROR: Error finding record by Unique ID (146429056): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:39] ERROR: Error creating/updating record with ListingID 146429056: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:39] ERROR: Failed to push record with ListingID 146429056: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:39] ERROR: Error finding record by Unique ID (146429056): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:39] ERROR: Error creating/updating record with ListingID 146429056: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:39] ERROR: Retry failed for ListingID 146429056: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:39] ERROR: Error finding record by Unique ID (146432024): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:39] ERROR: Error creating/updating record with ListingID 146432024: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:39] ERROR: Failed to push record with ListingID 146432024: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:40] ERROR: Error finding record by Unique ID (146432024): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:40] ERROR: Error creating/updating record with ListingID 146432024: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:40] ERROR: Retry failed for ListingID 146432024: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:41] ERROR: Error finding record by Unique ID (146452008): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:41] ERROR: Error creating/updating record with ListingID 146452008: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:41] ERROR: Failed to push record with ListingID 146452008: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:41] ERROR: Error finding record by Unique ID (146452008): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:41] ERROR: Error creating/updating record with ListingID 146452008: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:41] ERROR: Retry failed for ListingID 146452008: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:42] ERROR: Error finding record by Unique ID (146452016): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:42] ERROR: Error creating/updating record with ListingID 146452016: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:42] ERROR: Failed to push record with ListingID 146452016: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:42] ERROR: Error finding record by Unique ID (146452016): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:42] ERROR: Error creating/updating record with ListingID 146452016: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:42] ERROR: Retry failed for ListingID 146452016: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:43] ERROR: Error finding record by Unique ID (146476804): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:43] ERROR: Error creating/updating record with ListingID 146476804: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:43] ERROR: Failed to push record with ListingID 146476804: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:43] ERROR: Error finding record by Unique ID (146476804): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:43] ERROR: Error creating/updating record with ListingID 146476804: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:43] ERROR: Retry failed for ListingID 146476804: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:43] ERROR: Error finding record by Unique ID (146491644): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:43] ERROR: Error creating/updating record with ListingID 146491644: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:43] ERROR: Failed to push record with ListingID 146491644: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:44] ERROR: Error finding record by Unique ID (146491644): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:44] ERROR: Error creating/updating record with ListingID 146491644: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:44] ERROR: Retry failed for ListingID 146491644: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:44] ERROR: Error finding record by Unique ID (146496520): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:44] ERROR: Error creating/updating record with ListingID 146496520: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:44] ERROR: Failed to push record with ListingID 146496520: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:45] ERROR: Error finding record by Unique ID (146496520): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:45] ERROR: Error creating/updating record with ListingID 146496520: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:45] ERROR: Retry failed for ListingID 146496520: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:45] ERROR: Error finding record by Unique ID (146528232): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:45] ERROR: Error creating/updating record with ListingID 146528232: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:45] ERROR: Failed to push record with ListingID 146528232: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:45] ERROR: Error finding record by Unique ID (146528232): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:45] ERROR: Error creating/updating record with ListingID 146528232: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:45] ERROR: Retry failed for ListingID 146528232: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:46] ERROR: Error finding record by Unique ID (146543092): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:46] ERROR: Error creating/updating record with ListingID 146543092: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:46] ERROR: Failed to push record with ListingID 146543092: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:46] ERROR: Error finding record by Unique ID (146543092): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:46] ERROR: Error creating/updating record with ListingID 146543092: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:46] ERROR: Retry failed for ListingID 146543092: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:46] ERROR: Error finding record by Unique ID (146543872): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:46] ERROR: Error creating/updating record with ListingID 146543872: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:46] ERROR: Failed to push record with ListingID 146543872: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:47] ERROR: Error finding record by Unique ID (146543872): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:47] ERROR: Error creating/updating record with ListingID 146543872: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:47] ERROR: Retry failed for ListingID 146543872: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:47] ERROR: Error finding record by Unique ID (146551648): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:47] ERROR: Error creating/updating record with ListingID 146551648: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:47] ERROR: Failed to push record with ListingID 146551648: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:48] ERROR: Error finding record by Unique ID (146551648): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:48] ERROR: Error creating/updating record with ListingID 146551648: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:48] ERROR: Retry failed for ListingID 146551648: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:48] ERROR: Error finding record by Unique ID (146553840): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:48] ERROR: Error creating/updating record with ListingID 146553840: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:48] ERROR: Failed to push record with ListingID 146553840: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:48] ERROR: Error finding record by Unique ID (146553840): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:48] ERROR: Error creating/updating record with ListingID 146553840: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:48] ERROR: Retry failed for ListingID 146553840: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:49] ERROR: Error finding record by Unique ID (146558208): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:49] ERROR: Error creating/updating record with ListingID 146558208: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:49] ERROR: Failed to push record with ListingID 146558208: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:49] ERROR: Error finding record by Unique ID (146558208): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:49] ERROR: Error creating/updating record with ListingID 146558208: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:49] ERROR: Retry failed for ListingID 146558208: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:49] ERROR: Error finding record by Unique ID (146559912): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:49] ERROR: Error creating/updating record with ListingID 146559912: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:49] ERROR: Failed to push record with ListingID 146559912: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:50] ERROR: Error finding record by Unique ID (146559912): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:50] ERROR: Error creating/updating record with ListingID 146559912: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:50] ERROR: Retry failed for ListingID 146559912: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:50] ERROR: Error finding record by Unique ID (146571808): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:50] ERROR: Error creating/updating record with ListingID 146571808: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:50] ERROR: Failed to push record with ListingID 146571808: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:51] ERROR: Error finding record by Unique ID (146571808): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:51] ERROR: Error creating/updating record with ListingID 146571808: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:51] ERROR: Retry failed for ListingID 146571808: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:51] ERROR: Error finding record by Unique ID (146621888): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:51] ERROR: Error creating/updating record with ListingID 146621888: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:51] ERROR: Failed to push record with ListingID 146621888: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:52] ERROR: Error finding record by Unique ID (146621888): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:52] ERROR: Error creating/updating record with ListingID 146621888: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:52] ERROR: Retry failed for ListingID 146621888: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:52] ERROR: Error finding record by Unique ID (146626916): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:52] ERROR: Error creating/updating record with ListingID 146626916: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:52] ERROR: Failed to push record with ListingID 146626916: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:52] ERROR: Error finding record by Unique ID (146626916): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:52] ERROR: Error creating/updating record with ListingID 146626916: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:52] ERROR: Retry failed for ListingID 146626916: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:53] ERROR: Error finding record by Unique ID (146630748): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:53] ERROR: Error creating/updating record with ListingID 146630748: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:53] ERROR: Failed to push record with ListingID 146630748: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:53] ERROR: Error finding record by Unique ID (146630748): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:53] ERROR: Error creating/updating record with ListingID 146630748: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:53] ERROR: Retry failed for ListingID 146630748: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:53] ERROR: Error finding record by Unique ID (146633828): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:53] ERROR: Error creating/updating record with ListingID 146633828: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:53] ERROR: Failed to push record with ListingID 146633828: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:54] ERROR: Error finding record by Unique ID (146633828): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:54] ERROR: Error creating/updating record with ListingID 146633828: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:54] ERROR: Retry failed for ListingID 146633828: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:54] ERROR: Error finding record by Unique ID (146697880): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:54] ERROR: Error creating/updating record with ListingID 146697880: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:54] ERROR: Failed to push record with ListingID 146697880: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:55] ERROR: Error finding record by Unique ID (146697880): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:55] ERROR: Error creating/updating record with ListingID 146697880: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:55] ERROR: Retry failed for ListingID 146697880: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:55] ERROR: Error finding record by Unique ID (146700252): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:55] ERROR: Error creating/updating record with ListingID 146700252: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:55] ERROR: Failed to push record with ListingID 146700252: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:55] ERROR: Error finding record by Unique ID (146700252): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:55] ERROR: Error creating/updating record with ListingID 146700252: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:55] ERROR: Retry failed for ListingID 146700252: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:56] ERROR: Error finding record by Unique ID (146730940): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:56] ERROR: Error creating/updating record with ListingID 146730940: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:56] ERROR: Failed to push record with ListingID 146730940: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:56] ERROR: Error finding record by Unique ID (146730940): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:56] ERROR: Error creating/updating record with ListingID 146730940: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:56] ERROR: Retry failed for ListingID 146730940: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:56] ERROR: Error finding record by Unique ID (146731692): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:56] ERROR: Error creating/updating record with ListingID 146731692: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:56] ERROR: Failed to push record with ListingID 146731692: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:57] ERROR: Error finding record by Unique ID (146731692): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:57] ERROR: Error creating/updating record with ListingID 146731692: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:57] ERROR: Retry failed for ListingID 146731692: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:57] ERROR: Error finding record by Unique ID (146743304): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:57] ERROR: Error creating/updating record with ListingID 146743304: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:57] ERROR: Failed to push record with ListingID 146743304: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:58] ERROR: Error finding record by Unique ID (146743304): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:58] ERROR: Error creating/updating record with ListingID 146743304: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:58] ERROR: Retry failed for ListingID 146743304: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:58] ERROR: Error finding record by Unique ID (146745056): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:58] ERROR: Error creating/updating record with ListingID 146745056: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:58] ERROR: Failed to push record with ListingID 146745056: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:58] ERROR: Error finding record by Unique ID (146745056): The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:58] ERROR: Error creating/updating record with ListingID 146745056: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:12:58] ERROR: Retry failed for ListingID 146745056: The formula for filtering records is invalid: Unknown field names: listingid
+[2024-12-03 10:21:00] ERROR: Error fetching performance data for Listing ID 146768252: Request failed with status code 404
+[2024-12-03 10:21:00] ERROR: Error Response Data: {
+  "errors": [
+    {
+      "status": 404,
+      "title": "Not Found",
+      "detail": "The requested resource cannot be found",
+      "meta": {
+        "transactionId": "a7ce123f-0d08-4d48-9bb4-d25d17083ee5"
+      }
+    }
+  ]
+}
+[2024-12-03 10:21:01] ERROR: Error creating/updating record with ListingID 145592036: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:01] ERROR: Failed to push record with ListingID 145592036: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:02] ERROR: Error creating/updating record with ListingID 145592036: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:02] ERROR: Retry failed for ListingID 145592036: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:03] ERROR: Error creating/updating record with ListingID 145641028: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:03] ERROR: Failed to push record with ListingID 145641028: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:04] ERROR: Error creating/updating record with ListingID 145641028: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:04] ERROR: Retry failed for ListingID 145641028: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:04] ERROR: Error creating/updating record with ListingID 145757172: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:04] ERROR: Failed to push record with ListingID 145757172: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:05] ERROR: Error creating/updating record with ListingID 145757172: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:05] ERROR: Retry failed for ListingID 145757172: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:06] ERROR: Error creating/updating record with ListingID 145911736: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:06] ERROR: Failed to push record with ListingID 145911736: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:07] ERROR: Error creating/updating record with ListingID 145911736: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:07] ERROR: Retry failed for ListingID 145911736: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:07] ERROR: Error creating/updating record with ListingID 145944152: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:07] ERROR: Failed to push record with ListingID 145944152: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:08] ERROR: Error creating/updating record with ListingID 145944152: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:08] ERROR: Retry failed for ListingID 145944152: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:09] ERROR: Error creating/updating record with ListingID 145995832: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:09] ERROR: Failed to push record with ListingID 145995832: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:10] ERROR: Error creating/updating record with ListingID 145995832: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:10] ERROR: Retry failed for ListingID 145995832: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:10] ERROR: Error creating/updating record with ListingID 146072780: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:10] ERROR: Failed to push record with ListingID 146072780: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:11] ERROR: Error creating/updating record with ListingID 146072780: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:11] ERROR: Retry failed for ListingID 146072780: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:12] ERROR: Error creating/updating record with ListingID 146153620: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:12] ERROR: Failed to push record with ListingID 146153620: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:12] ERROR: Error creating/updating record with ListingID 146153620: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:12] ERROR: Retry failed for ListingID 146153620: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:13] ERROR: Error creating/updating record with ListingID 146185656: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:13] ERROR: Failed to push record with ListingID 146185656: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:14] ERROR: Error creating/updating record with ListingID 146185656: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:14] ERROR: Retry failed for ListingID 146185656: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:14] ERROR: Error creating/updating record with ListingID 146217828: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:14] ERROR: Failed to push record with ListingID 146217828: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:15] ERROR: Error creating/updating record with ListingID 146217828: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:15] ERROR: Retry failed for ListingID 146217828: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:16] ERROR: Error creating/updating record with ListingID 146259396: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:16] ERROR: Failed to push record with ListingID 146259396: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:16] ERROR: Error creating/updating record with ListingID 146259396: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:16] ERROR: Retry failed for ListingID 146259396: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:17] ERROR: Error creating/updating record with ListingID 146267676: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:17] ERROR: Failed to push record with ListingID 146267676: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:18] ERROR: Error creating/updating record with ListingID 146267676: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:18] ERROR: Retry failed for ListingID 146267676: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:18] ERROR: Error creating/updating record with ListingID 146268104: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:18] ERROR: Failed to push record with ListingID 146268104: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:19] ERROR: Error creating/updating record with ListingID 146268104: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:19] ERROR: Retry failed for ListingID 146268104: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:20] ERROR: Error creating/updating record with ListingID 146268540: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:20] ERROR: Failed to push record with ListingID 146268540: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:21] ERROR: Error creating/updating record with ListingID 146268540: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:21] ERROR: Retry failed for ListingID 146268540: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:21] ERROR: Error creating/updating record with ListingID 146276944: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:21] ERROR: Failed to push record with ListingID 146276944: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:22] ERROR: Error creating/updating record with ListingID 146276944: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:22] ERROR: Retry failed for ListingID 146276944: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:23] ERROR: Error creating/updating record with ListingID 146288568: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:23] ERROR: Failed to push record with ListingID 146288568: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:23] ERROR: Error creating/updating record with ListingID 146288568: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:23] ERROR: Retry failed for ListingID 146288568: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:24] ERROR: Error creating/updating record with ListingID 146288752: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:24] ERROR: Failed to push record with ListingID 146288752: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:25] ERROR: Error creating/updating record with ListingID 146288752: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:25] ERROR: Retry failed for ListingID 146288752: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:25] ERROR: Error creating/updating record with ListingID 146293692: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:25] ERROR: Failed to push record with ListingID 146293692: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:26] ERROR: Error creating/updating record with ListingID 146293692: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:26] ERROR: Retry failed for ListingID 146293692: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:27] ERROR: Error creating/updating record with ListingID 146324812: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:27] ERROR: Failed to push record with ListingID 146324812: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:27] ERROR: Error creating/updating record with ListingID 146324812: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:27] ERROR: Retry failed for ListingID 146324812: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:28] ERROR: Error creating/updating record with ListingID 146335276: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:28] ERROR: Failed to push record with ListingID 146335276: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:29] ERROR: Error creating/updating record with ListingID 146335276: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:29] ERROR: Retry failed for ListingID 146335276: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:29] ERROR: Error creating/updating record with ListingID 146347908: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:29] ERROR: Failed to push record with ListingID 146347908: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:30] ERROR: Error creating/updating record with ListingID 146347908: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:30] ERROR: Retry failed for ListingID 146347908: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:31] ERROR: Error creating/updating record with ListingID 146350232: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:31] ERROR: Failed to push record with ListingID 146350232: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:31] ERROR: Error creating/updating record with ListingID 146350232: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:31] ERROR: Retry failed for ListingID 146350232: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:32] ERROR: Error creating/updating record with ListingID 146401564: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:32] ERROR: Failed to push record with ListingID 146401564: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:33] ERROR: Error creating/updating record with ListingID 146401564: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:33] ERROR: Retry failed for ListingID 146401564: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:33] ERROR: Error creating/updating record with ListingID 146411392: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:33] ERROR: Failed to push record with ListingID 146411392: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:34] ERROR: Error creating/updating record with ListingID 146411392: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:34] ERROR: Retry failed for ListingID 146411392: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:35] ERROR: Error creating/updating record with ListingID 146413684: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:35] ERROR: Failed to push record with ListingID 146413684: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:36] ERROR: Error creating/updating record with ListingID 146413684: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:36] ERROR: Retry failed for ListingID 146413684: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:36] ERROR: Error creating/updating record with ListingID 146429056: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:36] ERROR: Failed to push record with ListingID 146429056: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:37] ERROR: Error creating/updating record with ListingID 146429056: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:37] ERROR: Retry failed for ListingID 146429056: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:38] ERROR: Error creating/updating record with ListingID 146432024: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:38] ERROR: Failed to push record with ListingID 146432024: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:38] ERROR: Error creating/updating record with ListingID 146432024: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:38] ERROR: Retry failed for ListingID 146432024: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:39] ERROR: Error creating/updating record with ListingID 146452008: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:39] ERROR: Failed to push record with ListingID 146452008: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:40] ERROR: Error creating/updating record with ListingID 146452008: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:40] ERROR: Retry failed for ListingID 146452008: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:40] ERROR: Error creating/updating record with ListingID 146452016: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:40] ERROR: Failed to push record with ListingID 146452016: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:41] ERROR: Error creating/updating record with ListingID 146452016: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:41] ERROR: Retry failed for ListingID 146452016: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:42] ERROR: Error creating/updating record with ListingID 146476804: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:42] ERROR: Failed to push record with ListingID 146476804: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:42] ERROR: Error creating/updating record with ListingID 146476804: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:42] ERROR: Retry failed for ListingID 146476804: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:43] ERROR: Error creating/updating record with ListingID 146491644: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:43] ERROR: Failed to push record with ListingID 146491644: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:44] ERROR: Error creating/updating record with ListingID 146491644: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:44] ERROR: Retry failed for ListingID 146491644: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:44] ERROR: Error creating/updating record with ListingID 146496520: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:44] ERROR: Failed to push record with ListingID 146496520: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:45] ERROR: Error creating/updating record with ListingID 146496520: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:45] ERROR: Retry failed for ListingID 146496520: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:46] ERROR: Error creating/updating record with ListingID 146528232: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:46] ERROR: Failed to push record with ListingID 146528232: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:47] ERROR: Error creating/updating record with ListingID 146528232: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:47] ERROR: Retry failed for ListingID 146528232: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:47] ERROR: Error creating/updating record with ListingID 146543092: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:47] ERROR: Failed to push record with ListingID 146543092: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:48] ERROR: Error creating/updating record with ListingID 146543092: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:48] ERROR: Retry failed for ListingID 146543092: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:49] ERROR: Error creating/updating record with ListingID 146543872: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:49] ERROR: Failed to push record with ListingID 146543872: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:49] ERROR: Error creating/updating record with ListingID 146543872: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:49] ERROR: Retry failed for ListingID 146543872: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:50] ERROR: Error creating/updating record with ListingID 146551648: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:50] ERROR: Failed to push record with ListingID 146551648: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:51] ERROR: Error creating/updating record with ListingID 146551648: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:51] ERROR: Retry failed for ListingID 146551648: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:51] ERROR: Error creating/updating record with ListingID 146553840: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:51] ERROR: Failed to push record with ListingID 146553840: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:52] ERROR: Error creating/updating record with ListingID 146553840: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:52] ERROR: Retry failed for ListingID 146553840: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:53] ERROR: Error creating/updating record with ListingID 146558208: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:53] ERROR: Failed to push record with ListingID 146558208: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:53] ERROR: Error creating/updating record with ListingID 146558208: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:53] ERROR: Retry failed for ListingID 146558208: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:54] ERROR: Error creating/updating record with ListingID 146559912: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:54] ERROR: Failed to push record with ListingID 146559912: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:55] ERROR: Error creating/updating record with ListingID 146559912: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:55] ERROR: Retry failed for ListingID 146559912: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:55] ERROR: Error creating/updating record with ListingID 146571808: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:55] ERROR: Failed to push record with ListingID 146571808: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:56] ERROR: Error creating/updating record with ListingID 146571808: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:56] ERROR: Retry failed for ListingID 146571808: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:57] ERROR: Error creating/updating record with ListingID 146621888: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:57] ERROR: Failed to push record with ListingID 146621888: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:58] ERROR: Error creating/updating record with ListingID 146621888: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:58] ERROR: Retry failed for ListingID 146621888: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:58] ERROR: Error creating/updating record with ListingID 146626916: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:58] ERROR: Failed to push record with ListingID 146626916: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:59] ERROR: Error creating/updating record with ListingID 146626916: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:21:59] ERROR: Retry failed for ListingID 146626916: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:00] ERROR: Error creating/updating record with ListingID 146630748: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:00] ERROR: Failed to push record with ListingID 146630748: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:00] ERROR: Error creating/updating record with ListingID 146630748: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:00] ERROR: Retry failed for ListingID 146630748: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:01] ERROR: Error creating/updating record with ListingID 146633828: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:01] ERROR: Failed to push record with ListingID 146633828: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:02] ERROR: Error creating/updating record with ListingID 146633828: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:02] ERROR: Retry failed for ListingID 146633828: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:03] ERROR: Error creating/updating record with ListingID 146697880: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:03] ERROR: Failed to push record with ListingID 146697880: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:03] ERROR: Error creating/updating record with ListingID 146697880: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:03] ERROR: Retry failed for ListingID 146697880: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:04] ERROR: Error creating/updating record with ListingID 146700252: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:04] ERROR: Failed to push record with ListingID 146700252: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:05] ERROR: Error creating/updating record with ListingID 146700252: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:05] ERROR: Retry failed for ListingID 146700252: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:05] ERROR: Error creating/updating record with ListingID 146730940: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:05] ERROR: Failed to push record with ListingID 146730940: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:06] ERROR: Error creating/updating record with ListingID 146730940: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:06] ERROR: Retry failed for ListingID 146730940: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:07] ERROR: Error creating/updating record with ListingID 146731692: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:07] ERROR: Failed to push record with ListingID 146731692: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:08] ERROR: Error creating/updating record with ListingID 146731692: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:08] ERROR: Retry failed for ListingID 146731692: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:08] ERROR: Error creating/updating record with ListingID 146743304: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:08] ERROR: Failed to push record with ListingID 146743304: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:09] ERROR: Error creating/updating record with ListingID 146743304: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:09] ERROR: Retry failed for ListingID 146743304: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:10] ERROR: Error creating/updating record with ListingID 146745056: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:10] ERROR: Failed to push record with ListingID 146745056: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:10] ERROR: Error creating/updating record with ListingID 146745056: Field "Price Guide" cannot accept the provided value
+[2024-12-03 10:22:10] ERROR: Retry failed for ListingID 146745056: Field "Price Guide" cannot accept the provided value
+[2024-12-03 13:05:01] ERROR: Error fetching performance data for Listing ID 146768252: Request failed with status code 404
+[2024-12-03 13:05:01] ERROR: Error Response Data: {
+  "errors": [
+    {
+      "status": 404,
+      "title": "Not Found",
+      "detail": "The requested resource cannot be found",
+      "meta": {
+        "transactionId": "60f97aa9-4bf5-4234-bf97-5e51f558f8e9"
+      }
+    }
+  ]
+}
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (145592036): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145592036%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 145592036: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145592036%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 145592036: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145592036%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (145592036): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145592036%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 145592036: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145592036%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 145592036: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145592036%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (145641028): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145641028%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 145641028: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145641028%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 145641028: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145641028%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (145641028): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145641028%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 145641028: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145641028%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 145641028: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145641028%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (145757172): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145757172%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 145757172: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145757172%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 145757172: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145757172%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (145757172): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145757172%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 145757172: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145757172%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 145757172: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145757172%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (145911736): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145911736%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 145911736: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145911736%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 145911736: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145911736%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (145911736): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145911736%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 145911736: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145911736%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 145911736: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145911736%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (145944152): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145944152%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 145944152: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145944152%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 145944152: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145944152%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (145944152): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145944152%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 145944152: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145944152%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 145944152: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145944152%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (145995832): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145995832%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 145995832: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145995832%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 145995832: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145995832%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (145995832): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145995832%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 145995832: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145995832%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 145995832: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22145995832%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146072780): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146072780%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146072780: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146072780%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146072780: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146072780%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146072780): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146072780%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146072780: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146072780%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146072780: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146072780%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146153620): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146153620%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146153620: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146153620%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146153620: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146153620%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146153620): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146153620%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146153620: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146153620%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146153620: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146153620%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146185656): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146185656%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146185656: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146185656%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146185656: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146185656%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146185656): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146185656%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146185656: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146185656%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146185656: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146185656%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146217828): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146217828%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146217828: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146217828%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146217828: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146217828%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146217828): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146217828%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146217828: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146217828%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146217828: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146217828%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146259396): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146259396%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146259396: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146259396%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146259396: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146259396%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146259396): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146259396%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146259396: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146259396%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146259396: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146259396%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146267676): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146267676%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146267676: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146267676%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146267676: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146267676%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146267676): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146267676%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146267676: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146267676%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146267676: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146267676%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146268104): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146268104%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146268104: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146268104%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146268104: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146268104%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146268104): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146268104%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146268104: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146268104%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146268104: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146268104%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146268540): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146268540%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146268540: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146268540%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146268540: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146268540%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146268540): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146268540%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146268540: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146268540%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146268540: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146268540%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146276944): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146276944%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146276944: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146276944%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146276944: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146276944%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146276944): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146276944%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146276944: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146276944%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146276944: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146276944%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146288568): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146288568%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146288568: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146288568%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146288568: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146288568%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146288568): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146288568%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146288568: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146288568%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146288568: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146288568%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146288752): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146288752%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146288752: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146288752%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146288752: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146288752%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146288752): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146288752%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146288752: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146288752%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146288752: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146288752%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146293692): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146293692%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146293692: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146293692%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146293692: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146293692%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146293692): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146293692%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146293692: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146293692%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146293692: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146293692%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146324812): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146324812%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146324812: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146324812%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146324812: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146324812%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146324812): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146324812%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146324812: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146324812%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146324812: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146324812%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146335276): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146335276%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146335276: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146335276%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146335276: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146335276%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146335276): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146335276%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146335276: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146335276%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146335276: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146335276%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146347908): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146347908%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146347908: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146347908%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146347908: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146347908%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146347908): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146347908%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146347908: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146347908%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146347908: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146347908%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146350232): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146350232%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146350232: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146350232%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146350232: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146350232%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146350232): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146350232%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146350232: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146350232%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146350232: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146350232%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146401564): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146401564%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146401564: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146401564%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146401564: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146401564%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146401564): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146401564%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146401564: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146401564%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146401564: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146401564%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146411392): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146411392%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146411392: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146411392%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146411392: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146411392%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146411392): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146411392%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146411392: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146411392%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146411392: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146411392%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146413684): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146413684%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146413684: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146413684%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146413684: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146413684%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146413684): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146413684%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146413684: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146413684%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146413684: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146413684%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146429056): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146429056%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146429056: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146429056%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146429056: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146429056%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146429056): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146429056%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146429056: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146429056%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146429056: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146429056%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146432024): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146432024%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146432024: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146432024%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146432024: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146432024%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146432024): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146432024%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146432024: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146432024%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146432024: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146432024%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146452008): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146452008%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146452008: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146452008%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146452008: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146452008%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146452008): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146452008%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146452008: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146452008%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146452008: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146452008%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146452016): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146452016%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146452016: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146452016%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146452016: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146452016%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146452016): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146452016%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146452016: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146452016%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146452016: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146452016%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146476804): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146476804%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146476804: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146476804%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146476804: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146476804%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146476804): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146476804%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146476804: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146476804%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146476804: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146476804%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146491644): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146491644%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146491644: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146491644%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146491644: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146491644%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146491644): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146491644%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146491644: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146491644%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146491644: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146491644%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146496520): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146496520%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146496520: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146496520%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146496520: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146496520%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146496520): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146496520%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146496520: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146496520%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146496520: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146496520%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146528232): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146528232%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146528232: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146528232%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146528232: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146528232%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146528232): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146528232%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146528232: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146528232%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146528232: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146528232%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146543092): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146543092%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146543092: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146543092%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146543092: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146543092%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146543092): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146543092%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146543092: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146543092%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146543092: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146543092%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146543872): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146543872%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146543872: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146543872%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146543872: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146543872%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146543872): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146543872%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146543872: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146543872%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146543872: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146543872%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146551648): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146551648%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146551648: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146551648%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146551648: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146551648%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146551648): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146551648%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146551648: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146551648%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146551648: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146551648%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146553840): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146553840%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146553840: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146553840%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146553840: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146553840%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146553840): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146553840%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146553840: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146553840%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146553840: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146553840%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146558208): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146558208%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146558208: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146558208%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146558208: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146558208%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146558208): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146558208%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146558208: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146558208%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146558208: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146558208%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146559912): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146559912%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146559912: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146559912%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146559912: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146559912%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146559912): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146559912%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146559912: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146559912%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146559912: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146559912%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146571808): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146571808%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146571808: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146571808%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146571808: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146571808%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146571808): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146571808%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146571808: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146571808%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146571808: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146571808%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146621888): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146621888%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146621888: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146621888%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146621888: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146621888%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146621888): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146621888%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146621888: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146621888%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146621888: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146621888%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146626916): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146626916%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146626916: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146626916%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146626916: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146626916%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146626916): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146626916%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146626916: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146626916%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146626916: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146626916%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146630748): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146630748%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146630748: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146630748%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146630748: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146630748%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146630748): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146630748%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146630748: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146630748%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146630748: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146630748%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146633828): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146633828%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146633828: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146633828%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146633828: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146633828%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146633828): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146633828%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146633828: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146633828%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146633828: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146633828%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146697880): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146697880%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146697880: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146697880%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146697880: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146697880%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146697880): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146697880%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146697880: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146697880%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146697880: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146697880%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146700252): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146700252%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146700252: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146700252%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146700252: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146700252%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146700252): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146700252%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146700252: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146700252%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146700252: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146700252%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146730940): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146730940%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146730940: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146730940%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146730940: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146730940%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146730940): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146730940%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146730940: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146730940%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146730940: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146730940%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146731692): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146731692%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146731692: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146731692%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146731692: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146731692%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146731692): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146731692%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146731692: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146731692%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146731692: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146731692%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146743304): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146743304%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146743304: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146743304%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146743304: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146743304%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146743304): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146743304%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146743304: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146743304%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146743304: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146743304%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146745056): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146745056%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146745056: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146745056%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Failed to push record with ListingID 146745056: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146745056%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error finding record by Unique ID (146745056): request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146745056%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Error creating/updating record with ListingID 146745056: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146745056%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com
+[2024-12-03 13:05:02] ERROR: Retry failed for ListingID 146745056: request to https://api.airtable.com/v0/appCDlslqWH9qAvJq/REA?filterByFormula=%7BListingID%7D+%3D+%22146745056%22 failed, reason: getaddrinfo ENOTFOUND api.airtable.com

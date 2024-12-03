@@ -22,6 +22,8 @@ async function domainSync(sendProgressUpdate) {
             throw new Error('No property data available from Domain API.');
         }
 
+        logSyncMessage(`Fetched ${apiData.listings.length} listings from Domain API.`);
+
         sendProgressUpdate({ step: 2, total: 5, message: 'Fetching performance data...' });
         const performanceDataMap = {};
 
@@ -46,14 +48,18 @@ async function domainSync(sendProgressUpdate) {
             throw new Error('No valid data to sync to Airtable.');
         }
 
+        logSyncMessage(`Transformed ${transformedData.length} records for Airtable.`);
+
         sendProgressUpdate({ step: 4, total: 5, message: 'Pushing data to Airtable...' });
 
         for (const record of transformedData) {
             try {
                 await pushDataToAirtable([record]); // Push one record at a time
+                logSyncMessage(`Successfully pushed ListingID: ${record.fields.ListingID}`);
                 successCount++;
             } catch (error) {
-                logErrorMessage(`Failed to push record with ListingID: ${record.fields.ListingID}, Error: ${error.message}`);
+                const errorMessage = `Failed to push record with ListingID: ${record.fields.ListingID}, Error: ${error.message}`;
+                logErrorMessage(errorMessage);
                 failedCount++;
                 failedRecords.push({ ListingID: record.fields.ListingID, error: error.message });
             }
@@ -64,7 +70,11 @@ async function domainSync(sendProgressUpdate) {
         logSyncMessage(`Domain.com.au sync completed. Success: ${successCount}, Failed: ${failedCount}`);
 
         if (failedRecords.length > 0) {
-            logErrorMessage(`Some records failed to sync: ${JSON.stringify(failedRecords, null, 2)}`);
+            logErrorMessage(
+                `Some records failed to sync: ${failedRecords
+                    .map(record => `ListingID: ${record.ListingID}, Error: ${record.error}`)
+                    .join('; ')}`
+            );
             throw new Error(`Domain sync partially failed. Check logs for details.`);
         }
 
